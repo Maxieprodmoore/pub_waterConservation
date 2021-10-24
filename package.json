@@ -1,15 +1,18 @@
 {
   "name": "water-conservation-pub",
   "source": "index.html",
-  "browserlists": ["defaults", "since 2017"],
+  "browserlists": [
+    "defaults",
+    "since 2017"
+  ],
   "scripts": {
     "start": "parcel",
     "build": "parcel build"
   },
   "dependencies": {
+    "@splidejs/splide": "^3.2.0",
     "animate.css": "^4.1.1",
     "parcel": "^2.0.0",
     "shoelace": "^0.1.0"
   }
 }
-
