@@ -113,14 +113,13 @@ button {
 /*-----Intro section------*/
 
 #imgHero {
-    background-image: url("waterdroplets.9c243476.jpg");
+    background-image: url("pexels-pixabay-247765-waterDroplet.e2fc27bf.jpg");
     background-color: #5B9ED9;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
-    position: relative;
 }
 
 #navbar {

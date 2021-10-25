@@ -29,7 +29,7 @@ Array.from(collageImg).forEach(function(collageImgArray, i) {
   });
 });
 //Get icon button (x) that closes Overlay
-var overlayClose = document.querySelectorAll("#overlay-CloseBtn");
+var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
 
 // When the user clicks on icon button (x), close the overlay
 Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
