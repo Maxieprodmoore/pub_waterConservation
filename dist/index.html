@@ -10,173 +10,385 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
         <!----End of Fonts Compilation---->
-<<<<<<< HEAD
 
+        
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
-        <link rel="stylesheet" href="/index.a4e33057.css">
-=======
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
         <link rel="stylesheet" href="/index.be5cf2f4.css">
->>>>>>> 5b728a8 (Fresh start)
         <title>Water Warriors Singapore</title>
     </head>
     <body>
+        <div id="imgHero">
+            <div class="intro">
+                <h1>Water Warriors Singapore</h1>
+                <h3>Education for the protection and Conservation of water</h3>
+                <br>
+                <p class="welcome">The world may have come to a standstill, but the fight to save water for our future rages on.</p>
+                <br>
+                <sl-button size="large" pill="" class="intro-btn " href="#navbar">Learn how you can play your part! <sl-icon name="chevron-right"></sl-icon></sl-button>
+    
+            </div>
+        </div>
         
-<<<<<<< HEAD
+
         <sl-tab-group>
-=======
-        
->>>>>>> 5b728a8 (Fresh start)
             <div id="navbar">
                 <sl-tab slot="nav" panel="waterValue">Value of Water</sl-tab>
                 <sl-tab slot="nav" panel="waterConserv">Why Conserve water?</sl-tab>
-                <sl-tab slot="nav" panel="waterProtec">Protecting Singapore's Water</sl-tab>
+                <sl-tab slot="nav" panel="waterProtec">Protecting Singapore's Water</sl-tab>    
             </div>
             
-<<<<<<< HEAD
-            <sl-tab-panel name="waterValue" class="value_h2O">
-=======
-            <div name="waterValue" class="value_h2O">
->>>>>>> 5b728a8 (Fresh start)
-                <div class="intro">
-                    <h1>Water Warriors Singapore</h1>
-                    <h3>Education for the protection and Conservation of water</h3>
-                    <br>
-                    <p class="welcome">The world may have come to a standstill, but the fight to save water for our future rages on.</p>
-                    <br>
-                    <sl-button size="large" pill="" class="intro-btn" href="#water_Value">Learn how you can play your part! <sl-icon name="chevron-right"></sl-icon></sl-button>
-        
-                </div>
-                <section>
-                    <div class="section-waterValue" id="water_Value">
+            <sl-tab-panel name="waterValue" active="" class="value_h2O">
+                
+                <section id="water_Value">
+                    <div class="section-waterValue">
                         <h2>The Value of Water</h2>
-                        <p>Water is very important to us.</p>
-                        <br>
+                        
+                        <p>Water is very important to each and every one of us.</p>
                         <p>Click on the buttons bellow to find out the details!</p>
+        
+                        
 
-                        <sl-button-group>
-                            <sl-button size="large" pill="" href="#water_Uses">Uses of Water <sl-icon name="chevron-compact-down"></sl-icon></sl-button>
-                            <sl-button size="large" pill="" href="#water_Sustains">How water sustains nature <sl-icon name="chevron-compact-down"></sl-icon></sl-button>
-                        </sl-button-group>
+                        <div class="valueWater_btns">
+                            <a href="#water_Uses">
+                                <p class="waterUses_btn">Uses of Water</p>
+                                <img src="/woman-drinking-bottle-water.11d81a45.png" class="valueWater_img" alt="Uses of water button">
+                            </a>
+                            
+                            <a href="#water_Sustains">
+                                <p class="waterSustains_btn">How water <br> sustains nature</p>
+                                <img src="/sea_Turtle.b6c1244c.png" class="valueWater_img" alt="How water sustains nature button">
+                            </a>
+                            
+                        </div>
                                                    
                     </div>
                 </section>
 
-                <section>
-                    <div class="section-waterUses" id="water_Uses">
-                        <h3>Uses of water</h3>
-                        <br>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-                    </div>
+                <section id="water_Uses">
+                        <h3 class="section-waterUses_Title">Uses of water</h3>
+                        <p>In our daily lives, there are many things that clearly use water. </p>
+                        <p>Take a look through this slide show. How many of these are you surprised by?</p>
+                        <div class="splide" id="slide_waterUses">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/Glass-of-water.a73e8473.jpg" alt="pouring water into cup" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/foodfromWater.3ef93e9c.png" alt="Food from water" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                        
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/CleaningFood.08db32fe.jpg" alt="Washing food for cooking" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/pexels-ketut-subiyanto-4546141.d5c6d4d0.jpg" alt="boy looking at mirror while brushing teeth" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/pexels-ketut-subiyanto-4546167.b828eda7.jpg" alt="boy putting clothes into washing machine" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/Beach_youwall.debc0cf1.jpg" alt="Beach scene" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+                                    <li class="splide__slide">
+                                        <div class="splide__slide__container">
+                                            <img src="/woman-drinking-bottle-water.deb6ca3d.jpg" alt="woman drinking from water bottle" class="water_Uses_img">
+                                        </div>
+                                        
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        
+
+                    
                 </section>
 
-                <section>
-                    <div class="section-waterSustains" id="water_Sustains">
-                        <h3>How water sustains nature</h3>
+                <section id="water_Sustains">
+                    <div class="section-waterSustains">
+                        <h3 class="section-waterSustains_Title"> How water sustains nature</h3>
                         <br>
+                        <div class="waterSustains_collagesht">
+                            <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
+                            <!----Creating the collage picture-->
+                            <div class="waterSustains_collagepic">
+                                <img class="ws-collagePic" id="collagePic1" src="/africa-deer-drinking-water-preview.c9354478.png" alt="african deers drinking water (thumbnail)">
+                                <img class="ws-collagePic" id="collagePic2" src="/Frog_During_Rain_preview.55ba3c0f.png" alt="frog taking shelter under leaf from rain (thumbnail)">
+                                <img class="ws-collagePic" id="collagePic3" src="/Bird_drinking_Water_preview.108fef40.png" alt="bird drinking water (thumbnail)">
+                                <img class="ws-collagePic" id="collagePic4" src="/12_YT_SPARROW_preview.f1be7868.png" alt="Sparrow drinking and playing from bird bath (thumbnail)">
+                                <img class="ws-collagePic" id="collagePic5" src="/Fishes-swiming-preview.41a0c98e.png" alt="school of fish swimming in pattern (thumbnail)">
+                                <img class="ws-collagePic" id="collagePic6" src="/pexels-holiho-forest-preview.fb7cf485.png" alt="forest pathway (thumbnail)">
+                            </div>
+                            
+                        </div>
+                        
+                        <!-----Creating Overlay and full image-->
+                        <div id="overlayCollage01" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img01" src="/africa-deer-drinking-water.37b85baf.png" alt="african deers drinking water">
+                        </div>
 
-                        <p>Click the Animals and Plants to see how they interact with Nature everyday!</p>
+                        <div id="overlayCollage02" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img02" src="/Frog_During_Rain.517b6cd9.jpg" alt="frog taking shelter under leaf from rain">
+                        </div>
+
+                        <div id="overlayCollage03" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img03" src="/Bird_drinking_Water.ad3dd5c8.png" alt="bird drinking water">
+                        </div>
+
+                        <div id="overlayCollage04" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img04" src="/12_YT_SPARROW_1391748f.2c08a776.jpg" alt="Sparrow drinking and playing from bird bath">
+                        </div>
+
+                        <div id="overlayCollage05" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img05" src="/pexels-harrison-haines-3536511.80d0ec99.jpg" alt="school of fish swimming in pattern">
+                        </div>
+
+                        <div id="overlayCollage06" class="collageOverlay">
+                            <sl-icon-button name="x" label="Close button" circle="" size="large" class="overlay-CloseBtn"></sl-icon-button>
+                            <img class="overlay-Content" id="img06" src="/pexels-holiho-1112186.0d1615b0.jpg" alt="forest pathway">
+                        </div>
+
+                        
                     </div>
-                    <sl-button size="large" pill="" class="intro-btn" href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                    <div class="footer">
+                        <sl-button size="large" pill="" class="footer-btn" href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                    </div>
+                    
                 </section>
-<<<<<<< HEAD
             </sl-tab-panel>
 
-            <sl-tab-panel name="waterConserv" class="conserveH2O" id="waterNeeded">
-=======
-            </div>
-
-            <div class="conserveH2O" id="waterNeeded">
->>>>>>> 5b728a8 (Fresh start)
-                <section>
+            <sl-tab-panel name="waterConserv" id="waterNeeded">
+                <section id="conserveH2O">
                     <div class="section-waterConserve">
                         <h2>Why Conserve Water?</h2>
                         <h3>How much water do we really need?</h3>
-                        <div class="waterNeed-img">
-                            <img src="/pexels-noah-Tap.009a6aa6.jpg" alt="Water Tap">
-                        </div>
                         <div class="waterNeed-demo">
-                            <p>Placeholder text here</p>
+                            <div id="waterNeed-btns">
+                                <sl-button-group>
+                                    <sl-button id="waterTrend-btn">Show Water Demand Trend</sl-button>
+                                    <sl-button id="waterUsage-btn">Show Breakdown of Water usage in Household</sl-button>
+                                </sl-button-group>
+                            </div>
+                            
+                            <img class="waterNeed-img" src="/waterConsumptionTrend.86ea1c6f.gif" id="waterTrends" alt="population growth in Singapore and water demand over the years">
+                            <img class="waterNeed-img" src="/WaterUsage-PieChart.89ff316d.jpg" id="waterUsage" alt="Water Usage PIE chart from 2018/2019 PUB water consumption study">
+                            <p id="waterNeeds">At this rate, there will be <span id="waterNeeds-Highlight">No water</span> left!</p>
                         </div>
                     </div>
                 </section>
 
                 <section>
-                    <div class="section-waterConserve" id="waterAvail">
+                    <div class="section-waterAvail" id="waterAvail">
                         <h3>How much water we have?</h3>
                         <div class="waterAvail-img">
-                            <div id="image-slider" class="splide">
+                            <img src="/NEWaterPlant_exterior.37217ea4.jpg" alt="Exterior of a NEWater plant">
+                           
+                            <div id="slider-waterAvail" class="splide">
                                 <div class="splide__track">
                                     <ul class="splide__list">
                                         <li class="splide__slide">
-                                            <img src="/Imported%20water_CNA.2574a381.jpeg" alt="Pipes with Water from Malaysia">
+                                            <div class="splide__slide__container">
+                                                <img src="/Imported_water_CNA.5d5b4602.jpeg" alt="Pipes with Water from Malaysia">
+                                            </div>
+                                            
                                         </li>
                                         <li class="splide__slide">
-                                            <img src="/NEWaterPlant_exterior.37217ea4.jpg" alt="Exterior of a NEWater plant">
+                                            <div class="splide__slide__container">
+                                                <img src="/NEWaterPlant_exterior.37217ea4.jpg" alt="Exterior of a NEWater plant">
+                                            </div>
+                                            
                                         </li>
                                         <li class="splide__slide">
-                                            <img src="/Tuas-Desalination-Plant.fcc9920c.jpg" alt="Exterior of the Desalination plant in Tuas">
+                                            <div class="splide__slide__container">
+                                                <img src="/Tuas-Desalination-Plant.fcc9920c.jpg" alt="Exterior of the Desalination plant in Tuas">
+                                            </div>
+                                            
                                         </li>
                                         <li class="splide__slide">
-                                            <img src="/singapore-marinabarragereservoir_PUB.3e121e15.jpg" alt="Aerial Photo of the Marina Barrage reservoir building">
+                                            <div class="splide__slide__container">
+                                                <img src="/singapore-marinabarragereservoir_PUB.3e121e15.jpg" alt="Aerial Photo of the Marina Barrage reservoir building">
+                                            </div>
+                                            
                                         </li>
                                     </ul>
                                 </div>
                             </div>
+                            
                         </div>
-<<<<<<< HEAD
                         <div class="waterAvail-demo">
-                            <sl-checkbox checked="" id="rainfall">Rainfall</sl-checkbox>
-                            <sl-checkbox checked="" id="seawater">Desalinated Water</sl-checkbox>
-                            <sl-checkbox checked="" id="NEWater">NEWater</sl-checkbox>
-                            <sl-checkbox checked="" id="tuasWater">Inported Water</sl-checkbox>
-                            <p>Total persentage of water available: <span id="waterAvail"></span>%</p>
+                            <sl-checkbox class="waterAvail-checkbox" id="rainfall">Rainfall</sl-checkbox>
+                            <sl-checkbox class="waterAvail-checkbox" id="seawater">Desalinated Water</sl-checkbox>
+                            <sl-checkbox class="waterAvail-checkbox" id="NEWater">NEWater</sl-checkbox>
+                            <sl-checkbox class="waterAvail-checkbox" id="tuasWater">Inported Water</sl-checkbox>
+                            <p>Total percentage of water available: <span id="waterAvailPercent"></span>%</p>
                         </div>
-=======
->>>>>>> 5b728a8 (Fresh start)
                     </div>
                 </section>
 
-                <section>
+                <section id="consq">
                     <h3>Consequences of No Water</h3>
-                    <br>
                     <p>Scroll down to see the consequences of having no water.</p>
-                    <img src="/waterFlow-Tap.ccdca629.jpg" id="tap"> 
-                    <img src="/sea_B4_City.2aab5ad6.jpg" id="city_lake">
-                    <sl-button size="large" pill="" class="intro-btn" href="#waterNeeded">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                    <div class="consequences-imgGallery"> 
+
+                        <div class="consequences-imgCollage">
+                            <img src="/sea_B4_City.2aab5ad6.jpg" id="city_lake" alt="city view from a lake-side">
+                            <img src="/pexels-holiho-forest-preview.fb7cf485.png" id="consequences-forest" alt="pathway through the forest">
+                            <img src="/africa-deer-drinking-water-preview.c9354478.png" id="consequences-deer" alt="deer drinking from river">
+                            <img src="/sea_Turtle-preview.5a601e0d.png" id="consequences-Turtle" alt="turtle swimming">
+                            <img src="/Bird_drinking_Water_preview.108fef40.png" id="consequences-bird" alt="bird catching fish from waters">
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="footer">
+                        <sl-button size="large" pill="" class="footer-btn" href="#waterNeeded">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                    </div> 
                 </section>
                                     
-<<<<<<< HEAD
             </sl-tab-panel>
 
             <sl-tab-panel name="waterProtec" class="proteccH2O" id="waterSupplies">
-=======
-            </div>
-
-            <div class="proteccH2O" id="waterSupplies">
->>>>>>> 5b728a8 (Fresh start)
                 <h2>Protecting Singapore's Water</h2>
                 
 
                 <div class="waterSupply-gallery">
-                    <h3>Sources of Water in Singapore</h3>
+                    <section>
+                        <h3>Sources of Water in Singapore</h3>
 
-                    <p>Ever wondered what happens to the water before it is pumped into Singapore's water supply?</p>
-                        <br>
-                    <p>Click on the images to find out more!</p>
-                    <img src="/Imported%20water_CNA.2574a381.jpeg" class="waterSupply-Gallery">
-                    <img src="/Tuas-Desalination-Plant.fcc9920c.jpg" class="waterSupply-Gallery">
-                    <img src="/NEWaterPlant_exterior.37217ea4.jpg" class="waterSupply-Gallery">
-                    <img src="/singapore-marinabarragereservoir_PUB.3e121e15.jpg" class="waterSupply-Gallery">
+                        <p>Ever wondered what happens to the water before it is pumped into Singapore's water supply?</p>
+                        <p>Click on the images to find out more!</p>
 
+                        <div id="supply-Gallery">
+                            <div class="flip-card">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/water-Pipes_CNA.a2a1ccbd.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
+                                        <p class="flip-card-Txt">Water is collected from the water catchments and drains.</p>
+                                        <p class="flip-card-Txt">Then they are sent along via the water pipes for treatment.</p>
+                                    </div>
+                                </div>    
+                            </div>
+                            
+                            <div class="flip-card" id="card-desalinationPlant">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/Tuas-Desalination-Plant.fcc9920c.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h6 class="flip-card-TitleTxt">Water Treatment </h6>
+                                        <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected.</p>
+                                        <p class="flip-card-Txt">Treatment frees the water of harmful bacteria and particles, making it safe for drinking.</p>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="flip-card" id="card-NEWater">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/NEWaterPlant_exterior.fedcdaf3.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
+                                        <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
+                                    </div>
+                                </div>    
+                            </div>
+
+                            <div class="flip-card" id="card-reservoir">
+                                <div class="flip-card-inner">
+                                    <div class="flip-card-front">
+                                        <img src="/singapore-marinabarragereservoir_PUB.3e121e15.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
+                                    </div>
+                                    <div class="flip-card-back">
+                                        <h6 class="flip-card-TitleTxt">Reservoirs </h6>
+                                        <p class="flip-card-Txt">Water is finally pumped out for our use.</p>
+                                        <p class="flip-card-Txt">Whether it be for personal use or for indutrial needs.</p>
+                                    </div>
+                                </div>    
+                            </div>
+                               
+                        </div>
+                        
+                    </section>
+                    
                 </div>
 
                 <div class="waterSupply-quiz">
-                    <h3>Prevent contamination of Singapore's Water Supply</h3>
+                    <section>
+                        <h3>Quiz</h3>
+                        <p>You've made it so far in this website. <br>
+                        Would you like to take this short quiz and see how much you remember?</p>
+                        <sl-switch class="waterSupply-Switch" id="quizShow">Yes please!</sl-switch>
+                                  
+                        <!-----One page per Quiz Question----->
+                        <div id="qnForm">
+                            <sl-form id="qnSheet">
+                                <div class="question-options">
+                                    <!--<div class="question-img">---->    
+                                    <!---</div>--->
+                                    <p id="qn">Question goes here.</p>
+                                    <sl-radio name="option" class="qnOptions"><span id="choiceA">Option 1</span></sl-radio><br>
+                                    <sl-radio name="option" class="qnOptions"><span id="choiceB">Option 2</span></sl-radio><br>
+                                    <sl-radio name="option" class="qnOptions"><span id="choiceC">Option 3</span></sl-radio><br>
+                                    <sl-radio name="option" class="qnOptions"><span id="choiceD">Option 4</span></sl-radio>
+                                </div>
+                                <br>
+                                <!---------Styling the button(s)--------->
+                                <div class="ansBtn">
+                                    <sl-button size="large" type="primary" pill="" disabled="" id="ansSub">Submit Answer</sl-button>
+                                </div>
+                                <br>
+                                <!----------Styling the Progress Bar----------->
+                                <sl-progress-bar id="waterSupply-quizProgress"></sl-progress-bar>
+                            </sl-form>
+                            <!---Dialogue Box---------------------->
+                            <sl-dialog label="Alert" id="dialog-overview">
+                                <!----Styling the Final button + Return to Start buttons-->
+                                This is the final Question of the quiz. Are you sure you want to submit the quiz?
+                                
+                                
+                                <sl-button slot="footer" size="large" pill="" type="primary" id="getResults">Submit and get results.</sl-button>
+                                <sl-button slot="footer" size="large" pill="" type="danger" id="returnSender">Return to first question.</sl-button>
+                            
+                            </sl-dialog>
+            
+                        </div>
+                        <div class="footer">
+                            <sl-button size="large" pill="" class="footer-btn" href="#waterSupplies">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                        </div> 
+                    </section>            
                 </div>
-                <sl-button size="large" pill="" class="intro-btn" href="#waterSupplies">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
-<<<<<<< HEAD
+                
+                
             </sl-tab-panel>
             
 
@@ -186,15 +398,6 @@
         
         <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.esm.js" defer=""></script>
-        <script src="/index.7fbff28d.js"></script>
-=======
-            </div>
-            
-
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
-        <script src="/index.8eb82e9b.js" defer=""></script>
->>>>>>> 5b728a8 (Fresh start)
+        <script src="/index.65c7a1e5.js"></script>
     </body>
 </html>
