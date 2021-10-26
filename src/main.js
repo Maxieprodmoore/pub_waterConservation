@@ -1,3 +1,7 @@
+import _ from 'lodash';
+import Splide from '@splidejs/splide';
+
+
 /*------Sticky Navigation------*/
 window.onscroll = function() {myFunction()};
 
@@ -77,51 +81,6 @@ var slidesWaterAvail = new Splide('#slider-waterAvail', {
 document.addEventListener( 'DOMContentLoaded', function () {
   slidesWaterAvail.mount();
 } );
-
-/*Water Available Section----------*/
-  /*Get Water Trend button ID----*/
-    let waterTrendBtn = document.getElementById('waterTrend-btn');
-
-  /*Get Breakdown of water usage button ID----*/
-    let waterUsageBtn = document.getElementById('waterUsage-btn');
-
-  /*Get Water Trend image ID----*/
-  let waterTrendImg = document.getElementById('waterTrends');
-
-  /*Get Breakdown of water usage Image ID----*/
-    let waterUsageImg = document.getElementById('waterUsage');
-
-  /*Create Activator where when Water Trend button is clicked, water trend image is displayed.*/
-    waterTrendBtn.addEventListener("click", function(){
-      waterTrendImg.style.display= "inline-block";
-      document.getElementById("waterNeeds").style.display= "block";
-    });
-
-    /*Create Activator where when Water Usage button is clicked, water Usage image is displayed.*/
-    waterUsageBtn.addEventListener("click", function(){
-      waterUsageImg.style.display= "inline-block";
-    });
-
-  
-
-
-/*-------Checking Watersupplies---------*/
-/* Get Number slot-----*/
-var waterAvailNum = document.getElementById('waterAvailPercent');
-//let waterAvailNum = 0;
-
-
-/*Get Rainfall Checkbox-----*/
-const rain = document.getElementById('rainfall');
-
-//rain.addEventListener('sl-change', event => {
-  //if (rain.checked = true) {
-    //waterAvailNum.innerHTML = waterAvailNum + 18;
-  //}else {
-    //waterAvailNum.innerHTML = waterAvailNum;
-  //};
-  
-//});
 
 
 /*Getting Quiz Sheet------*/

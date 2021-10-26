@@ -9,10 +9,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
-        <!----End of Fonts Compilation---->
+        <!----End of Fonts Compilation----> 
+        <script type="module" src="main.js"></script> 
+        <script src="./../dist/index.8eb82e9b.js"></script> 
+        <script type="module">
+            import Splide from '@splidejs/splide';
+            import '@shoelace-style/shoelace/dist/themes/light.css';
+            import '@shoelace-style/shoelace/dist/components/button/button.js';
+            import '@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js';
+            import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
+            import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
+            import '@shoelace-style/shoelace/dist/components/icon/icon.js';
+            import '@shoelace-style/shoelace/dist/components/tab-group/tab-group.js';
+            import '@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js';
+            import '@shoelace-style/shoelace/dist/components/tab/tab.js';
+            import '@shoelace-style/shoelace/dist/components/tooltip/tooltip.js';
+            import '@shoelace-style/shoelace/dist/components/switch/switch.js';
+            import '@shoelace-style/shoelace/dist/components/form/form.js';
+            import '@shoelace-style/shoelace/dist/components/radio/radio.js';
+            import '@shoelace-style/shoelace/dist/components/radio-group/radio-group.js';
+            import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
+            import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
 
-        
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.css">
+            // Set the base path to the folder you copied Shoelace's assets to
+            setBasePath('/dist/shoelace');
+
+        </script>      
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
         <link rel="stylesheet" href="styles.css">
         <title>Water Warriors Singapore</title>
@@ -31,14 +53,33 @@
         </div>
         
 
-        <sl-tab-group>
+    
             <div id="navbar">
-                <sl-tab slot="nav" panel="waterValue" >Value of Water</sl-tab>
-                <sl-tab slot="nav" panel="waterConserv">Why Conserve water?</sl-tab>
-                <sl-tab slot="nav" panel="waterProtec">Protecting Singapore's Water</sl-tab>    
+                <div id="hamburgerNav">
+                    <sl-icon-button name="list" label="Navigation menu" style="font-size: 2rem;"></sl-icon-button>
+                </div>
+                <div id="browserNav">
+                    <sl-tooltip content="The Value of Water" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Value"></sl-button></sl-tooltip>
+                    <sl-tooltip content="Uses of Water" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Uses"></sl-button></sl-tooltip>
+                    <sl-tooltip content="How water sustains nature" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Sustains"></sl-button></sl-tooltip>
+                    <sl-tooltip content="Why Conserve water?"placement="right-start" ><sl-button type="primary" size="medium" circle href="#conserveH2O"></sl-button></sl-tooltip>
+                    <sl-tooltip content="How much water do we have?" placement="right-start" ><sl-button type="primary" size="medium" circle href="#waterAvail"></sl-button></sl-tooltip>
+                    <sl-tooltip content="The consequences of having no water." placement="right-start" ><sl-button type="primary" size="medium" circle href="#consq"></sl-button></sl-tooltip>
+                    <sl-tooltip content="Protecting Singapore's Water"placement="right-start" ><sl-button type="primary" size="medium" circle href="#waterSupplies"></sl-button></sl-tooltip>
+                </div>
+                <sl-drawer label="Drawer" class="drawer-overview">
+                    <a href="#water_Value">The Value of Water</a>
+                    <a href="#water_Uses">The Uses of Water</a>
+                    <a href="#water_Sustains">How water sustains nature</a>
+                    <a href="#conserveH2O">Why Conserve water?</a>
+                    <a href="#waterAvail">How much water do we have?</a>
+                    <a href="#consq">The consequences of having no water</a>
+                    <a href="#waterSupplies">Protecting Singapore's Water</a>
+                </sl-drawer>
+                    
             </div>
             
-            <sl-tab-panel name="waterValue" active class="value_h2O">
+            <div class="value_h2O">
                 
                 <section id="water_Value">
                     <div class="section-waterValue" >
@@ -56,7 +97,7 @@
                             </a>
                             
                             <a href="#water_Sustains">
-                                <p class="waterSustains_btn">How water <br> sustains nature</p>
+                                <p class="waterSustains_btn">How water sustains nature</p>
                                 <img src="./../images/sea_Turtle.png" class="valueWater_img" alt="How water sustains nature button">
                             </a>
                             
@@ -69,7 +110,7 @@
                         <h3 class="section-waterUses_Title">Uses of water</h3>
                         <p>In our daily lives, there are many things that clearly use water. </p>
                         <p>Take a look through this slide show. How many of these are you surprised by?</p>
-                        <div class="splide" id="slide_waterUses">
+                        <!-------<div class="splide" id="slide_waterUses">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
@@ -118,7 +159,7 @@
 
                                 </ul>
                             </div>
-                        </div>
+                        </div> ------------>
                         
 
                     
@@ -126,7 +167,7 @@
 
                 <section id="water_Sustains">
                     <div class="section-waterSustains" >
-                        <h3 class="section-waterSustains_Title"> How water sustains nature</h3>
+                        <h3> How water sustains nature</h3>
                         <br>
                         <div class="waterSustains_collagesht">
                             <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
@@ -175,110 +216,83 @@
 
                         
                     </div>
-                    <div class="footer">
-                        <sl-button size="large" pill class="footer-btn"   href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
-                    </div>
                     
                 </section>
-            </sl-tab-panel>
+            </div>
 
-            <sl-tab-panel name="waterConserv"  id="waterNeeded">
+            <div  id="waterNeeded">
                 <section id="conserveH2O">
                     <div class="section-waterConserve" >
                         <h2>Why Conserve Water?</h2>
                         <h3>How much water do we really need?</h3>
-                        <div class="waterNeed-demo">
-                            <div id="waterNeed-btns">
-                                <sl-button-group>
-                                    <sl-button id="waterTrend-btn">Show Water Demand Trend</sl-button>
-                                    <sl-button id="waterUsage-btn">Show Breakdown of Water usage in Household</sl-button>
-                                </sl-button-group>
-                            </div>
+                        <sl-tab-group class="waterNeed-demo" activation="manual">
+                            <sl-tab slot="nav" panel="waterTrend" id="waterTrend-btn">Show Water Demand Trend</sl-tab>
+                            <sl-tab slot="nav" panel="waterUsage" id="waterUsage-btn">Show Breakdown of Water usage in Household</sl-tab>
                             
-                            <img class="waterNeed-img" src="./../images/waterConsumptionTrend.gif" id="waterTrends" alt="population growth in Singapore and water demand over the years">
-                            <img class="waterNeed-img" src="./../images/WaterUsage-PieChart.jpg" id="waterUsage" alt="Water Usage PIE chart from 2018/2019 PUB water consumption study">
-                            <p id="waterNeeds">At this rate, there will be <span id="waterNeeds-Highlight">No water</span> left!</p>
-                        </div>
+                            <sl-tab-panel name="waterTrend">
+                                <img class="waterNeed-img" src="./../images/waterConsumptionTrend.gif" id="waterTrends" alt="population growth in Singapore and water demand over the years">
+                            </sl-tab-panel>
+                            <sl-tab-panel name="waterUsage">
+                                <img class="waterNeed-img" src="./../images/WaterUsage-PieChart.jpg" id="waterUsage" alt="Water Usage PIE chart from 2018/2019 PUB water consumption study">
+                                <p id="waterNeeds">At this rate, there will be <span id="waterNeeds-Highlight">No water</span> left!</p>
+                            </sl-tab-panel>
+                            
+                        </sl-tab-group>
                     </div>
                 </section>
 
                 <section>
                     <div class="section-waterAvail" id="waterAvail">
-                        <h3>How much water we have?</h3>
-                        <div class="waterAvail-img">
-                            <img src="./../images/NEWaterPlant_exterior.jpg" alt="Exterior of a NEWater plant">
-                           
-                            <div id="slider-waterAvail" class="splide">
-                                <div class="splide__track">
-                                    <ul class="splide__list">
-                                        <li class="splide__slide">
-                                            <div class="splide__slide__container">
-                                                <img src="./../images/Imported_water_CNA.jpeg" alt="Pipes with Water from Malaysia">
-                                            </div>
-                                            
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="splide__slide__container">
-                                                <img src="./../images/NEWaterPlant_exterior.jpg" alt="Exterior of a NEWater plant">
-                                            </div>
-                                            
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="splide__slide__container">
-                                                <img src="./../images/Tuas-Desalination-Plant.jpg" alt="Exterior of the Desalination plant in Tuas">
-                                            </div>
-                                            
-                                        </li>
-                                        <li class="splide__slide">
-                                            <div class="splide__slide__container">
-                                                <img src="./../images/singapore-marinabarragereservoir_PUB.jpg" alt="Aerial Photo of the Marina Barrage reservoir building">
-                                            </div>
-                                            
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <h3>How much water do we have?</h3>
+                        <div class="waterAvail-gallery">
+                            <sl-tooltip content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
+                                <img class="waterAvail-img" src="./../images/Imported_water_CNA.jpeg" alt="Pipes with Water from Malaysia">
+                            </sl-tooltip>
                             
-                        </div>
-                        <div class="waterAvail-demo">
-                            <sl-checkbox  class="waterAvail-checkbox" id="rainfall">Rainfall</sl-checkbox>
-                            <sl-checkbox  class="waterAvail-checkbox" id="seawater">Desalinated Water</sl-checkbox>
-                            <sl-checkbox  class="waterAvail-checkbox" id="NEWater">NEWater</sl-checkbox>
-                            <sl-checkbox class="waterAvail-checkbox" id="tuasWater">Inported Water</sl-checkbox>
-                            <p>Total percentage of water available: <span id="waterAvailPercent"></span>%</p>
+                            <sl-tooltip content="NEWater make up to 40% of our water sources currently">
+                                <img class="waterAvail-img" src="./../images/NEWaterPlant_exterior.jpg" alt="Exterior of a NEWater plant">
+                            </sl-tooltip>                            
+                            <sl-tooltip content="Desalinated water treated make up to 25% of our water sources currently">
+                                <img class="waterAvail-img" src="./../images/Tuas-Desalination-Plant.jpg" alt="Exterior of the Desalination plant in Tuas">
+                            </sl-tooltip>
+                                                                                 
                         </div>
                     </div>
                 </section>
 
                 <section id="consq">
                     <h3>Consequences of No Water</h3>
-                    <p>Scroll down to see the consequences of having no water.</p>
+                    <p>Click to see the consequences of having no water.</p>
                     <div class="consequences-imgGallery"> 
-
-                        <div class="consequences-imgCollage">
-                            <img src="./../images/sea_B4_City.jpg" id="city_lake" alt="city view from a lake-side">
-                            <img src="./../images/pexels-holiho-forest-preview.png" id="consequences-forest" alt="pathway through the forest">
-                            <img src="./../images/africa-deer-drinking-water-preview.png" id="consequences-deer" alt="deer drinking from river">
-                            <img src="./../images/sea_Turtle-preview.png" id="consequences-Turtle" alt="turtle swimming">
-                            <img src="./../images/Bird_drinking_Water_preview.png" id="consequences-bird" alt="bird catching fish from waters">
-
+                        <sl-tooltip id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
+                            <img src="./../images/sea_B4_City.jpg"  alt="city view from a lake-side">
+                        </sl-tooltip>   
+                        <div class="consequences-imgCollage">                       
+                            <sl-tooltip hoist placement="top" content="Plants will wither and die, and the soil gets eroded without the plants roots to anchor them." trigger="click">
+                                <img src="./../images/pexels-holiho-forest-preview.png" id="consequences-forest" alt="pathway through the forest">
+                            </sl-tooltip> 
+                                                                                               
+                            <sl-tooltip hoist placement="top" content="Creatures of the water will lose their habitats." trigger="click">
+                                <img src="./../images/sea_Turtle-preview.png" id="consequences-Turtle" alt="turtle swimming">
+                            </sl-tooltip>                   
+                            <sl-tooltip hoist placement="top" content="Certain animals will lose their food sources." trigger="click">
+                                <img src="./../images/Bird_drinking_Water_preview.png" id="consequences-bird" alt="bird catching fish from waters">
+                            </sl-tooltip>
+                            <sl-tooltip hoist placement="top" content="We lose our sources of hydration and eventually die of thirst." trigger="click">
+                                <img src="./../images/africa-deer-drinking-water-preview.png" id="consequences-deer" alt="deer drinking from river">
+                            </sl-tooltip>
+                            
                         </div>
                         
                     </div>
-                    
-                    <div class="footer">
-                        <sl-button size="large" pill class="footer-btn"  href="#waterNeeded">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
-                    </div> 
                 </section>
                                     
-            </sl-tab-panel>
+            </div>
 
-            <sl-tab-panel name="waterProtec" class="proteccH2O" id="waterSupplies">
-                <h2>Protecting Singapore's Water</h2>
-                
-
-                <div class="waterSupply-gallery" >
+            <div class="proteccH2O" id="waterSupplies">
+               
                     <section>
+                        <h2>Protecting Singapore's Water</h2>
                         <h3>Sources of Water in Singapore</h3>
 
                         <p>Ever wondered what happens to the water before it is pumped into Singapore's water supply?</p>
@@ -292,8 +306,7 @@
                                     </div>
                                     <div class="flip-card-back">
                                         <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
-                                        <p class="flip-card-Txt">Water is collected from the water catchments and drains.</p>
-                                        <p class="flip-card-Txt">Then they are sent along via the water pipes for treatment.</p>
+                                        <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
                                     </div>
                                 </div>    
                             </div>
@@ -305,8 +318,7 @@
                                     </div>
                                     <div class="flip-card-back">
                                         <h6 class="flip-card-TitleTxt">Water Treatment </h6>
-                                        <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected.</p>
-                                        <p class="flip-card-Txt">Treatment frees the water of harmful bacteria and particles, making it safe for drinking.</p>
+                                        <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
                                     </div>
                                 </div>    
                             </div>
@@ -330,8 +342,7 @@
                                     </div>
                                     <div class="flip-card-back">
                                         <h6 class="flip-card-TitleTxt">Reservoirs </h6>
-                                        <p class="flip-card-Txt">Water is finally pumped out for our use.</p>
-                                        <p class="flip-card-Txt">Whether it be for personal use or for indutrial needs.</p>
+                                        <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
                                     </div>
                                 </div>    
                             </div>
@@ -342,7 +353,7 @@
                     
                 </div>
 
-                <div class="waterSupply-quiz">
+                <!-------<div class="waterSupply-quiz">
                     <section>
                         <h3>Quiz</h3>
                         <p>You've made it so far in this website. <br>
@@ -356,10 +367,13 @@
                                     <!--<div class="question-img">---->    
                                     <!---</div>--->
                                     <p id="qn">Question goes here.</p>
-                                    <sl-radio name="option" class="qnOptions"><span id="choiceA">Option 1</span></sl-radio><br>
-                                    <sl-radio name="option" class="qnOptions"><span id="choiceB">Option 2</span></sl-radio><br>
-                                    <sl-radio name="option" class="qnOptions"><span id="choiceC">Option 3</span></sl-radio><br>
-                                    <sl-radio name="option" class="qnOptions"><span id="choiceD">Option 4</span></sl-radio>
+                                    <sl-radio-group label="Select your answer">
+                                        <sl-radio name="option" class="qnOptions"><span id="choiceA">Option 1</span></sl-radio><br>
+                                        <sl-radio name="option" class="qnOptions"><span id="choiceB">Option 2</span></sl-radio><br>
+                                        <sl-radio name="option" class="qnOptions"><span id="choiceC">Option 3</span></sl-radio><br>
+                                        <sl-radio name="option" class="qnOptions"><span id="choiceD">Option 4</span></sl-radio>
+                                    </sl-radio-group>
+                                    
                                 </div>
                                 <br>
                                 <!---------Styling the button(s)--------->
@@ -383,21 +397,10 @@
             
                         </div>
                         <div class="footer">
-                            <sl-button size="large" pill class="footer-btn"  href="#waterSupplies">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                            <sl-button size="large" pill class="footer-btn"  href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
                         </div> 
                     </section>            
-                </div>
-                
-                
-            </sl-tab-panel>
-            
-
-        </sl-tab-group>
-
-        
-        
-        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/js/splide.min.js"></script>
-        <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.22/dist/shoelace/shoelace.esm.js"></script>
-        <script src="main.js"></script>
+                </div>                
+            </div>        
     </body>
 </html>
