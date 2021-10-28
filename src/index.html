@@ -35,7 +35,7 @@
             setBasePath('/dist/shoelace');
 
         </script>      
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.14/dist/css/splide.min.css">
+        <link rel="stylesheet" href="./../node_modules/@splidejs/splide/dist/css/splide.min.css">
         <link rel="stylesheet" href="styles.css">
         <title>Water Warriors Singapore</title>
     </head>
@@ -110,7 +110,7 @@
                         <h3 class="section-waterUses_Title">Uses of water</h3>
                         <p>In our daily lives, there are many things that clearly use water. </p>
                         <p>Take a look through this slide show. How many of these are you surprised by?</p>
-                        <!-------<div class="splide" id="slide_waterUses">
+                        <div class="splide" id="slide_waterUses">
                             <div class="splide__track">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
@@ -159,7 +159,7 @@
 
                                 </ul>
                             </div>
-                        </div> ------------>
+                        </div> 
                         
 
                     
@@ -169,8 +169,38 @@
                     <div class="section-waterSustains" >
                         <h3> How water sustains nature</h3>
                         <br>
+                        <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
                         <div class="waterSustains_collagesht">
-                            <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
+                            <!-----Creating Overlay and full image-->
+                            <div id="overlayCollage01" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
+                                <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
+                            </div>
+
+                            <div id="overlayCollage02" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
+                                <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
+                            </div>
+
+                            <div id="overlayCollage03" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
+                                <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
+                            </div>
+
+                            <div id="overlayCollage04" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn" ></sl-icon-button>
+                                <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
+                            </div>
+
+                            <div id="overlayCollage05" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
+                                <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
+                            </div>
+
+                            <div id="overlayCollage06" class="collageOverlay">
+                                <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn" ></sl-icon-button>
+                                <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
+                            </div>
                             <!----Creating the collage picture-->
                             <div class="waterSustains_collagepic">
                                 <img class="ws-collagePic" id="collagePic1" src="./../images/africa-deer-drinking-water-preview.png" alt="african deers drinking water (thumbnail)">
@@ -183,36 +213,7 @@
                             
                         </div>
                         
-                        <!-----Creating Overlay and full image-->
-                        <div id="overlayCollage01" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
-                            <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
-                        </div>
-
-                        <div id="overlayCollage02" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
-                            <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
-                        </div>
-
-                        <div id="overlayCollage03" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
-                            <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
-                        </div>
-
-                        <div id="overlayCollage04" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn" ></sl-icon-button>
-                            <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
-                        </div>
-
-                        <div id="overlayCollage05" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn"></sl-icon-button>
-                            <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
-                        </div>
-
-                        <div id="overlayCollage06" class="collageOverlay">
-                            <sl-icon-button name="x" label="Close button" circle size="large" class="overlay-CloseBtn" ></sl-icon-button>
-                            <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
-                        </div>
+                        
 
                         
                     </div>
@@ -231,10 +232,11 @@
                             
                             <sl-tab-panel name="waterTrend">
                                 <img class="waterNeed-img" src="./../images/waterConsumptionTrend.gif" id="waterTrends" alt="population growth in Singapore and water demand over the years">
+                                <p id="waterNeeds">At this rate, there will be <span id="waterNeeds-Highlight">No water</span> left!</p>
                             </sl-tab-panel>
                             <sl-tab-panel name="waterUsage">
                                 <img class="waterNeed-img" src="./../images/WaterUsage-PieChart.jpg" id="waterUsage" alt="Water Usage PIE chart from 2018/2019 PUB water consumption study">
-                                <p id="waterNeeds">At this rate, there will be <span id="waterNeeds-Highlight">No water</span> left!</p>
+                                
                             </sl-tab-panel>
                             
                         </sl-tab-group>
@@ -264,7 +266,7 @@
                     <h3>Consequences of No Water</h3>
                     <p>Click to see the consequences of having no water.</p>
                     <div class="consequences-imgGallery"> 
-                        <sl-tooltip id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
+                        <sl-tooltip hoist id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
                             <img src="./../images/sea_B4_City.jpg"  alt="city view from a lake-side">
                         </sl-tooltip>   
                         <div class="consequences-imgCollage">                       

@@ -44,11 +44,13 @@ Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
 
 /*--------Setting up Slider --------*/
 var elms = document.getElementsByClassName( 'splide' );
-for ( var i = 0, len = elms.length; i < len; i++ ) {
+
+for ( var i = 0; i < elms.length; i++ ) {
 	new Splide( elms[ i ] ).mount();
 };
 
 document.addEventListener( 'DOMContentLoaded', function () {
+  var elms = new Splide('.splide')
   elms.mount();
 } );
 

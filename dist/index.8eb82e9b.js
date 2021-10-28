@@ -492,8 +492,9 @@ Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
     });
 });
 /*--------Setting up Slider --------*/ var elms = document.getElementsByClassName('splide');
-for(var i = 0, len = elms.length; i < len; i++)new _splideDefault.default(elms[i]).mount();
+for(var i = 0; i < elms.length; i++)new _splideDefault.default(elms[i]).mount();
 document.addEventListener('DOMContentLoaded', function() {
+    var elms = new _splideDefault.default('.splide');
     elms.mount();
 });
 /*--------Setting up Slider for Uses of Water --------*/ var slideWaterUses = new _splideDefault.default('#slide_waterUses', {
