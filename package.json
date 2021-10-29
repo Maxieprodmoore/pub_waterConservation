@@ -6,7 +6,7 @@
     "since 2017"
   ],
   "scripts": {
-    "start": "parcel",
+    "start": "parcel serve",
     "build": "parcel build"
   },
   "dependencies": {
@@ -14,7 +14,9 @@
     "@shoelace-style/shoelace": "^2.0.0-beta.58",
     "@splidejs/splide": "^3.2.0",
     "animate.css": "^4.1.1",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
     "parcel": "^2.0.0"
   }
 }
