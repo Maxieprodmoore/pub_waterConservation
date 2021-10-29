@@ -10,7 +10,7 @@ var sticky = navbar.offsetTop;
 
 function myFunction() {
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }
@@ -50,7 +50,7 @@ for ( var i = 0; i < elms.length; i++ ) {
 };
 
 document.addEventListener( 'DOMContentLoaded', function () {
-  var elms = new Splide('.splide')
+  var elms = new Splide('.splide');
   elms.mount();
 } );
 
@@ -175,7 +175,7 @@ let progress = progressBar.percentage;
 var quizSwitch = document.getElementById('quizShow');
     /* Create Activator to show Quiz question sheet-------*/
       quizSwitch.addEventListener("sl-change", function() {
-        if (quizSwitch.checked === true) {
+        if (quizSwitch.checked == true) {
           progressInitial();
           quizForm.style.display = "block";
           populateQuestion();

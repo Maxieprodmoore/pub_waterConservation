@@ -39,6 +39,7 @@ p{
     width: 70%;
     margin: 0 15%;
     height: 100vh;
+    padding: 2%;
 }
 
 section{
@@ -95,14 +96,14 @@ sl-button.footer-btn::part(base){
 
 /*-----Intro section------*/
 #imgHero {
-    background-image: url("./../dist/pexels-pixabay-247765-waterDroplet.jpg");
+    background-image: url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
     background-color: #5B9ED9;
     width: 100vw;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
-    padding: 2%;
+    
 }
 
 #navbar {
@@ -112,6 +113,7 @@ sl-button.footer-btn::part(base){
     left: 0;
     top: 0;
     position: sticky;
+    padding-top: 0.25%;
 }
 #browserNav {
     display: flex;
@@ -119,8 +121,8 @@ sl-button.footer-btn::part(base){
     z-index: 100;
 }
 
-#browserNav sl-button {
-    --margin-bottom: 0.5%;
+#browserNav sl-button::part(base) {
+    margin-bottom: 0.5%;
 }
 
 #hamburgerNav {

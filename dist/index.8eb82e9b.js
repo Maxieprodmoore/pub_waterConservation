@@ -586,7 +586,7 @@ let progress = progressBar.percentage;
 }
 /*Accessing Quiz-----*/ /*------Getting switch-----*/ var quizSwitch = document.getElementById('quizShow');
 /* Create Activator to show Quiz question sheet-------*/ quizSwitch.addEventListener("sl-change", function() {
-    if (quizSwitch.checked === true) {
+    if (quizSwitch.checked == true) {
         progressInitial();
         quizForm.style.display = "block";
         populateQuestion();
