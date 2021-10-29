@@ -66,9 +66,6 @@
 
     
             <div id="navbar">
-                <div id="hamburgerNav">
-                    <sl-button label="Navigation menu" caret src="./../dist/shoelace/assets/icons/list.svg"  style="font-size: 2rem; color: black;"></sl-button>
-                </div>
                 <div id="browserNav">
                     <sl-tooltip content="The Value of Water" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Value"></sl-button></sl-tooltip>
                     <sl-tooltip content="Uses of Water" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Uses"></sl-button></sl-tooltip>
@@ -78,15 +75,6 @@
                     <sl-tooltip content="The consequences of having no water." placement="right-start" ><sl-button type="primary" size="medium" circle href="#consq"></sl-button></sl-tooltip>
                     <sl-tooltip content="Protecting Singapore's Water"placement="right-start" ><sl-button type="primary" size="medium" circle href="#waterSupplies"></sl-button></sl-tooltip>
                 </div>
-                <sl-drawer label="Drawer" class="drawer-overview">
-                    <a href="#water_Value">The Value of Water</a>
-                    <a href="#water_Uses">The Uses of Water</a>
-                    <a href="#water_Sustains">How water sustains nature</a>
-                    <a href="#conserveH2O">Why Conserve water?</a>
-                    <a href="#waterAvail">How much water do we have?</a>
-                    <a href="#consq">The consequences of having no water</a>
-                    <a href="#waterSupplies">Protecting Singapore's Water</a>
-                </sl-drawer>
                     
             </div>
             
@@ -102,16 +90,20 @@
                         
 
                         <div class="valueWater_btns">
-                            <a href="#water_Uses">
-                                <p class="waterUses_btn">Uses of Water</p>
-                                <img src="./../images/woman-drinking-bottle-water.png" class="valueWater_img" alt="Uses of water button">
-                            </a>
-                            
-                            <a href="#water_Sustains">
-                                <p class="waterSustains_btn">How water sustains nature</p>
-                                <img src="./../images/sea_Turtle.png" class="valueWater_img" alt="How water sustains nature button">
-                            </a>
-                            
+                            <div class="valueWater_img">
+                                <a href="#water_Uses">
+                                    <p class="waterUses_btn">Uses of Water</p>
+                                    <img src="./../images/woman-drinking-bottle-water.png"  alt="Uses of water button">
+                                </a>
+                            </div>                            
+
+                            <div class="valueWater_img">
+                                <a href="#water_Sustains">
+                                    <p class="waterSustains_btn">How water sustains nature</p>
+                                    <img src="./../images/sea_Turtle.png" alt="How water sustains nature button">
+                                </a>
+                            </div>                           
+                                                      
                         </div>
                                                    
                     </div>
@@ -272,14 +264,14 @@
                     <div class="section-waterAvail" id="waterAvail">
                         <h3>How much water do we have?</h3>
                         <div class="waterAvail-gallery">
-                            <sl-tooltip content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
+                            <sl-tooltip trigger="click" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
                                 <img class="waterAvail-img" src="./../images/Imported_water_CNA.jpeg" alt="Pipes with Water from Malaysia">
                             </sl-tooltip>
                             
-                            <sl-tooltip content="NEWater make up to 40% of our water sources currently">
+                            <sl-tooltip trigger="click" content="NEWater make up to 40% of our water sources currently">
                                 <img class="waterAvail-img" src="./../images/NEWaterPlant_exterior.jpg" alt="Exterior of a NEWater plant">
                             </sl-tooltip>                            
-                            <sl-tooltip content="Desalinated water treated make up to 25% of our water sources currently">
+                            <sl-tooltip trigger="click" content="Desalinated water treated make up to 25% of our water sources currently">
                                 <img class="waterAvail-img" src="./../images/Tuas-Desalination-Plant.jpg" alt="Exterior of the Desalination plant in Tuas">
                             </sl-tooltip>
                                                                                  

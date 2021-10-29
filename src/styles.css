@@ -23,7 +23,7 @@ h2 {
 }
 
 h1, h2, h3 {
-    font-size: 4rem;
+    font-size: 3.2rem;
 }
 
 h4 , h5, h6 {
@@ -114,6 +114,11 @@ sl-button.footer-btn::part(base){
     transform: translate(-70%, -35%);
 }
 
+.intro::after{
+    content: "";
+    clear: both;
+    position: initial;
+}
 
 
 #navbar {
@@ -125,15 +130,18 @@ sl-button.footer-btn::part(base){
     position: sticky;
     padding-top: 0.25%;
 }
+
 #browserNav {
     display: flex;
     flex-direction: column;
     z-index: 100;
     padding-top: 2%;
+    padding-left: initial;
 }
 
 #browserNav sl-button::part(base) {
     margin-bottom: 0.5%;
+    opacity: 0.9;
 }
 
 #hamburgerNav {
@@ -174,11 +182,8 @@ sl-button.footer-btn::part(base){
 
     .valueWater_btns{
         width: 100%;
-        margin-top: 2%;
-        margin-bottom: 0.5%;
-        margin-left: 18%;
         padding: 0;
-        display: inline-block;
+        display: flex;
         position: relative;
     }
 
@@ -187,8 +192,8 @@ sl-button.footer-btn::part(base){
     }
 
     .valueWater_img{
-        width: 30%;
-        margin: 0 auto;
+        width: 48%;
+        margin: 0 1%;
         padding: 0;
         object-fit: contain;
     }
@@ -202,13 +207,19 @@ sl-button.footer-btn::part(base){
         
     }
 
+    p.waterUses_btn::after, p.waterSustains_btn::after{
+        clear: both;
+        content: "";
+        position: initial;
+    }
+
     p.waterUses_btn {
-        transform: translate(80%, 7%);
+        transform: translate(140%, 90%);
         color: black;
     }
 
     p.waterSustains_btn {
-        transform: translate(150%, -410%);
+        transform: translate(50%, 400%);
         color: white;
     }
 
@@ -239,7 +250,7 @@ sl-button.footer-btn::part(base){
 
 
                 .ws-collagePic{
-                    width: 23%;
+                    width: 31%;
                     height: auto;
                     margin: 1%;
                     cursor: pointer;
@@ -450,7 +461,6 @@ sl-button.footer-btn::part(base){
             display: flex;
             flex-direction: row;
             width: 100%;
-            transform: translateX(10%);
             margin-top: 2%;
         }
 
@@ -469,8 +479,9 @@ sl-button.footer-btn::part(base){
     /*Creating the flipcards----*/
         .flip-card {
             background-color: transparent;
-            width: 15vw;
-            height:15vw;
+            width: 25vw;
+            height:25vw;
+            object-fit: contain;
             margin: .9%;
             padding: 0;
         }
@@ -534,50 +545,136 @@ sl-button.footer-btn::part(base){
 
         /*-----END Sources of Water in Singapore section----*/
 
-        /*-----Quizz portion (Prevent Contamination of Water supply)--------*/
-        /*--------Styling the quiz button------*/
-        .waterSupply-quiz {
-            text-align: center;
-        }
-
-        .quizShow {
-            width: 80%;
-            margin-top: 2%;
-            transform: translateX(110%);
-
-        }
-        
-        #qnForm {
-            display: none;
-        }
-
-        #qnSheet {
-            display: inline-block;
-        }
-
-
-
-        .question-options{
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-
-        .ansBtn {
-            margin-top: 3%;
-        }
-
-        .waterSupply-quiz {
-            display:inline-block;
-        }
-
-        .qn {
-            display: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        /*-----END Quizz portion (Prevent Contamination of Water supply)-----*/
 
 /*-------END Protecting Singapore's Water supply Section------*/
 
+@media only screen and (max-width: 810px) {
+    section {
+        margin: 0 2.5%;
+        width: calc(100vw - 5%);
+    }
+
+    .valueWater_btns{
+        margin-left: 0px;
+    }
+
+    .valueWater_img {
+        width: 47%;
+        margin: 0 0.5%;
+    }
+
+    p.waterSustains_btn {
+        transform: translate(100%, -410%);
+    }
+
+    p.waterUses_btn {
+        transform: translate(35%, 7%);
+    }
+
+    .ws-collagePic {
+        width: 31%;
+    }
+
+    .section-waterConserve {
+        left: initial;
+    }
+
+    .waterNeed-demo {
+        margin-top: 3%;
+    }
+
+    #consq {
+        width: 90vw;
+        margin: 0 5vw;
+    }
+
+    #supply-Gallery {
+        transform: initial;
+    }
+
+    .overlay-Content {
+        margin-bottom: 2%;
+    }
+
+    sl-button.footer-btn::part(base){
+        transform: translate(170%, 0%);
+        padding: 2%;
+    }
+
+    .flip-card {
+        width: 50vw;
+        height: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 412px) {
+    section {
+        margin: 0 0.5%;
+        width: calc(100vw - 1%);
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        text-align: left;
+    }
+
+    h3{
+        font-size: 2.4rem;
+    }
+
+    #browserNav {
+        padding-left: 2%;
+    }
+
+    .welcome {
+        text-align: left;
+    }
+
+    .valueWater_btns {
+        flex-direction: column;
+    }
+
+    .section-waterConserve, .section-waterAvail, .proteccH2O, .section-waterSustains {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.waterSustains_btn {
+        transform: initial;
+        color: white;
+    }
+
+    .ws-collagePic {
+        width: 98%;
+        margin-bottom: 2%;
+    }
+
+    .waterAvail-img {
+        width: 100%;
+    }
+
+    .valueWater_img {
+        width: 99%;
+        margin: 0 0.5% 3%;
+    }
+
+    #supply-Gallery {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #consq {
+        width: calc(100vw - 4% );
+        margin: 0 2%;
+    }
+
+    .flip-card {
+        margin-bottom: 2%;
+        height: 90vw;
+        width: 90vw;
+    }
+
+    sl-button.footer-btn::part(base) {
+        transform: translate(70%, 0%);
+    }
+}
