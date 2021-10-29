@@ -127,6 +127,7 @@ sl-button.footer-btn::part(base){
     width: 100%;   
     left: 0;
     top: 0;
+    z-index: 100;
     position: sticky;
     padding-top: 0.25%;
 }
@@ -134,7 +135,6 @@ sl-button.footer-btn::part(base){
 #browserNav {
     display: flex;
     flex-direction: column;
-    z-index: 100;
     padding-top: 2%;
     padding-left: initial;
 }
