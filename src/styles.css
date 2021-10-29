@@ -67,10 +67,11 @@ button {
 .footer {
     display: block;
     width: 100vw;
+    margin-top: 1%;
 }
 
 sl-button.footer-btn::part(base){
-    transform: translate(170%, 900%);
+    transform: translate(500%, 0%);
     padding: 2%;
 }
 
@@ -401,6 +402,12 @@ sl-button.footer-btn::part(base){
             position: absolute;
         }
 
+        .consequences-imgCollage::after{
+            content: "";
+            clear: both;
+            position: initial;
+        }
+
         #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
             z-index: 3;
             width: 10%;
@@ -441,6 +448,7 @@ sl-button.footer-btn::part(base){
     /*-----Sources of Water in Singapore section----*/
         #supply-Gallery{
             display: flex;
+            flex-direction: row;
             width: 100%;
             transform: translateX(10%);
             margin-top: 2%;
@@ -457,17 +465,13 @@ sl-button.footer-btn::part(base){
             height: 100%;    
         }
 
-        #supply-Gallery div{
-            width: 25%;
-            height: auto;
-        }
 
     /*Creating the flipcards----*/
         .flip-card {
             background-color: transparent;
             width: 15vw;
             height:15vw;
-            margin: 0;
+            margin: .9%;
             padding: 0;
         }
 
@@ -520,19 +524,6 @@ sl-button.footer-btn::part(base){
         .flip-card-Txt {
             font-size: 1.2rem;
             margin-bottom: 0;
-        }
-
-    /*Aligning the cards------*/
-        #card-desalinationPlant{
-            transform: translate(102%, -100%);
-        }
-
-        #card-NEWater{
-            transform: translate(204%, -200%);
-        }
-
-        #card-reservoir{
-            transform: translate(306%, -300%);
         }
 
     /*Switch to activate Quiz----*/
