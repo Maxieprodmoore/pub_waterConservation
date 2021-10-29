@@ -39,7 +39,7 @@ p{
 
 section{
     margin: 0 5%;
-    padding-bottom: 2%;
+    padding: 0 3% 2%;
     width: calc(100vw - 10%);
     display: block;
 }
@@ -205,7 +205,7 @@ p.waterUses_btn {
     }
 
 p.waterSustains_btn {
-        transform: translate(175%, -410%);
+        transform: translate(150%, -410%);
         color: white;
     }
 
@@ -251,31 +251,21 @@ p.waterSustains_btn {
 
 /*-----Overlay Background---*/
 
-.collageOverlay {
-                    display: none; /* Hidden by default */
-                    position: fixed; /* Stay in place */
-                    z-index: 200; /* Sit on top */
-                    padding: 2% 0; /* Location of the box */
-                    left: 0;
-                    top: 0;
-                    width: 100vw; /* Full width */
-                    height: 100vh; /* Full height */
-                    max-height: 100%;
+.collageOverlay::part(base) {
+                    --size: 100vw; /* Full width */
                     overflow: auto; /* Enable scroll if needed */
-                    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                    background-color: rgba(30, 30, 30, 0.9); /* Black w/ opacity */
                 }
 
 /*-----Overlay Image---*/
 
+.collageOverlay::part(panel) {
+                    --body-spacing: 5%;
+                }
+
 .overlay-Content {
                     margin: auto;
                     display: block;
-                    width: 80vw;
-                    /*Add animation*/
-                    -webkit-animation-name: zoom;
-                    -webkit-animation-duration: 0.6s;
-                    animation-name: zoom;
-                    animation-duration: 0.6s;
                 }
 
 @-webkit-keyframes zoom {
@@ -334,6 +324,15 @@ p.waterSustains_btn {
 
 #waterNeeds-Highlight {
             color: #E61A14;
+        }
+
+.waterNeed-demo sl-tab-panel::part(base) {
+            --padding: 2%;
+            text-align: center;
+        }
+
+.section-waterConserve{
+            left: 10%;
         }
 
 /*----- END How much Water is really needed section -----*/
@@ -532,6 +531,10 @@ p.waterSustains_btn {
 
 /*--------Styling the quiz button------*/
 
+.waterSupply-quiz {
+            text-align: center;
+        }
+
 .quizShow {
             width: 80%;
             margin-top: 2%;
@@ -554,7 +557,6 @@ p.waterSustains_btn {
         }
 
 .ansBtn {
-            margin-left: 35%;
             margin-top: 3%;
         }
 

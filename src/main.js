@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import Splide from '@splidejs/splide';
+import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 
 
 /*------Sticky Navigation------*/
@@ -20,39 +21,28 @@ function myFunction() {
 
 /*--------Creating Modal images for How Water sustains nature Collage-------*/
 
-//Get Overlay
-var overlay = document.querySelectorAll(".collageOverlay");
+  //Get Overlay
+  var overlay = document.querySelectorAll(".collageOverlay");
 
-//Get image. 
-var collageImg = document.querySelectorAll(".ws-collagePic");
+  //Get image. 
+  var collageImg = document.querySelectorAll(".ws-collagePic");
 
-//Get overlay to be active on clicking on image
-Array.from(collageImg).forEach(function(collageImgArray, i) {
-  collageImgArray.addEventListener('click',  function() {
-    overlay[i].style.display = "block";
+  //Get overlay to be active on clicking on image
+  Array.from(collageImg).forEach(function(collageImgArray, i) {
+  collageImgArray.addEventListener('click', () => {
+      overlay.show();
   });
-});
-//Get icon button (x) that closes Overlay
-var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
-
-// When the user clicks on icon button (x), close the overlay
-Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
-  overlayCloseArray.addEventListener('click', function() {
-    overlay[i].style.display = "none";
   });
-});
+  //Get icon button (x) that closes Overlay
+  var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
 
-/*--------Setting up Slider --------*/
-var elms = document.getElementsByClassName( 'splide' );
+  // When the user clicks on icon button (x), close the overlay
+  Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
+  overlayCloseArray.addEventListener('click', () => {
+      overlay.hide();
+  });
+  });
 
-for ( var i = 0; i < elms.length; i++ ) {
-	new Splide( elms[ i ] ).mount();
-};
-
-document.addEventListener( 'DOMContentLoaded', function () {
-  var elms = new Splide('.splide');
-  elms.mount();
-} );
 
 /*--------Setting up Slider for Uses of Water --------*/
 var slideWaterUses = new Splide('#slide_waterUses', {
@@ -63,7 +53,7 @@ var slideWaterUses = new Splide('#slide_waterUses', {
   heightRatio: 0.4,
   drag: true,
   cover: true,
-} ).mount();
+} )
 
 document.addEventListener( 'DOMContentLoaded', function () {
   slideWaterUses.mount();
@@ -175,7 +165,7 @@ let progress = progressBar.percentage;
 var quizSwitch = document.getElementById('quizShow');
     /* Create Activator to show Quiz question sheet-------*/
       quizSwitch.addEventListener("sl-change", function() {
-        if (quizSwitch.checked == true) {
+        if (quizSwitch.checked === true) {
           progressInitial();
           quizForm.style.display = "block";
           populateQuestion();
