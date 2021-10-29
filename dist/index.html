@@ -10,11 +10,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;0,900;1,700;1,900&display=swap" rel="stylesheet">
         <!----End of Fonts Compilation---->  
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css"> 
-        <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js" defer=""></script>
 
-        
-        <script>// modules are defined as an array
+        <!------------Shoelace components--------------->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/themes/light.css"> 
+            <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.58/dist/shoelace.js" defer=""></script>
+            <script src="/index.99fe75c3.js" defer=""></script> 
+            <script>// modules are defined as an array
 // [ module function, map of requires ]
 //
 // map of requires is short require name -> numeric require
@@ -156,12 +157,12 @@
       this[globalName] = mainExports;
     }
   }
-})({"2FOwz":[function(require,module,exports) {
+})({"8AQHZ":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "52d3eb05d32bf69d";
+module.bundle.HMR_BUNDLE_ID = "1fbcd697ddbb4d69";
 "use strict";
 function _createForOfIteratorHelper(o, allowArrayLike) {
     var it;
@@ -474,7 +475,7 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"jmjsA":[function(require,module,exports) {
+},{}],"2EYcb":[function(require,module,exports) {
 var _lightCss = require("@shoelace-style/shoelace/dist/themes/light.css");
 var _buttonJs = require("@shoelace-style/shoelace/dist/components/button/button.js");
 var _progressBarJs = require("@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js");
@@ -8323,11 +8324,12 @@ parcelHelpers.export(exports, "setBasePath", ()=>_chunkS6TJZ6NJJs.setBasePath
 var _chunkS6TJZ6NJJs = require("../chunks/chunk.S6TJZ6NJ.js");
 var _chunkIHGPZX35Js = require("../chunks/chunk.IHGPZX35.js");
 
-},{"../chunks/chunk.S6TJZ6NJ.js":"edUe8","../chunks/chunk.IHGPZX35.js":"4lKzp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["2FOwz","jmjsA"], "jmjsA", "parcelRequire6566")
+},{"../chunks/chunk.S6TJZ6NJ.js":"edUe8","../chunks/chunk.IHGPZX35.js":"4lKzp","@parcel/transformer-js/src/esmodule-helpers.js":"ciiiV"}]},["8AQHZ","2EYcb"], "2EYcb", "parcelRequire6566")
 
 </script> 
-
-        <script>// modules are defined as an array
+        <!-------------------End of Shoelace Components Import----------------------->
+        <!----Splide Importing----->
+            <script>// modules are defined as an array
 // [ module function, map of requires ]
 //
 // map of requires is short require name -> numeric require
@@ -8469,12 +8471,12 @@ var _chunkIHGPZX35Js = require("../chunks/chunk.IHGPZX35.js");
       this[globalName] = mainExports;
     }
   }
-})({"gPprD":[function(require,module,exports) {
+})({"cRBPo":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "4a236f9275d0a351";
-module.bundle.HMR_BUNDLE_ID = "aa389dfceba5be7b";
+module.bundle.HMR_BUNDLE_ID = "fa983d5fc672ff2e";
 "use strict";
 function _createForOfIteratorHelper(o, allowArrayLike) {
     var it;
@@ -8787,7 +8789,7 @@ function hmrAcceptRun(bundle, id) {
     acceptedAssets[id] = true;
 }
 
-},{}],"bCQK3":[function(require,module,exports) {
+},{}],"gQEgn":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _splide = require("@splidejs/splide");
 var _splideDefault = parcelHelpers.interopDefault(_splide);
@@ -13147,9 +13149,10 @@ n = this, t = function() {
     }, i.STATES = n, i;
 }, "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (n = "undefined" != typeof globalThis ? globalThis : n || self).Splide = t();
 
-},{}],"4OZhZ":[function() {},{}]},["gPprD","bCQK3"], "bCQK3", "parcelRequire6566")
+},{}],"4OZhZ":[function() {},{}]},["cRBPo","gQEgn"], "gQEgn", "parcelRequire6566")
 
 </script>
+        <!-----------End of Splide Components import-->
 
         <link rel="stylesheet" href="/index.be5cf2f4.css">
         <script src="/index.8eb82e9b.js" defer=""></script> 
@@ -13163,7 +13166,7 @@ n = this, t = function() {
                 <br>
                 <p class="welcome">The world may have come to a standstill, but the fight to save water for our future rages on.</p>
                 <br>
-                <sl-button size="large" pill="" class="intro-btn " href="#navbar">Learn how you can play your part! <sl-icon slot="prefix" name="chevron-right"></sl-icon></sl-button>
+                <sl-button size="large" pill="" class="intro-btn" href="#navbar">Learn how you can play your part! <sl-icon slot="suffix" name="chevron-right"></sl-icon></sl-button>
     
             </div>
         </div>
