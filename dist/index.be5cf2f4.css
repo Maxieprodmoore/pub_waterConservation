@@ -128,6 +128,7 @@ sl-button.footer-btn::part(base){
     display: flex;
     flex-direction: column;
     z-index: 100;
+    padding-top: 2%;
 }
 
 #browserNav sl-button::part(base) {
@@ -251,21 +252,39 @@ p.waterSustains_btn {
 
 /*-----Overlay Background---*/
 
-.collageOverlay::part(base) {
-                    --size: 100vw; /* Full width */
+.collageOverlay {
+                    display: none; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 200; /* Sit on top */
+                    
+                    left: 0;
+                    top: 0;
+                    width: 100vw; /* Full width */
+                    height: 100vh; /* Full height */
+                    max-height: 100%;
                     overflow: auto; /* Enable scroll if needed */
-                    background-color: rgba(30, 30, 30, 0.9); /* Black w/ opacity */
+                    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+                }
+
+.collageOverlay div{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 4% 3%; /* Location of the box */
+                    width: 100%;
+                    height: 100%;
                 }
 
 /*-----Overlay Image---*/
 
-.collageOverlay::part(panel) {
-                    --body-spacing: 5%;
-                }
-
 .overlay-Content {
-                    margin: auto;
-                    display: block;
+                    margin-bottom: 1%;
+                    width: 100%;
+                    
+                    /*Add animation*/
+                    -webkit-animation-name: zoom;
+                    -webkit-animation-duration: 0.6s;
+                    animation-name: zoom;
+                    animation-duration: 0.6s;
                 }
 
 @-webkit-keyframes zoom {
@@ -280,22 +299,13 @@ p.waterSustains_btn {
 
 /*The close button-----*/
 
-.overlay-CloseBtn::part(icon-button) {
-                    position: absolute;
-                    margin-top: 5%;
+.overlay-CloseBtn::part(base) {
                     width: 100%;
                 }
 
-.overlay-CloseBtn::part(icon-button)::after {
+.overlay-CloseBtn::part(base)::after {
                     clear: both;
                 }
-
-/*Styling Caption--------*/
-
-.waterSustains_collageCaption{
-                  margin-top: 5%;
-                  margin-left: 15%;
-              }
 
 /*-----END How Water sustains Nature section -----*/
 
@@ -433,7 +443,7 @@ p.waterSustains_btn {
 /*-----Sources of Water in Singapore section----*/
 
 #supply-Gallery{
-            display: inline-block;
+            display: flex;
             width: 100%;
             transform: translateX(10%);
             margin-top: 2%;
@@ -448,6 +458,11 @@ p.waterSustains_btn {
 .waterSupply-GalleryImg {
             width: 100%;
             height: 100%;    
+        }
+
+#supply-Gallery div{
+            width: 25%;
+            height: auto;
         }
 
 /*Creating the flipcards----*/
@@ -480,6 +495,12 @@ p.waterSustains_btn {
             height: 100%;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+        }
+
+.flip-card::after{
+            content: "";
+            clear: both;
+            position: initial;
         }
 
 .flip-card-front {

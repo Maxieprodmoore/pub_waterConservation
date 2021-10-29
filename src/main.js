@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import Splide from '@splidejs/splide';
+import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 
 
@@ -22,26 +23,27 @@ function myFunction() {
 /*--------Creating Modal images for How Water sustains nature Collage-------*/
 
   //Get Overlay
-  var overlay = document.querySelectorAll(".collageOverlay");
+    var overlay = document.querySelectorAll(".collageOverlay");
 
   //Get image. 
-  var collageImg = document.querySelectorAll(".ws-collagePic");
+    var collageImg = document.querySelectorAll(".ws-collagePic");
 
   //Get overlay to be active on clicking on image
-  Array.from(collageImg).forEach(function(collageImgArray, i) {
-  collageImgArray.addEventListener('click', () => {
-      overlay.show();
-  });
-  });
+    Array.from(collageImg).forEach(function(collageImgArray, i) {
+      collageImgArray.addEventListener('click',  function() {
+        overlay[i].style.display = "block";
+      });
+    });
   //Get icon button (x) that closes Overlay
-  var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
+    var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
 
   // When the user clicks on icon button (x), close the overlay
-  Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
-  overlayCloseArray.addEventListener('click', () => {
-      overlay.hide();
-  });
-  });
+    Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
+      overlayCloseArray.addEventListener('click', function() {
+        overlay[i].style.display = "none";
+      });
+    });
+
 
 
 /*--------Setting up Slider for Uses of Water --------*/

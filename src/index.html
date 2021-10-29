@@ -58,7 +58,7 @@
                 <br>
                 <p class="welcome">The world may have come to a standstill, but the fight to save water for our future rages on.</p>
                 <br>
-                <sl-button size="large" pill class="intro-btn"  href="#navbar" >Learn how you can play your part! <sl-icon slot="suffix" name="chevron-right"></sl-icon></sl-button>
+                <sl-button size="large" pill class="intro-btn"  href="#navbar" caret>Learn how you can play your part!</sl-button>
     
             </div>
         </div>
@@ -67,7 +67,7 @@
     
             <div id="navbar">
                 <div id="hamburgerNav">
-                    <sl-icon-button label="Navigation menu" src="./../dist/shoelace/assets/icons/list.svg"  style="font-size: 2rem; color: black;"></sl-icon-button>
+                    <sl-button label="Navigation menu" caret src="./../dist/shoelace/assets/icons/list.svg"  style="font-size: 2rem; color: black;"></sl-button>
                 </div>
                 <div id="browserNav">
                     <sl-tooltip content="The Value of Water" placement="right-start" ><sl-button type="primary" size="medium" circle href="#water_Value"></sl-button></sl-tooltip>
@@ -183,35 +183,49 @@
                         <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
                         <div class="waterSustains_collagesht">
                             <!-----Creating Overlay and full image-->
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage01" class="collageOverlay">
-                                <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
+                            <div id="overlayCollage01" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>                                
+                            </div>
+    
+                            <div id="overlayCollage02" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>
+                                
+                            </div>
+    
+                            <div id="overlayCollage03" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>                                
+                            </div>
+    
+                            <div id="overlayCollage04" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>                                
+                            </div>
+    
+                            <div id="overlayCollage05" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>                                
+                            </div>
+    
+                            <div id="overlayCollage06" class="collageOverlay">
+                                <div>
+                                    <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
+                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                </div>                                
+                            </div>
 
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage02" class="collageOverlay">
-                                <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
-
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage03" class="collageOverlay">
-                                <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
-
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage04" class="collageOverlay">
-                                <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
-
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage05" class="collageOverlay">
-                                <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
-
-                            <sl-drawer placement="start" label="collage Overlay" id="overlayCollage06" class="collageOverlay">
-                                <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
-                                <sl-button slot="footer" type="primary" pill size="large" class="overlay-CloseBtn">Close</sl-button>
-                            </sl-drawer>
                             <!----Creating the collage picture-->
                             <div class="waterSustains_collagepic">
                                 <img class="ws-collagePic" id="collagePic1" src="./../images/africa-deer-drinking-water-preview.png" alt="african deers drinking water (thumbnail)">
@@ -312,54 +326,62 @@
                         <p>Click on the images to find out more!</p>
 
                         <div id="supply-Gallery">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./../images/water-Pipes_CNA.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
-                                        <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
-                                    </div>
-                                </div>    
+                            <div>
+                                <div class="flip-card">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./../images/water-Pipes_CNA.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
+                                            <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
+                                        </div>
+                                    </div>    
+                                </div>
                             </div>
                             
-                            <div class="flip-card" id="card-desalinationPlant">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./../images/Tuas-Desalination-Plant.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h6 class="flip-card-TitleTxt">Water Treatment </h6>
-                                        <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
-                                    </div>
-                                </div>    
+                            <div>
+                                <div class="flip-card" id="card-desalinationPlant">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./../images/Tuas-Desalination-Plant.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h6 class="flip-card-TitleTxt">Water Treatment </h6>
+                                            <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
+                                        </div>
+                                    </div>    
+                                </div>
                             </div>
-
-                            <div class="flip-card" id="card-NEWater">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./../images/NEWaterPlant_exterior.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
-                                        <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
-                                    </div>
-                                </div>    
+                            
+                            <div>
+                                <div class="flip-card" id="card-NEWater">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./../images/NEWaterPlant_exterior.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
+                                            <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
+                                        </div>
+                                    </div>    
+                                </div>
                             </div>
-
-                            <div class="flip-card" id="card-reservoir">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="./../images/singapore-marinabarragereservoir_PUB.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
-                                    </div>
-                                    <div class="flip-card-back">
-                                        <h6 class="flip-card-TitleTxt">Reservoirs </h6>
-                                        <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
-                                    </div>
-                                </div>    
+                            
+                            <div>
+                                <div class="flip-card" id="card-reservoir">
+                                    <div class="flip-card-inner">
+                                        <div class="flip-card-front">
+                                            <img src="./../images/singapore-marinabarragereservoir_PUB.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
+                                        </div>
+                                        <div class="flip-card-back">
+                                            <h6 class="flip-card-TitleTxt">Reservoirs </h6>
+                                            <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
+                                        </div>
+                                    </div>    
+                                </div>
                             </div>
-                               
+                                                       
                         </div>
                         
                     </section>
