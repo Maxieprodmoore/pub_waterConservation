@@ -17,6 +17,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "^2.0.0",
     "parcel": "^2.0.0"
   }
 }

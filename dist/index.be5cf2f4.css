@@ -127,7 +127,7 @@ sl-button.footer-btn::part(base){
     width: 100%;   
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: initial;
     position: sticky;
     padding-top: 0.25%;
 }
@@ -140,6 +140,11 @@ sl-button.footer-btn::part(base){
     position: initial;
 }
 
+sl-tooltip::part(base){
+    --max-width: 100%;
+    --z-index: 100;
+}
+
 #browserNav {
     display: flex;
     flex-direction: column;
@@ -147,9 +152,19 @@ sl-button.footer-btn::part(base){
     padding-left: initial;
 }
 
-#browserNav sl-button::part(base) {
-    margin-bottom: 0.5%;
-    opacity: 0.9;
+#browserNav div::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#browserNav div {
+    margin-bottom: 0.95%;
+    opacity: 0.7;
+}
+
+#browserNav div sl-tooltop::part(base){
+    transform: translateX(10%) ;
 }
 
 #hamburgerNav {
@@ -335,12 +350,8 @@ p.waterSustains_btn {
 
 /*----- How much Water is really needed section -----*/
 
-#waterTrend-btn, #waterUsage-btn{
-            z-index: 100;
-        }
-
 .waterNeed-img {
-            width: 49%;
+            width: 48%;
             object-fit: contain;
             padding: 1%;
         }
@@ -371,26 +382,33 @@ p.waterSustains_btn {
 
 .waterAvail-gallery {
             width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+.waterAvail-img sl-tooltip::part(base) {
+            margin-top: 4%;
+            width: 100%;
+
+        }
+
+.waterAvail-img sl-tooltip::part(base)::after {
+            clear: both;
+            display: initial;
         }
 
 .waterAvail-img {
-            width: 33%;
-            margin-top: 2%;
+            width: 31%;
+            height: 31%;
+            margin: 2% 1% 1.5%;
             padding: 0;
             object-fit: contain;
         }
 
 .waterAvail-img::after {
             clear: both;
-        }
-
-.waterAvail-demo {
-            width: 30%;
-            height: 93%;
-            margin: 0;
-            padding: 5%;
-            border-style: dashed;
-            transform: translate(200%, -101%);
+            display: flex;
+            flex-direction: row;
         }
 
 .section-waterAvail::after{
@@ -430,25 +448,28 @@ p.waterSustains_btn {
         }
 
 #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
-            z-index: 3;
-            width: 10%;
+            z-index: 3;            
+        }
+
+#consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
+            width: 11.5%;
             border-radius: 50%;
         }
 
 #consequences-forest {
-            transform: translate(550%, 350%);
+            transform: translate(55%, 110%);
         }
 
 #consequences-deer {
-            transform: translate(-200%, 300%);
+            transform: translate(11%, 150%);
         }
 
 #consequences-bird {
-            transform: translate(180%, 20%);
+            transform: translate(43%, 20%);
         }
 
 #consequences-Turtle {
-            transform: translate(680%, 280%);
+            transform: translate(83%, -40%);
         }
 
 /*Styling big image BG--------*/
@@ -533,7 +554,7 @@ p.waterSustains_btn {
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 8% 2.5% 5%;
+            padding: 8% 3% 5%;
             
         }
 
@@ -544,6 +565,7 @@ p.waterSustains_btn {
 
 .flip-card-Txt {
             font-size: 1.2rem;
+            text-align: left;
             margin-bottom: 0;
         }
 
@@ -594,8 +616,8 @@ p.waterSustains_btn {
     }
 
     #consq {
-        width: 90vw;
-        margin: 0 5vw;
+        width: 100vw;
+        margin: initial;
     }
 
     #supply-Gallery {
@@ -671,11 +693,6 @@ p.waterSustains_btn {
     #supply-Gallery {
         display: flex;
         flex-direction: column;
-    }
-
-    #consq {
-        width: calc(100vw - 4% );
-        margin: 0 2%;
     }
 
     .flip-card {
