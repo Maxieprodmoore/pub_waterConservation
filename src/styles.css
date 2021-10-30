@@ -697,19 +697,23 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
-        width: 15%;
+        width: 20%;
+    }
+
+    #consequences-bird {
+        transform: translate(42%, 7%);
     }
 
     #consequences-deer {
-        transform: translate(11%, 50%);
+        transform: translate(2%, 10%);
     }
 
     #consequences-forest {
-        transform: translate(55%, 0%);
+        transform: translate(35%, -65%);
     }
 
     #consequences-Turtle {
-        transform: translate(83%, -140%);
+        transform: translate(65%, -210%);
     }
 
     .waterAvail-gallery {
