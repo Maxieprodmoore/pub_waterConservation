@@ -132,6 +132,14 @@ sl-button.footer-btn::part(base){
     padding-top: 0.25%;
 }
 
+#navbar::after{
+    display: flex;
+    flex-direction: column;
+    content: "";
+    clear: both;
+    position: initial;
+}
+
 #browserNav {
     display: flex;
     flex-direction: column;
