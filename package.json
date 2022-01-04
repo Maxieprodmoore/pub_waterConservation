@@ -7,17 +7,17 @@
   ],
   "scripts": {
     "start": "parcel serve",
+    "watch": "parcel",
     "build": "parcel build"
   },
   "dependencies": {
-    "@parcel/resolver-glob": "^2.0.0",
-    "@shoelace-style/shoelace": "^2.0.0-beta.58",
+    "@parcel/transformer-react-refresh-wrap": "^2.0.1",
+    "@shoelace-style/shoelace": "^2.0.0-beta.62",
     "@splidejs/splide": "^3.2.0",
     "animate.css": "^4.1.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "@parcel/transformer-image": "^2.0.0",
-    "parcel": "^2.0.0"
+    "parcel": "^2.0.1"
   }
 }

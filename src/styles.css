@@ -18,17 +18,28 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.35%;
 }
 
+h1 {
+    font-size: 4rem ;
+}
+
 h2 {
+    font-size: 3.6rem;
     text-transform: uppercase;
 }
 
-h1, h2, h3 {
+h3 {
     font-size: 3.2rem;
 }
 
-h4 , h5, h6 {
+h4 {
     font-size: 2.8rem;
 }
+
+h5 {
+    font-size: 2.4rem;
+}
+
+h6 { font-size: 2rem;}
 
 
 p{
@@ -92,7 +103,7 @@ sl-button.footer-btn::part(base){
 
 /*-----Intro section------*/
 #imgHero {
-    background-image: url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
     background-color: #5B9ED9;
     width: 100vw;
     height: 100vh;
@@ -111,7 +122,11 @@ sl-button.footer-btn::part(base){
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-70%, -35%);
+    transform: translate(-50%, -50%);
+}
+
+.intro h1, .intro h4, .intro p {
+    color: white;
 }
 
 .intro::after{
