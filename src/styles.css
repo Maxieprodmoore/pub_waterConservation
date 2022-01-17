@@ -240,7 +240,7 @@ sl-tooltip::part(base)::after{
         font-weight: 700;
         text-align: center;
         position: absolute;
-        font-size: 1.8rem;
+        font-size: 3rem;
         
     }
 
@@ -251,12 +251,12 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(140%, 90%);
+        transform: translate(75%, 90%);
         color: black;
     }
 
     p.waterSustains_btn {
-        transform: translate(50%, 400%);
+        transform: translate(13%, 400%);
         color: white;
     }
 
