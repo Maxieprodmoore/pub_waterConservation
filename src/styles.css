@@ -595,6 +595,45 @@ sl-tooltip::part(base)::after{
 
 
 /*-------END Protecting Singapore's Water supply Section------*/
+@media only screen and (max-width: 1366px) {
+    p.waterUses_btn {
+        transform: translate(77%,50%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(20%,70%);
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    p.waterUses_btn {
+        transform: translate(50%,10%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(5%,100%);
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    p.waterUses_btn {
+        transform: translate(30%,10%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%,100%);
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    p.waterUses_btn {
+        transform: translate(45%,10%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(1%,70%);
+    }
+}
 
 @media only screen and (max-width: 810px) {
     section {
@@ -611,12 +650,16 @@ sl-tooltip::part(base)::after{
         margin: 0 0.5%;
     }
 
+    p.waterSustains_btn, p.waterUses_btn {
+        font-size: 2rem;
+    }
+
     p.waterSustains_btn {
-        transform: translate(0%, 40%);
+        transform: translate(-5%, 130%);
     }
 
     p.waterUses_btn {
-        transform: translate(35%, 7%);
+        transform: translate(30%, 7%);
     }
 
     .ws-collagePic {
