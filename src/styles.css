@@ -446,6 +446,7 @@ sl-tooltip::part(base)::after{
             width: 100%;
             transform: translate(-2.5%, 0);
             margin-bottom: 2%;
+            
         }
 
         .consequences-imgGallery::after{
@@ -454,7 +455,7 @@ sl-tooltip::part(base)::after{
        
         /*-----Consequences of No Water Collage -----*/
         .consequences-imgCollage{
-            position: absolute;
+            position: relative;
         }
 
         .consequences-imgCollage::after{
@@ -464,7 +465,9 @@ sl-tooltip::part(base)::after{
         }
 
         #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
-            z-index: 3;            
+            z-index: 3; 
+            position: absolute;  
+            overflow: hidden;         
         }
 
         #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
