@@ -1,13 +1,14 @@
 {
   "name": "water-conservation-pub",
+  "version": "1.0.0",
+  "description": "",
   "source": "src/index.html",
   "browserslist": [
     "defaults",
     "since 2017"
   ],
   "scripts": {
-    "start": "parcel serve",
-    "watch": "parcel",
+    "start": "parcel",
     "build": "parcel build"
   },
   "dependencies": {
@@ -17,6 +18,6 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    "parcel": "^2.2.0"
+    "parcel": "^2.2.1"
   }
 }

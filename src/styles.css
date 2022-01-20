@@ -123,6 +123,7 @@ sl-button.footer-btn::part(base){
     left: 50%;
     top: 50%;
     transform: translate(-70%,-15%);
+    overflow: hidden;
 }
 
 .intro h1, .intro h4, .intro p {
@@ -229,9 +230,8 @@ sl-tooltip::part(base)::after{
     }
 
     .valueWater_img{
-        width: 48%;
+        width: 98%;
         margin: 0 1%;
-        padding: 0;
         object-fit: contain;
     }
 
@@ -364,7 +364,7 @@ sl-tooltip::part(base)::after{
         
             
         .waterNeed-img {
-            width: 48%;
+            width: 98%;
             object-fit: contain;
             padding: 1%;
         }
@@ -466,8 +466,7 @@ sl-tooltip::part(base)::after{
 
         #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
             z-index: 3; 
-            position: absolute;  
-            overflow: hidden;         
+            position: absolute;        
         }
 
         #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
@@ -610,11 +609,11 @@ sl-tooltip::part(base)::after{
 
 @media only screen and (max-width: 1280px) {
     p.waterUses_btn {
-        transform: translate(50%,10%);
+        transform: translate(30%,10%);
     }
 
     p.waterSustains_btn {
-        transform: translate(5%,100%);
+        transform: translate(-0.5%,100%);
     }
 }
 
@@ -698,6 +697,30 @@ sl-tooltip::part(base)::after{
     .flip-card {
         width: 50vw;
         height: 50vw;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .intro {
+        width: 90%;
+        margin: 0 5%;
+        padding: initial;
+        transform: translate(-55%,-15%);
+      }
+
+    .ws-collagePic {
+        width: 47%;
+    }
+
+    .waterAvail-img {
+        width: 90%;
+        height: 90%;
+        margin: 0% 0% 2%;
+    }
+
+    p.waterUses_btn {
+        transform: translate(20%, 7%);
     }
 
 }
