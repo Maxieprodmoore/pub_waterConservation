@@ -3,7 +3,6 @@ import Splide from '@splidejs/splide';
 import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 
-
 /*------Sticky Navigation------*/
 window.onscroll = function() {myFunction()};
 
@@ -75,3 +74,4 @@ var slidesWaterAvail = new Splide('#slider-waterAvail', {
 document.addEventListener( 'DOMContentLoaded', function () {
   slidesWaterAvail.mount();
 } );
+

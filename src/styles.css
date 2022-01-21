@@ -757,6 +757,13 @@ sl-tooltip::part(base)::after{
         flex-direction: column;
     }
 
+    #city_lake img {
+        height: 80vh;
+        width: auto;
+        object-fit: cover;
+        margin-bottom: 3%;
+    }
+
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
         width: 20%;
     }
