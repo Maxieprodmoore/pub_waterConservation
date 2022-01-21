@@ -233,6 +233,7 @@ sl-tooltip::part(base)::after{
         margin: 0 1%;
         padding: 0;
         object-fit: contain;
+        position: relative;
     }
 
     p.waterUses_btn, p.waterSustains_btn{
@@ -442,17 +443,13 @@ sl-tooltip::part(base)::after{
         }
 
         .consequences-imgGallery{
-            display: flex;
+            display: inline-block;
             width: 100%;
             transform: translate(-2.5%, 0);
             margin-bottom: 2%;
-            
+            position: relative;
         }
 
-        .consequences-imgGallery::after{
-            clear: both;
-        }
-       
         /*-----Consequences of No Water Collage -----*/
         .consequences-imgCollage{
             position: relative;
@@ -467,34 +464,36 @@ sl-tooltip::part(base)::after{
         #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
             z-index: 3; 
             position: absolute;  
-            overflow: hidden;         
+            overflow: hidden;        
         }
 
         #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
             width: 11.5%;
             border-radius: 50%;
+            object-fit: contain;
         }
 
         #consequences-forest {
-            transform: translate(55%, 110%);
+            transform: translate(55%, -150%);
         }
 
         #consequences-deer {
-            transform: translate(11%, 150%);
+            transform: translate(11%, -180%);
         }
 
         #consequences-bird {
-            transform: translate(43%, 20%);
+            transform: translate(43%, -500%);
         }
 
         #consequences-Turtle {
-            transform: translate(83%, -40%);
+            transform: translate(83%, -190%);
         }
 
         /*Styling big image BG--------*/
         #city_lake{
             width: 100%;
             display: inline-block;
+            position: relative;
         }
         /*-----END Consequences of No Water Collages -----*/
         /*-----END Consequences of No Water section -----*/
@@ -598,23 +597,46 @@ sl-tooltip::part(base)::after{
 
 
 /*-------END Protecting Singapore's Water supply Section------*/
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1600px) {
     p.waterUses_btn {
-        transform: translate(77%,50%);
+        transform: translate(50%, 90%);
     }
 
     p.waterSustains_btn {
-        transform: translate(20%,70%);
+        transform: translate(3.5%, 400%);
+    }
+
+    #consequences-forest {
+        transform: translate(55%, -120%);
+    }
+
+    #consequences-bird {
+        transform: translate(43%, -400%);
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    p.waterUses_btn {
+        transform: translate(35%,50%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%,70%);
     }
 }
 
 @media only screen and (max-width: 1280px) {
+    
     p.waterUses_btn {
         transform: translate(50%,10%);
     }
 
     p.waterSustains_btn {
         transform: translate(5%,100%);
+    }
+
+    #consequences-bird {
+        transform: translate(43%, -400%);
     }
 }
 
@@ -629,8 +651,12 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 1024px) {
+    .intro {
+        transform: translate(-70%,2%);
+    }
+
     p.waterUses_btn {
-        transform: translate(45%,10%);
+        transform: translate(15%,10%);
     }
 
     p.waterSustains_btn {
@@ -702,6 +728,36 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-width: 800px) {
+    p.waterSustains_btn {
+        transform: translate(0%, 130%);
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .intro {
+        transform: translate(-70%, 5%);
+    }
+    
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    
+    p.waterSustains_btn, p.waterUses_btn {
+        font-size: 1.8rem;
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%, 130%);
+    }
+
+    p.waterUses_btn {
+        transform: translate(30%, 7%);
+    }
+}
+
 @media only screen and (max-width: 428px) {
     section {
         margin: 0 0.5%;
@@ -769,19 +825,19 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(42%, 7%);
+        transform: translate(42%, -880%);
     }
 
     #consequences-deer {
-        transform: translate(2%, 10%);
+        transform: translate(2%, -250%);
     }
 
     #consequences-forest {
-        transform: translate(35%, -65%);
+        transform: translate(35%, -155%);
     }
 
     #consequences-Turtle {
-        transform: translate(65%, -210%);
+        transform: translate(65%, -380%);
     }
 
     .waterAvail-gallery {
