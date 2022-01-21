@@ -85,12 +85,6 @@ sl-button.footer-btn::part(base){
     padding: 2%;
 }
 
-.hint {
-    font-weight: bold;
-    color: red;
-    font-size: 1.25rem;
-}
-
 /*----Sticky Navigation-----*/
 
 .sticky {
@@ -130,7 +124,6 @@ sl-button.footer-btn::part(base){
     left: 50%;
     top: 50%;
     transform: translate(-70%,-15%);
-    overflow: hidden;
 }
 
 .intro h1, .intro h4, .intro p {
@@ -235,8 +228,9 @@ sl-tooltip::part(base)::after{
     }
 
 .valueWater_img{
-        width: 98%;
+        width: 48%;
         margin: 0 1%;
+        padding: 0;
         object-fit: contain;
     }
 
@@ -371,7 +365,7 @@ p.waterSustains_btn {
 /*----- How much Water is really needed section -----*/
 
 .waterNeed-img {
-            width: 98%;
+            width: 48%;
             object-fit: contain;
             padding: 1%;
         }
@@ -470,7 +464,8 @@ p.waterSustains_btn {
 
 #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
             z-index: 3; 
-            position: absolute;        
+            position: absolute;  
+            overflow: hidden;         
         }
 
 #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
@@ -576,7 +571,7 @@ p.waterSustains_btn {
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 30% 10% 30%;
+            padding: 8% 3% 5%;
             
         }
 
@@ -614,11 +609,11 @@ p.waterSustains_btn {
 
 @media only screen and (max-width: 1280px) {
     p.waterUses_btn {
-        transform: translate(30%,10%);
+        transform: translate(50%,10%);
     }
 
     p.waterSustains_btn {
-        transform: translate(-0.5%,100%);
+        transform: translate(5%,100%);
     }
 }
 
@@ -706,50 +701,18 @@ p.waterSustains_btn {
 
 }
 
-@media only screen and (max-width: 720px) {
-    .intro {
-        width: 90%;
-        margin: 0 5%;
-        padding: initial;
-        transform: translate(-55%,-15%);
-      }
-
-    .ws-collagePic {
-        width: 47%;
-    }
-
-    .waterAvail-img {
-        width: 90%;
-        height: 90%;
-        margin: 0% 2% 0%;
-    }
-
-    p.waterUses_btn {
-        transform: translate(20%, 7%);
-    }
-
-}
-
 @media only screen and (max-width: 428px) {
     section {
-        margin: 0 ;
-        width: 100%;
+        margin: 0 0.5%;
+        width: calc(100vw - 1%);
     }
 
     h1, h2, h3, h4, h5, h6, p {
         text-align: left;
     }
 
-    h1 {
-        font-size: 3.6rem;
-      }
-
     h3{
-        font-size: 1.6rem;
-    }
-
-    h4 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     #browserNav {
@@ -758,10 +721,6 @@ p.waterSustains_btn {
 
     .welcome {
         text-align: left;
-    }
-
-    p.waterUses_btn {
-        transform: translate(40%, 7%);
     }
 
     .valueWater_btns {
@@ -785,7 +744,6 @@ p.waterSustains_btn {
 
     .waterAvail-img {
         width: 100%;
-        margin: 2% 0;
     }
 
     .valueWater_img {
