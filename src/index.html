@@ -12,8 +12,10 @@
         <!----End of Fonts Compilation---->  
 
         <!------------Shoelace components--------------->
-            <script type="module">   
-                import '@shoelace-style/shoelace/dist/themes/light.css';
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.64/dist/themes/light.css">
+            <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.64/dist/shoelace.js"></script>
+            <script type="module" data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.64/dist/">
+                import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
                 import '@shoelace-style/shoelace/dist/components/button/button.js';
                 import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
                 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
@@ -23,15 +25,8 @@
                 import '@shoelace-style/shoelace/dist/components/tab/tab.js';
                 import '@shoelace-style/shoelace/dist/components/tooltip/tooltip.js';
                 import '@shoelace-style/shoelace/dist/components/switch/switch.js';
-                import '@splidejs/splide/dist/js/splide.min.js';
-                import '@shoelace-style/shoelace/dist/shoelace.js';
-                import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
-
-                // Set the base path to the folder you copied Shoelace's assets to
-                setBasePath('./../dist/shoelace');    
-                
-                /*--------Creating Modal images for How Water sustains nature Collage-------*/
-            </script> 
+            </script>
+            
         <!-------------------End of Shoelace Components Import----------------------->
         <!----Splide Importing----->
             <script type="module"> 
@@ -51,7 +46,7 @@
                 <br>
                 <p class="welcome">The world may have come to a standstill, but the fight to save water for our future rages on.</p>
                 <br>
-                <sl-button size="large" pill class="intro-btn"  href="#navbar" caret>Learn how you can play your part!</sl-button>
+                <sl-button size="large" pill class="intro-btn" variant="default" href="#navbar" caret>Learn how you can play your part!</sl-button>
     
             </div>
         </div>
@@ -59,45 +54,56 @@
 
     
             <div id="navbar">
+                <sl-drawer open id="phoneNav">
+                    <a href="#water_Value">The Value of Water</a>
+                    <a href="#water_Uses">Uses of Water</a>
+                    <a href="#water_Sustains">How water sustains nature</a>
+                    <a href="#conserveH2O">Why Conserve water?</a>
+                    <a href="#waterAvail">How much water do we have?</a>
+                    <a href="#consq">The consequences of no water</a>
+                    <a href="#waterSupplies">Protecting our Water</a>
+                    <sl-button slot="footer" variant="primary" id="phoneNavBtnClose">Close</sl-button>
+                </sl-drawer>
+                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Menu"></sl-icon-button>
                 <div id="browserNav">
                     <div>
-                        <sl-tooltip content="The Value of Water" placement="top-end">
-                            <sl-button type="primary" size="medium" circle href="#water_Value"></sl-button>
+                        <sl-tooltip content="The Value of Water" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#water_Value"></sl-button>
                         </sl-tooltip>
                     </div>
                     <div>
-                        <sl-tooltip content="Uses of Water" placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#water_Uses"></sl-button>
-                        </sl-tooltip>
-                    </div>
-                    
-                    <div>
-                        <sl-tooltip content="How water sustains nature" placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#water_Sustains"></sl-button>
+                        <sl-tooltip content="Uses of Water" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#water_Uses"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="Why Conserve water?" placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#conserveH2O"></sl-button>
+                        <sl-tooltip content="How water sustains nature" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#water_Sustains"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="How much water do we have?" placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#waterAvail"></sl-button>
+                        <sl-tooltip content="Why Conserve water?" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#conserveH2O"></sl-button>
+                        </sl-tooltip>
+                    </div>
+                    
+                    <div>
+                        <sl-tooltip content="How much water do we have?" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#waterAvail"></sl-button>
                         </sl-tooltip>
                     </div>
                    
                     <div>
-                        <sl-tooltip content="The consequences of having no water." placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#consq"></sl-button>
+                        <sl-tooltip content="The consequences of no water" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#consq"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip hoist content="Protecting Singapore's Water" placement="top-end" >
-                            <sl-button type="primary" size="medium" circle href="#waterSupplies"></sl-button>
+                        <sl-tooltip hoist content="Protecting our Water" placement="right">
+                            <sl-button variant="primary" size="medium" circle href="#waterSupplies"></sl-button>
                         </sl-tooltip>
                     </div>
                     
@@ -292,19 +298,19 @@
                         <p>Ever wondered how much each national tap adds to our water supplies? Click to find out more!</p>
                         <div class="waterAvail-gallery">
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom-start" trigger="click" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
+                                <sl-tooltip  placement="bottom" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
                                     <img src="./../images/Imported_water_sq.png" alt="Pipes with Water from Malaysia">
                                 </sl-tooltip>
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom" trigger="click" content="NEWater make up to 40% of our water sources currently">
+                                <sl-tooltip  placement="bottom" content="NEWater make up to 40% of our water sources currently">
                                     <img src="./../images/NEWaterPlant_exteriorSq.png" alt="Exterior of a NEWater plant">
                                 </sl-tooltip> 
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom-end" trigger="click" content="Desalinated water treated make up to 25% of our water sources currently">
+                                <sl-tooltip  placement="bottom" content="Desalinated water treated make up to 25% of our water sources currently">
                                     <img src="./../images/Tuas-Desalination-Plant-sq.png" alt="Exterior of the Desalination plant in Tuas">
                                 </sl-tooltip>
                             </div>
@@ -317,6 +323,10 @@
                 <section id="consq">
                     <h3>Consequences of No Water</h3>
                     <p>Click on the images in he collage to see the consequences of having no water.</p>
+                    <sl-dialog label="Dialog" class="dialog-bird-drinking">
+                        Certain animals will lose their food sources.
+                        <sl-button slot="footer" variant="default">Close tab</sl-button>
+                    </sl-dialog>
                     <div class="consequences-imgGallery"> 
                         <sl-tooltip hoist id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
                             <img src="./../images/sea_B4_City.jpg"  alt="city view from a lake-side">
@@ -371,11 +381,6 @@
 
                         <div id="supply-Gallery">
                                 <div class="flip-card">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
-                                            <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/water-Pipes_CNA.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
@@ -385,16 +390,10 @@
                                                 <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
                                             </div>
                                         </div>   
-                                    </sl-tooltip>
                                      
                                 </div>                            
                           
                                 <div class="flip-card" id="card-desalinationPlant">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Water Treatment </h6>
-                                            <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/Tuas-Desalination-Plant.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
@@ -404,16 +403,10 @@
                                                 <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-NEWater">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
-                                                <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/NEWaterPlant_exterior.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
@@ -423,16 +416,11 @@
                                                 <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
+
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-reservoir">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Reservoirs </h6>
-                                                <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/singapore-marinabarragereservoir_PUB.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
@@ -442,18 +430,17 @@
                                                 <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
                                         
                                 </div>
                                                        
                         </div>                     
                         <div class="footer">
-                            <sl-button size="large" pill class="footer-btn"  href="#water_Value">Back to top <sl-icon src="./../dist/shoelace/assets/icons/chevron-bar-up.svg"></sl-icon></sl-button>
+                            <sl-button size="large" pill class="footer-btn"  href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
                         </div>
                     </section>
                                   
             </div> 
 
-            <script type="module" src="main.js"></script> 
+            <script type="module" src="./main.js"></script> 
     </body>
 </html>

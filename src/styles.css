@@ -101,6 +101,22 @@ sl-button.footer-btn::part(base){
     padding-top: 2%;
 }
 
+#phoneNavBtn{
+    float: right;
+    display: none;
+}
+
+
+#phoneNav::part(body){
+    display: flex;
+    flex-direction: column;    
+    --body-spacing: 5%;
+}
+
+#phoneNav a {
+    margin-bottom: 2%;
+}
+
 /*-----Intro section------*/
 #imgHero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
@@ -139,7 +155,7 @@ sl-button.footer-btn::part(base){
 #navbar {
     overflow: hidden;
     display: inline-block;
-    width: 100%;   
+    width: 100vw;   
     left: 0;
     top: 0;
     z-index: initial;
@@ -572,7 +588,7 @@ sl-tooltip::part(base)::after{
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 8% 3% 5%;
+            padding: 20% 10% 20%;
             
         }
         
@@ -661,6 +677,18 @@ sl-tooltip::part(base)::after{
 
     p.waterSustains_btn {
         transform: translate(1%,70%);
+    }
+
+    #navbar{
+        position: relative;
+    }
+
+    #phoneNavBtn{
+        display: block;
+    }
+
+    #browserNav {
+        display: none;
     }
 }
 

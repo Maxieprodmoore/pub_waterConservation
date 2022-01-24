@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import Splide from '@splidejs/splide';
 import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
@@ -17,7 +16,14 @@ function myFunction() {
   }
 }
 
+/*---------------------------Hamburger Menu-----------------------*/
 
+  const navMenu = document.getElementById("phoneNav");
+  const navOpen = document.getElementById("phoneNavBtn");
+  const navClose = navMenu.getElementById("phoneNavBtnClose");
+
+  navOpen.addEventListener('click', () => navMenu.show());
+  navClose.addEventListener('click', () => navMenu.hide());
 
 /*--------Creating Modal images for How Water sustains nature Collage-------*/
 
