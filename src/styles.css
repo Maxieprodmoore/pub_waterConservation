@@ -103,6 +103,7 @@ sl-button.footer-btn::part(base){
 
 #phoneNavBtn{
     float: right;
+    margin-right: 2%;
     display: none;
 }
 

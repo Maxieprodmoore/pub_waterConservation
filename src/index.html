@@ -30,9 +30,10 @@
         <!-------------------End of Shoelace Components Import----------------------->
         <!----Splide Importing----->
             <script type="module"> 
+                import  '@splidejs/splide/dist/js/splide.min.js';
                 import Splide from '@splidejs/splide';
-                import '@splidejs/splide/dist/css/splide.min.css';
             </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
         <!-----------End of Splide Components import-->
 
         <link rel="stylesheet" href="styles.css">
@@ -54,17 +55,6 @@
 
     
             <div id="navbar">
-                <sl-drawer open id="phoneNav">
-                    <a href="#water_Value">The Value of Water</a>
-                    <a href="#water_Uses">Uses of Water</a>
-                    <a href="#water_Sustains">How water sustains nature</a>
-                    <a href="#conserveH2O">Why Conserve water?</a>
-                    <a href="#waterAvail">How much water do we have?</a>
-                    <a href="#consq">The consequences of no water</a>
-                    <a href="#waterSupplies">Protecting our Water</a>
-                    <sl-button slot="footer" variant="primary" id="phoneNavBtnClose">Close</sl-button>
-                </sl-drawer>
-                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Menu"></sl-icon-button>
                 <div id="browserNav">
                     <div>
                         <sl-tooltip content="The Value of Water" placement="right">
@@ -108,7 +98,16 @@
                     </div>
                     
                 </div>
-                    
+                <sl-drawer id="phoneNav">
+                    <a href="#water_Value" >The Value of Water</a>
+                    <a href="#water_Uses" >Uses of Water</a>
+                    <a href="#water_Sustains" >How water sustains nature</a>
+                    <a href="#conserveH2O" >Why Conserve water?</a>
+                    <a href="#waterAvail" >How much water do we have?</a>
+                    <a href="#consq" >The consequences of no water</a>
+                    <a href="#waterSupplies" >Protecting our Water</a>
+                </sl-drawer>
+                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Navigation bar Menu"></sl-icon-button>    
             </div>
             
             <div class="value_h2O">
@@ -211,14 +210,14 @@
                             <div id="overlayCollage01" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage02" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>
                                 
                             </div>
@@ -226,28 +225,28 @@
                             <div id="overlayCollage03" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage04" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage05" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage06" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
 
@@ -443,4 +442,5 @@
 
             <script type="module" src="./main.js"></script> 
     </body>
+    
 </html>

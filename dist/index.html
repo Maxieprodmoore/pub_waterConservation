@@ -8800,11 +8800,11 @@ function hmrAcceptRun(bundle, id) {
 
 },{}],"14Tjh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+var _splideMinJs = require("@splidejs/splide/dist/js/splide.min.js");
 var _splide = require("@splidejs/splide");
 var _splideDefault = parcelHelpers.interopDefault(_splide);
-var _splideMinCss = require("@splidejs/splide/dist/css/splide.min.css");
 
-},{"@splidejs/splide":"5CJev","@splidejs/splide/dist/css/splide.min.css":"1SEZe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5CJev":[function(require,module,exports) {
+},{"@splidejs/splide":"5CJev","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@splidejs/splide/dist/js/splide.min.js":"icOIL"}],"5CJev":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CLASSES", ()=>CLASSES
@@ -8941,9 +8941,9 @@ parcelHelpers.export(exports, "default", ()=>Splide
 );
 /*!
  * Splide.js
- * Version  : 3.6.9
+ * Version  : 3.6.11
  * License  : MIT
- * Copyright: 2021 Naotoshi Fujita
+ * Copyright: 2022 Naotoshi Fujita
  */ const PROJECT_CODE = "splide";
 const DATA_ATTRIBUTE = `data-${PROJECT_CODE}`;
 const CREATED = 1;
@@ -11750,9 +11750,1542 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"1SEZe":[function() {},{}]},["5u3zE","14Tjh"], "14Tjh", "parcelRequire6566")
+},{}],"icOIL":[function(require,module,exports) {
+function At(n1, t1) {
+    for(var i = 0; i < t1.length; i++){
+        var r = t1[i];
+        r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(n1, r.key, r);
+    }
+}
+/*!
+ * Splide.js
+ * Version  : 3.6.11
+ * License  : MIT
+ * Copyright: 2022 Naotoshi Fujita
+ */ var n, t;
+n = this, t = function() {
+    var m1 = "splide", a1 = "data-" + m1, n2 = {
+        CREATED: 1,
+        MOUNTED: 2,
+        IDLE: 3,
+        MOVING: 4,
+        DESTROYED: 5
+    }, R1 = 10;
+    function _1(n3) {
+        n3.length = 0;
+    }
+    function I(n4) {
+        return !u1(n4) && "object" == typeof n4;
+    }
+    function r1(n5) {
+        return Array.isArray(n5);
+    }
+    function D1(n6) {
+        return "string" == typeof n6;
+    }
+    function M1(n7) {
+        return void 0 === n7;
+    }
+    function u1(n8) {
+        return null === n8;
+    }
+    function y1(n9) {
+        return n9 instanceof HTMLElement;
+    }
+    function w1(n10) {
+        return r1(n10) ? n10 : [
+            n10
+        ];
+    }
+    function b1(n11, t3) {
+        w1(n11).forEach(t3);
+    }
+    function x1(n12, t4) {
+        return -1 < n12.indexOf(t4);
+    }
+    function k1(n13, t5) {
+        return n13.push.apply(n13, w1(t5)), n13;
+    }
+    var o1 = Array.prototype;
+    function s1(n14, t6, i) {
+        return o1.slice.call(n14, t6, i);
+    }
+    function E1(t7, n15, i) {
+        t7 && b1(n15, function(n16) {
+            n16 && t7.classList[i ? "add" : "remove"](n16);
+        });
+    }
+    function A1(n17, t8) {
+        E1(n17, D1(t8) ? t8.split(" ") : t8, !0);
+    }
+    function L1(n18, t9) {
+        b1(t9, n18.appendChild.bind(n18));
+    }
+    function S1(n19, i) {
+        b1(n19, function(n20) {
+            var t10 = i.parentNode;
+            t10 && t10.insertBefore(n20, i);
+        });
+    }
+    function W(n21, t11) {
+        return y1(n21) && (n21.msMatchesSelector || n21.matches).call(n21, t11);
+    }
+    function z1(n22, t12) {
+        return n22 ? s1(n22.children).filter(function(n23) {
+            return W(n23, t12);
+        }) : [];
+    }
+    function P1(n24, t13) {
+        return t13 ? z1(n24, t13)[0] : n24.firstElementChild;
+    }
+    function e1(n25, t14, i) {
+        if (n25) for(var r = Object.keys(n25), r = i ? r.reverse() : r, u = 0; u < r.length; u++){
+            var o = r[u];
+            if ("__proto__" !== o && !1 === t14(n25[o], o)) break;
+        }
+        return n25;
+    }
+    function O1(r) {
+        return s1(arguments, 1).forEach(function(i) {
+            e1(i, function(n, t) {
+                r[t] = i[t];
+            });
+        }), r;
+    }
+    function l1(i, n26) {
+        return e1(n26, function(n27, t) {
+            r1(n27) ? i[t] = n27.slice() : I(n27) ? i[t] = l1(I(i[t]) ? i[t] : {
+            }, n27) : i[t] = n27;
+        }), i;
+    }
+    function T1(t15, n28) {
+        t15 && b1(n28, function(n29) {
+            t15.removeAttribute(n29);
+        });
+    }
+    function j1(i, n30, t16) {
+        I(n30) ? e1(n30, function(n31, t17) {
+            j1(i, t17, n31);
+        }) : u1(t16) ? T1(i, n30) : i.setAttribute(n30, String(t16));
+    }
+    function F1(n32, t18, i) {
+        n32 = document.createElement(n32);
+        return t18 && (D1(t18) ? A1 : j1)(n32, t18), i && L1(i, n32), n32;
+    }
+    function C(n33, t, i) {
+        if (M1(i)) return getComputedStyle(n33)[t];
+        u1(i) || (n33 = n33.style)[t] !== (i = "" + i) && (n33[t] = i);
+    }
+    function N(n34, t19) {
+        C(n34, "display", t19);
+    }
+    function X(n35, t20) {
+        return n35.getAttribute(t20);
+    }
+    function B(n36, t21) {
+        return n36 && n36.classList.contains(t21);
+    }
+    function G(n37) {
+        return n37.getBoundingClientRect();
+    }
+    function H(n38) {
+        b1(n38, function(n39) {
+            n39 && n39.parentNode && n39.parentNode.removeChild(n39);
+        });
+    }
+    function Y(n40) {
+        return P1((new DOMParser).parseFromString(n40, "text/html").body);
+    }
+    function U(n41, t22) {
+        n41.preventDefault(), t22 && (n41.stopPropagation(), n41.stopImmediatePropagation());
+    }
+    function q(n42, t23) {
+        return n42 && n42.querySelector(t23);
+    }
+    function J(n43, t24) {
+        return s1(n43.querySelectorAll(t24));
+    }
+    function K(n44, t25) {
+        E1(n44, t25, !1);
+    }
+    function V(n45) {
+        return D1(n45) ? n45 : n45 ? n45 + "px" : "";
+    }
+    function Q(n46, t26) {
+        if (void 0 === t26 && (t26 = ""), !n46) throw new Error("[" + m1 + "] " + t26);
+    }
+    function g1(n47) {
+        setTimeout(n47);
+    }
+    function Z() {
+    }
+    function v1(n48) {
+        return requestAnimationFrame(n48);
+    }
+    var $ = Math.min, nn = Math.max, tn = Math.floor, rn = Math.ceil, un = Math.abs;
+    function on(n49, t27, i, r) {
+        var u = $(t27, i), i = nn(t27, i);
+        return r ? u < n49 && n49 < i : u <= n49 && n49 <= i;
+    }
+    function en(n50, t28, i) {
+        var r = $(t28, i), i = nn(t28, i);
+        return $(nn(r, n50), i);
+    }
+    function cn(n51) {
+        return (0 < n51) - (n51 < 0);
+    }
+    function fn(t29, n52) {
+        return b1(n52, function(n53) {
+            t29 = t29.replace("%s", "" + n53);
+        }), t29;
+    }
+    function an(n54) {
+        return n54 < 10 ? "0" + n54 : "" + n54;
+    }
+    var sn = {
+    };
+    function c1() {
+        var o = {
+        };
+        function r2(n55, r) {
+            t30(n55, function(n56, t31) {
+                var i = o[n56];
+                o[n56] = i && i.filter(function(n57) {
+                    return n57.n ? n57.n !== r : r || n57.t !== t31;
+                });
+            });
+        }
+        function t30(n58, t32) {
+            w1(n58).join(" ").split(" ").forEach(function(n59) {
+                n59 = n59.split(".");
+                t32(n59[0], n59[1]);
+            });
+        }
+        return {
+            on: function(n60, i, r, u) {
+                void 0 === u && (u = R1), t30(n60, function(n61, t33) {
+                    o[n61] = o[n61] || [], k1(o[n61], {
+                        i: n61,
+                        r: i,
+                        t: t33,
+                        u: u,
+                        n: r
+                    }).sort(function(n62, t34) {
+                        return n62.u - t34.u;
+                    });
+                });
+            },
+            off: r2,
+            offBy: function(i) {
+                e1(o, function(n, t35) {
+                    r2(t35, i);
+                });
+            },
+            emit: function(n63) {
+                var t36 = arguments;
+                (o[n63] || []).forEach(function(n64) {
+                    n64.r.apply(n64, s1(t36, 1));
+                });
+            },
+            destroy: function() {
+                o = {
+                };
+            }
+        };
+    }
+    var ln = "mounted", dn = "move", vn = "moved", hn = "shifted", pn = "click", gn = "active", mn = "inactive", yn = "visible", wn = "hidden", _n = "slide:keydown", bn = "refresh", xn = "updated", kn = "resize", An = "resized", Ln = "repositioned", En = "scrolled", f1 = "destroy", Sn = "navigation:mounted", zn = "lazyload:loaded";
+    function Pn(n65) {
+        var r3 = n65.event, u = {
+        }, o = [];
+        function t37(n66, t38, r) {
+            e(n66, t38, function(t39, i) {
+                o = o.filter(function(n67) {
+                    return !!(n67[0] !== t39 || n67[1] !== i || r && n67[2] !== r) || (t39.removeEventListener(i, n67[2], n67[3]), !1);
+                });
+            });
+        }
+        function e(n68, t40, i) {
+            b1(n68, function(n69) {
+                n69 && t40.split(" ").forEach(i.bind(null, n69));
+            });
+        }
+        function i2() {
+            o = o.filter(function(n70) {
+                return t37(n70[0], n70[1]);
+            }), r3.offBy(u);
+        }
+        return r3.on(f1, i2, u), {
+            on: function(n71, t41, i) {
+                r3.on(n71, t41, u, i);
+            },
+            off: function(n72) {
+                r3.off(n72, u);
+            },
+            emit: r3.emit,
+            bind: function(n73, t42, i, r) {
+                e(n73, t42, function(n74, t43) {
+                    o.push([
+                        n74,
+                        t43,
+                        i,
+                        r
+                    ]), n74.addEventListener(t43, i, r);
+                });
+            },
+            unbind: t37,
+            destroy: i2
+        };
+    }
+    function Rn(t44, i, r, u) {
+        var o, n75, e = Date.now, c = 0, f = !0, a = 0;
+        function s() {
+            if (!f) {
+                var n76 = e() - o;
+                if (t44 <= n76 ? (c = 1, o = e()) : c = n76 / t44, r && r(c), 1 === c && (i(), u && ++a >= u)) return l();
+                v1(s);
+            }
+        }
+        function l() {
+            f = !0;
+        }
+        function d() {
+            cancelAnimationFrame(n75), f = (n75 = c = 0, true);
+        }
+        return {
+            start: function(n77) {
+                n77 || d(), o = e() - (n77 ? c * t44 : 0), f = !1, v1(s);
+            },
+            rewind: function() {
+                o = e(), c = 0, r && r(c);
+            },
+            pause: l,
+            cancel: d,
+            set: function(n78) {
+                t44 = n78;
+            },
+            isPaused: function() {
+                return f;
+            }
+        };
+    }
+    function d1(n79) {
+        var t45 = n79;
+        return {
+            set: function(n80) {
+                t45 = n80;
+            },
+            is: function(n81) {
+                return x1(w1(n81), t45);
+            }
+        };
+    }
+    function Dn(i, r) {
+        var u;
+        return function() {
+            var n82 = arguments, t46 = this;
+            u || (u = Rn(r || 0, function() {
+                i.apply(t46, n82), u = null;
+            }, null, 1)).start();
+        };
+    }
+    var h1 = {
+        marginRight: [
+            "marginBottom",
+            "marginLeft"
+        ],
+        autoWidth: [
+            "autoHeight"
+        ],
+        fixedWidth: [
+            "fixedHeight"
+        ],
+        paddingLeft: [
+            "paddingTop",
+            "paddingRight"
+        ],
+        paddingRight: [
+            "paddingBottom",
+            "paddingLeft"
+        ],
+        width: [
+            "height"
+        ],
+        left: [
+            "top",
+            "right"
+        ],
+        right: [
+            "bottom",
+            "left"
+        ],
+        x: [
+            "y"
+        ],
+        X: [
+            "Y"
+        ],
+        Y: [
+            "X"
+        ],
+        ArrowLeft: [
+            "ArrowUp",
+            "ArrowRight"
+        ],
+        ArrowRight: [
+            "ArrowDown",
+            "ArrowLeft"
+        ]
+    };
+    var Mn = m1, On = m1 + "__slider", Tn = m1 + "__track", jn = m1 + "__list", Fn = m1 + "__slide", In = Fn + "--clone", Wn = Fn + "__container", Cn = m1 + "__arrows", t2 = m1 + "__arrow", Nn = t2 + "--prev", Xn = t2 + "--next", i1 = m1 + "__pagination", Bn = m1 + "__progress", Gn = Bn + "__bar", Hn = m1 + "__autoplay", Yn = m1 + "__play", Un = m1 + "__pause", qn = "is-active", Jn = "is-prev", Kn = "is-next", Vn = "is-visible", Qn = "is-loading", Zn = [
+        qn,
+        Vn,
+        Jn,
+        Kn,
+        Qn
+    ];
+    var $n = "role", nt = "aria-controls", tt = "aria-current", it = "aria-label", rt = "aria-hidden", ut = "tabindex", p1 = "aria-orientation", ot = [
+        $n,
+        nt,
+        tt,
+        it,
+        rt,
+        p1,
+        ut,
+        "disabled"
+    ], et = "slide", ct = "loop", ft = "fade";
+    function at(u, i3, r, o) {
+        var t47, n83 = Pn(u), e = n83.on, c = n83.emit, f = n83.bind, a = n83.destroy, s = u.Components, l = u.root, d = u.options, v = d.isNavigation, h = d.updateOnMove, p = s.Direction.resolve, g = X(o, "style"), m = -1 < r, y = P1(o, "." + Wn), w = d.focusableNodes && J(o, d.focusableNodes);
+        function _() {
+            var n84 = m ? r : i3, t48 = fn(d.i18n.slideX, n84 + 1), n84 = u.splides.map(function(n85) {
+                return n85.splide.root.id;
+            }).join(" ");
+            j1(o, it, t48), j1(o, nt, n84), j1(o, $n, "menuitem"), k(A());
+        }
+        function b() {
+            t47 || x();
+        }
+        function x() {
+            var n86;
+            t47 || (n86 = u.index, k(A()), (function(n87) {
+                var t49 = !n87 && (!A() || m);
+                j1(o, rt, t49 || null), j1(o, ut, !t49 && d.slideFocus ? 0 : null), w && w.forEach(function(n88) {
+                    j1(n88, ut, t49 ? -1 : null);
+                });
+                n87 !== B(o, Vn) && (E1(o, Vn, n87), c(n87 ? yn : wn, L));
+            })(function() {
+                if (u.is(ft)) return A();
+                var n89 = G(s.Elements.track), t50 = G(o), i = p("left"), r = p("right");
+                return tn(n89[i]) <= rn(t50[i]) && tn(t50[r]) <= rn(n89[r]);
+            }()), E1(o, Jn, i3 === n86 - 1), E1(o, Kn, i3 === n86 + 1));
+        }
+        function k(n90) {
+            n90 !== B(o, qn) && (E1(o, qn, n90), v && j1(o, tt, n90 || null), c(n90 ? gn : mn, L));
+        }
+        function A() {
+            var n91 = u.index;
+            return n91 === i3 || d.cloneStatus && n91 === r;
+        }
+        var L = {
+            index: i3,
+            slideIndex: r,
+            slide: o,
+            container: y,
+            isClone: m,
+            mount: function() {
+                m || (o.id = l.id + "-slide" + an(i3 + 1)), f(o, "click keydown", function(n92) {
+                    c("click" === n92.type ? pn : _n, L, n92);
+                }), e([
+                    bn,
+                    Ln,
+                    hn,
+                    vn,
+                    En
+                ], x), e(Sn, _), h && e(dn, b);
+            },
+            destroy: function() {
+                t47 = !0, a(), K(o, Zn), T1(o, ot), j1(o, "style", g);
+            },
+            update: x,
+            style: function(n93, t51, i) {
+                C(i && y || o, n93, t51);
+            },
+            isWithin: function(n94, t52) {
+                return n94 = un(n94 - i3), (n94 = !m && (d.rewind || u.is(ct)) ? $(n94, u.length - n94) : n94) <= t52;
+            }
+        };
+        return L;
+    }
+    var st = a1 + "-interval";
+    var lt = {
+        passive: !1,
+        capture: !0
+    }, dt = "touchmove mousemove", vt = "touchend touchcancel mouseup";
+    var ht = [
+        "Left",
+        "Right",
+        "Up",
+        "Down"
+    ], pt = "keydown";
+    var gt = a1 + "-lazy", mt = gt + "-srcset", yt = "[" + gt + "], [" + mt + "]";
+    var wt = [
+        " ",
+        "Enter",
+        "Spacebar"
+    ];
+    var _t = Object.freeze({
+        __proto__: null,
+        Options: function(t53, n95, r) {
+            var u, o, i4, e = Dn(f);
+            function c(n96) {
+                n96 && removeEventListener("resize", e);
+            }
+            function f() {
+                var n97, n97 = (n97 = function(n98) {
+                    return n98[1].matches;
+                }, s1(o).filter(n97)[0] || []);
+                n97[0] !== i4 && (function(n99) {
+                    n99 = r.breakpoints[n99] || u;
+                    n99.destroy ? (t53.options = u, t53.destroy("completely" === n99.destroy)) : (t53.state.is(5) && (c(!0), t53.mount()), t53.options = n99);
+                })(i4 = n97[0]);
+            }
+            return {
+                setup: function() {
+                    try {
+                        l1(r, JSON.parse(X(t53.root, a1)));
+                    } catch (n100) {
+                        Q(!1, n100.message);
+                    }
+                    u = l1({
+                    }, r);
+                    var i, n101 = r.breakpoints;
+                    n101 && (i = "min" === r.mediaQuery, o = Object.keys(n101).sort(function(n102, t54) {
+                        return i ? +t54 - +n102 : +n102 - +t54;
+                    }).map(function(n103) {
+                        return [
+                            n103,
+                            matchMedia("(" + (i ? "min" : "max") + "-width:" + n103 + "px)")
+                        ];
+                    }), f());
+                },
+                mount: function() {
+                    o && addEventListener("resize", e);
+                },
+                destroy: c
+            };
+        },
+        Direction: function(n104, t, r) {
+            return {
+                resolve: function(n105, t) {
+                    var i = r.direction;
+                    return h1[n105]["rtl" !== i || t ? "ttb" === i ? 0 : -1 : 1] || n105;
+                },
+                orient: function(n106) {
+                    return n106 * ("rtl" === r.direction ? 1 : -1);
+                }
+            };
+        },
+        Elements: function(n107, t55, i) {
+            var r, u, o, e, c = Pn(n107).on, f = n107.root, a = {
+            }, s = [];
+            function l() {
+                var n108;
+                !function() {
+                    u = P1(f, "." + On), o = q(f, "." + Tn), e = P1(o, "." + jn), Q(o && e, "A track/list element is missing."), k1(s, z1(e, "." + Fn + ":not(." + In + ")"));
+                    var n109 = p("." + Hn), t56 = p("." + Cn);
+                    O1(a, {
+                        root: f,
+                        slider: u,
+                        track: o,
+                        list: e,
+                        slides: s,
+                        arrows: t56,
+                        autoplay: n109,
+                        prev: q(t56, "." + Nn),
+                        next: q(t56, "." + Xn),
+                        bar: q(p("." + Bn), "." + Gn),
+                        play: q(n109, "." + Yn),
+                        pause: q(n109, "." + Un)
+                    });
+                }(), n108 = f.id || (function(n110) {
+                    return "" + n110 + an(sn[n110] = (sn[n110] || 0) + 1);
+                })(m1), f.id = n108, o.id = o.id || n108 + "-track", e.id = e.id || n108 + "-list", A1(f, r = g());
+            }
+            function d() {
+                [
+                    f,
+                    o,
+                    e
+                ].forEach(function(n111) {
+                    T1(n111, "style");
+                }), _1(s), K(f, r);
+            }
+            function v() {
+                d(), l();
+            }
+            function h() {
+                K(f, r), A1(f, r = g());
+            }
+            function p(n112) {
+                return P1(f, n112) || P1(u, n112);
+            }
+            function g() {
+                return [
+                    Mn + "--" + i.type,
+                    Mn + "--" + i.direction,
+                    i.drag && Mn + "--draggable",
+                    i.isNavigation && Mn + "--nav",
+                    qn
+                ];
+            }
+            return O1(a, {
+                setup: l,
+                mount: function() {
+                    c(bn, v, R1 - 2), c(xn, h);
+                },
+                destroy: d
+            });
+        },
+        Slides: function(r4, u, o) {
+            var n113 = Pn(r4), t57 = n113.on, e = n113.emit, c = n113.bind, f = (n113 = u.Elements).slides, a = n113.list, s = [];
+            function i5() {
+                f.forEach(function(n114, t58) {
+                    v(n114, t58, -1);
+                });
+            }
+            function l() {
+                p(function(n115) {
+                    n115.destroy();
+                }), _1(s);
+            }
+            function d() {
+                l(), i5();
+            }
+            function v(n116, t59, i) {
+                n116 = at(r4, t59, i, n116);
+                n116.mount(), s.push(n116);
+            }
+            function h(n117) {
+                return n117 ? g(function(n118) {
+                    return !n118.isClone;
+                }) : s;
+            }
+            function p(n119, t60) {
+                h(t60).forEach(n119);
+            }
+            function g(t61) {
+                return s.filter("function" == typeof t61 ? t61 : function(n120) {
+                    return D1(t61) ? W(n120.slide, t61) : x1(w1(t61), n120.index);
+                });
+            }
+            return {
+                mount: function() {
+                    i5(), t57(bn, d), t57([
+                        ln,
+                        bn
+                    ], function() {
+                        s.sort(function(n121, t62) {
+                            return n121.index - t62.index;
+                        });
+                    });
+                },
+                destroy: l,
+                update: function() {
+                    p(function(n122) {
+                        n122.update();
+                    });
+                },
+                register: v,
+                get: h,
+                getIn: function(n123) {
+                    var t63 = u.Controller, i = t63.toIndex(n123), r = t63.hasFocus() ? 1 : o.perPage;
+                    return g(function(n124) {
+                        return on(n124.index, i, i + r - 1);
+                    });
+                },
+                getAt: function(n125) {
+                    return g(n125)[0];
+                },
+                add: function(n126, u) {
+                    b1(n126, function(n127) {
+                        var t64, i, r;
+                        y1(n127 = D1(n127) ? Y(n127) : n127) && ((t64 = f[u]) ? S1(n127, t64) : L1(a, n127), A1(n127, o.classes.slide), i = e.bind(null, kn), n127 = J(n127, "img"), (r = n127.length) ? n127.forEach(function(n128) {
+                            c(n128, "load error", function() {
+                                --r || i();
+                            });
+                        }) : i());
+                    }), e(bn);
+                },
+                remove: function(n129) {
+                    H(g(n129).map(function(n130) {
+                        return n130.slide;
+                    })), e(bn);
+                },
+                forEach: p,
+                filter: g,
+                style: function(t65, i, r) {
+                    p(function(n131) {
+                        n131.style(t65, i, r);
+                    });
+                },
+                getLength: function(n132) {
+                    return (n132 ? f : s).length;
+                },
+                isEnough: function() {
+                    return s.length > o.perPage;
+                }
+            };
+        },
+        Layout: function(n133, t66, i6) {
+            var r, u, o = Pn(n133), e = o.on, c = o.bind, f = o.emit, a = t66.Slides, s = t66.Direction.resolve, l = (t66 = t66.Elements).root, d = t66.track, v = t66.list, h = a.getAt;
+            function p() {
+                u = null, r = "ttb" === i6.direction, C(l, "maxWidth", V(i6.width)), C(d, s("paddingLeft"), m(!1)), C(d, s("paddingRight"), m(!0)), g();
+            }
+            function g() {
+                var n134 = G(l);
+                u && u.width === n134.width && u.height === n134.height || (C(d, "height", function() {
+                    var n135 = "";
+                    r && (Q(n135 = y(), "height or heightRatio is missing."), n135 = "calc(" + n135 + " - " + m(!1) + " - " + m(!0) + ")");
+                    return n135;
+                }()), a.style(s("marginRight"), V(i6.gap)), a.style("width", (i6.autoWidth ? "" : V(i6.fixedWidth) || (r ? "" : w())) || null), a.style("height", V(i6.fixedHeight) || (r ? i6.autoHeight ? "" : w() : y()) || null, !0), u = n134, f(An));
+            }
+            function m(n136) {
+                var t67 = i6.padding, n136 = s(n136 ? "right" : "left");
+                return t67 && V(t67[n136] || (I(t67) ? 0 : t67)) || "0px";
+            }
+            function y() {
+                return V(i6.height || G(v).width * i6.heightRatio);
+            }
+            function w() {
+                var n137 = V(i6.gap);
+                return "calc((100%" + (n137 && " + " + n137) + ")/" + (i6.perPage || 1) + (n137 && " - " + n137) + ")";
+            }
+            function _(n138, t68) {
+                var i = h(n138);
+                if (i) {
+                    n138 = G(i.slide)[s("right")], i = G(v)[s("left")];
+                    return un(n138 - i) + (t68 ? 0 : b());
+                }
+                return 0;
+            }
+            function b() {
+                var n139 = h(0);
+                return n139 && parseFloat(C(n139.slide, s("marginRight"))) || 0;
+            }
+            return {
+                mount: function() {
+                    p(), c(window, "resize load", Dn(f.bind(this, kn))), e([
+                        xn,
+                        bn
+                    ], p), e(kn, g);
+                },
+                listSize: function() {
+                    return G(v)[s("width")];
+                },
+                slideSize: function(n140, t69) {
+                    return (n140 = h(n140 || 0)) ? G(n140.slide)[s("width")] + (t69 ? 0 : b()) : 0;
+                },
+                sliderSize: function() {
+                    return _(n133.length - 1, !0) - _(-1, !0);
+                },
+                totalSize: _,
+                getPadding: function(n141) {
+                    return parseFloat(C(d, s("padding" + (n141 ? "Right" : "Left")))) || 0;
+                }
+            };
+        },
+        Clones: function(c, n142, f) {
+            var t70, i7 = Pn(c), r5 = i7.on, u2 = i7.emit, a = n142.Elements, s = n142.Slides, o2 = n142.Direction.resolve, l = [];
+            function e2() {
+                (t70 = p()) && ((function(u) {
+                    var o = s.get().slice(), e = o.length;
+                    if (e) {
+                        for(; o.length < u;)k1(o, o);
+                        k1(o.slice(-u), o.slice(0, u)).forEach(function(n143, t71) {
+                            var i = t71 < u, r = function(n144, t72) {
+                                n144 = n144.cloneNode(!0);
+                                return A1(n144, f.classes.clone), n144.id = c.root.id + "-clone" + an(t72 + 1), n144;
+                            }(n143.slide, t71);
+                            i ? S1(r, o[0].slide) : L1(a.list, r), k1(l, r), s.register(r, t71 - u + (i ? 0 : e), n143.index);
+                        });
+                    }
+                })(t70), u2(kn));
+            }
+            function d() {
+                H(l), _1(l);
+            }
+            function v() {
+                d(), e2();
+            }
+            function h() {
+                t70 < p() && u2(bn);
+            }
+            function p() {
+                var n145, t73, i = f.clones;
+                return c.is(ct) ? i || (n145 = a.list, D1(t73 = f[o2("fixedWidth")]) && (t73 = G(n145 = F1("div", {
+                    style: "width: " + t73 + "; position: absolute;"
+                }, n145)).width, H(n145)), i = (t73 && rn(G(a.track)[o2("width")] / t73) || f[o2("autoWidth")] && c.length || f.perPage) * (f.drag ? (f.flickMaxPages || 1) + 1 : 2)) : i = 0, i;
+            }
+            return {
+                mount: function() {
+                    e2(), r5(bn, v), r5([
+                        xn,
+                        kn
+                    ], h);
+                },
+                destroy: d
+            };
+        },
+        Move: function(e3, c, f) {
+            var a, n146 = Pn(e3), t74 = n146.on, s = n146.emit, r6 = (n146 = c.Layout).slideSize, i8 = n146.getPadding, u3 = n146.totalSize, o3 = n146.listSize, l = n146.sliderSize, d = (n146 = c.Direction).resolve, v = n146.orient, h = (n146 = c.Elements).list, p = n146.track;
+            function g() {
+                k() || (c.Scroll.cancel(), m(e3.index), s(Ln));
+            }
+            function m(n147) {
+                y(_(n147, !0));
+            }
+            function y(n148, t75) {
+                e3.is(ft) || (t75 = t75 ? n148 : (function(n149) {
+                    var t76, i;
+                    e3.is(ct) && (i = v(n149 - b()), t76 = A(!1, n149) && i < 0, i = A(!0, n149) && 0 < i, (t76 || i) && (n149 = w(n149, i)));
+                    return n149;
+                })(n148), h.style.transform = "translate" + d("X") + "(" + t75 + "px)", n148 !== t75 && s(hn));
+            }
+            function w(n150, t77) {
+                var i = n150 - x(t77), r = l();
+                return n150 -= v(r * (rn(un(i) / r) || 1)) * (t77 ? 1 : -1);
+            }
+            function _(n151, t78) {
+                var i, i = v(u3(n151 - 1) - (i = n151, "center" === (n151 = f.focus) ? (o3() - r6(i, !0)) / 2 : +n151 * r6(i) || 0));
+                return t78 ? (function(n152) {
+                    f.trimSpace && e3.is(et) && (n152 = en(n152, 0, v(l() - o3())));
+                    return n152;
+                })(i) : i;
+            }
+            function b() {
+                var n = d("left");
+                return G(h)[n] - G(p)[n] + v(i8(!1));
+            }
+            function x(n153) {
+                return _(n153 ? c.Controller.getEnd() : 0, !!f.trimSpace);
+            }
+            function k() {
+                return e3.state.is(4) && f.waitForTransition;
+            }
+            function A(n154, t79) {
+                t79 = M1(t79) ? b() : t79;
+                var i = !0 !== n154 && v(t79) < v(x(!1)), t79 = !1 !== n154 && v(t79) > v(x(!0));
+                return i || t79;
+            }
+            return {
+                mount: function() {
+                    a = c.Transition, t74([
+                        ln,
+                        An,
+                        xn,
+                        bn
+                    ], g);
+                },
+                destroy: function() {
+                    T1(h, "style");
+                },
+                move: function(n155, t80, i, r) {
+                    var u, o;
+                    k() || (u = e3.state.set, o = b(), n155 !== t80 && (a.cancel(), y(w(o, t80 < n155), !0)), u(4), s(dn, t80, i, n155), a.start(t80, function() {
+                        u(3), s(vn, t80, i, n155), "move" === f.trimSpace && n155 !== i && o === b() ? c.Controller.go(i < n155 ? ">" : "<", !1, r) : r && r();
+                    }));
+                },
+                jump: m,
+                translate: y,
+                shift: w,
+                cancel: function() {
+                    y(b()), a.cancel();
+                },
+                toIndex: function(n156) {
+                    for(var t81 = c.Slides.get(), i = 0, r = 1 / 0, u = 0; u < t81.length; u++){
+                        var o = t81[u].index, e = un(_(o, !0) - n156);
+                        if (!(e <= r)) break;
+                        r = e, i = o;
+                    }
+                    return i;
+                },
+                toPosition: _,
+                getPosition: b,
+                getLimit: x,
+                isBusy: k,
+                exceededLimit: A
+            };
+        },
+        Controller: function(n157, e, u4) {
+            var o4, c, f, t82 = Pn(n157).on, a = e.Move, s = a.getPosition, l = a.getLimit, i9 = e.Slides, d = i9.isEnough, r7 = i9.getLength, v = n157.is(ct), h = n157.is(et), p = u4.start || 0, g = p;
+            function m() {
+                o4 = r7(!0), c = u4.perMove, f = u4.perPage, p = en(p, 0, o4 - 1);
+            }
+            function y(n158, t83, i, r, u) {
+                var o = t83 ? n158 : S(n158);
+                e.Scroll.scroll(t83 || i ? a.toPosition(o, !0) : n158, r, function() {
+                    z(a.toIndex(a.getPosition())), u && u();
+                });
+            }
+            function w(n159) {
+                return b(!1, n159);
+            }
+            function _(n160) {
+                return b(!0, n160);
+            }
+            function b(n161, t84) {
+                var i, r, u = c || (P() ? 1 : f), o = x(p + u * (n161 ? -1 : 1), p);
+                return -1 !== o || !h || (i = s(), r = l(!n161), u = 1, un(i - r) < u) ? t84 ? o : A(o) : n161 ? 0 : k();
+            }
+            function x(n162, t85, i) {
+                var r;
+                return d() ? (r = k(), n162 < 0 || r < n162 ? n162 = on(0, n162, t85, !0) || on(r, t85, n162, !0) ? L(E(n162)) : v ? c || P() ? n162 : n162 < 0 ? -(o4 % f || f) : o4 : u4.rewind ? n162 < 0 ? r : 0 : -1 : i || n162 === t85 || (n162 = c ? n162 : L(E(t85) + (n162 < t85 ? -1 : 1)))) : n162 = -1, n162;
+            }
+            function k() {
+                var n163 = o4 - f;
+                return (P() || v && c) && (n163 = o4 - 1), nn(n163, 0);
+            }
+            function A(n164) {
+                return v ? d() ? n164 % o4 + (n164 < 0 ? o4 : 0) : -1 : n164;
+            }
+            function L(n165) {
+                return en(P() ? n165 : f * n165, 0, k());
+            }
+            function E(n166) {
+                return P() || (n166 = on(n166, o4 - f, o4 - 1) ? o4 - 1 : n166, n166 = tn(n166 / f)), n166;
+            }
+            function S(n167) {
+                n167 = a.toIndex(n167);
+                return h ? en(n167, 0, k()) : n167;
+            }
+            function z(n168) {
+                n168 !== p && (g = p, p = n168);
+            }
+            function P() {
+                return !M1(u4.focus) || u4.isNavigation;
+            }
+            return {
+                mount: function() {
+                    m(), t82([
+                        xn,
+                        bn
+                    ], m, R1 - 1);
+                },
+                go: function(n169, t86, i10) {
+                    var r8 = function(n170) {
+                        var t87 = p;
+                        var i, r;
+                        D1(n170) ? (r = n170.match(/([+\-<>])(\d+)?/) || [], i = r[1], r = r[2], "+" === i || "-" === i ? t87 = x(p + +("" + i + (+r || 1)), p, !0) : ">" === i ? t87 = r ? L(+r) : w(!0) : "<" === i && (t87 = _(!0))) : t87 = v ? n170 : en(n170, 0, k());
+                        return t87;
+                    }(n169);
+                    u4.useScroll ? y(r8, !0, !0, u4.speed, i10) : -1 < (n169 = A(r8)) && !a.isBusy() && (t86 || n169 !== p) && (z(n169), a.move(r8, n169, g, i10));
+                },
+                scroll: y,
+                getNext: w,
+                getPrev: _,
+                getAdjacent: b,
+                getEnd: k,
+                setIndex: z,
+                getIndex: function(n171) {
+                    return n171 ? g : p;
+                },
+                toIndex: L,
+                toPage: E,
+                toDest: S,
+                hasFocus: P
+            };
+        },
+        Arrows: function(u, n172, i11) {
+            var r9, t88 = Pn(u), o = t88.on, e = t88.bind, c = t88.emit, f = i11.classes, a = i11.i18n, s = n172.Elements, l = n172.Controller, d = s.arrows, v = s.prev, h = s.next, p = {
+            };
+            function g() {
+                var n173, t89;
+                i11.arrows && (v && h || (d = F1("div", f.arrows), v = m(!0), h = m(!1), r9 = !0, L1(d, [
+                    v,
+                    h
+                ]), S1(d, P1("slider" === i11.arrows && s.slider || u.root)))), v && h && (p.prev ? N(d, !1 === i11.arrows ? "none" : "") : (n173 = s.track.id, j1(v, nt, n173), j1(h, nt, n173), p.prev = v, p.next = h, t89 = l.go, o([
+                    ln,
+                    vn,
+                    xn,
+                    bn,
+                    En
+                ], y), e(h, "click", function() {
+                    t89(">", !0);
+                }), e(v, "click", function() {
+                    t89("<", !0);
+                }), c("arrows:mounted", v, h)));
+            }
+            function m(n174) {
+                return Y('<button class="' + f.arrow + " " + (n174 ? f.prev : f.next) + '" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><path d="' + (i11.arrowPath || "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z") + '" />');
+            }
+            function y() {
+                var n175 = u.index, t90 = l.getPrev(), i = l.getNext(), r = -1 < t90 && n175 < t90 ? a.last : a.prev, n175 = -1 < i && i < n175 ? a.first : a.next;
+                v.disabled = t90 < 0, h.disabled = i < 0, j1(v, it, r), j1(h, it, n175), c("arrows:updated", v, h, t90, i);
+            }
+            return {
+                arrows: p,
+                mount: function() {
+                    g(), o(xn, g);
+                },
+                destroy: function() {
+                    r9 ? H(d) : (T1(v, ot), T1(h, ot));
+                }
+            };
+        },
+        Autoplay: function(t91, i12, r) {
+            var u, o, e, n176 = Pn(t91), c = n176.on, f = n176.bind, a = n176.emit, s = Rn(r.interval, t91.go.bind(t91, ">"), function(n177) {
+                var t92 = d.bar;
+                t92 && C(t92, "width", 100 * n177 + "%"), a("autoplay:playing", n177);
+            }), l = s.isPaused, d = i12.Elements;
+            function v(n178) {
+                var t = n178 ? "pause" : "play", i = d[t];
+                i && (j1(i, nt, d.track.id), j1(i, it, r.i18n[t]), f(i, "click", n178 ? p : h));
+            }
+            function h() {
+                l() && i12.Slides.isEnough() && (s.start(!r.resetProgress), o = u = e = !1, a("autoplay:play"));
+            }
+            function p(n179) {
+                void 0 === n179 && (n179 = !0), l() || (s.pause(), a("autoplay:pause")), e = n179;
+            }
+            function g() {
+                e || (u || o ? p(!1) : h());
+            }
+            function m() {
+                var n180 = i12.Slides.getAt(t91.index);
+                s.set(n180 && +X(n180.slide, st) || r.interval);
+            }
+            return {
+                mount: function() {
+                    var n181 = r.autoplay;
+                    n181 && (v(!0), v(!1), (function() {
+                        var n182 = d.root;
+                        r.pauseOnHover && f(n182, "mouseenter mouseleave", function(n183) {
+                            u = "mouseenter" === n183.type, g();
+                        });
+                        r.pauseOnFocus && f(n182, "focusin focusout", function(n184) {
+                            o = "focusin" === n184.type, g();
+                        });
+                        c([
+                            dn,
+                            "scroll",
+                            bn
+                        ], s.rewind), c(dn, m);
+                    })(), "pause" !== n181 && h());
+                },
+                destroy: s.cancel,
+                play: h,
+                pause: p,
+                isPaused: l
+            };
+        },
+        Cover: function(n185, t93, i13) {
+            var r = Pn(n185).on;
+            function u(i) {
+                t93.Slides.forEach(function(n186) {
+                    var t94 = P1(n186.container || n186.slide, "img");
+                    t94 && t94.src && o(i, t94, n186);
+                });
+            }
+            function o(n187, t95, i) {
+                i.style("background", n187 ? 'center/cover no-repeat url("' + t95.src + '")' : "", !0), N(t95, n187 ? "none" : "");
+            }
+            return {
+                mount: function() {
+                    i13.cover && (r(zn, function(n188, t96) {
+                        o(!0, n188, t96);
+                    }), r([
+                        ln,
+                        xn,
+                        bn
+                    ], u.bind(null, !0)));
+                },
+                destroy: function() {
+                    u(!1);
+                }
+            };
+        },
+        Scroll: function(c, n189, f) {
+            var a, s, t97 = Pn(c), i14 = t97.on, l = t97.emit, d = n189.Move, v = d.getPosition, h = d.getLimit, p = d.exceededLimit;
+            function g(r, n190, t98, u) {
+                var i15, o = v(), e = 1;
+                n190 = n190 || (i15 = un(r - o), nn(i15 / 1.5, 800)), s = t98, y(), a = Rn(n190, m, function(n191) {
+                    var t99 = v(), i = (o + (r - o) * (i = n191, (n191 = f.easingFunc) ? n191(i) : 1 - Math.pow(1 - i, 4)) - v()) * e;
+                    d.translate(t99 + i), c.is(et) && !u && p() && (e *= 0.6, un(i) < 10 && (i = p(!1), g(h(!i), 600, null, !0)));
+                }, 1), l("scroll"), a.start();
+            }
+            function m() {
+                var n192 = v(), t100 = d.toIndex(n192);
+                on(t100, 0, c.length - 1) || d.translate(d.shift(n192, 0 < t100), !0), s && s(), l(En);
+            }
+            function y() {
+                a && a.cancel();
+            }
+            function r10() {
+                a && !a.isPaused() && (y(), m());
+            }
+            return {
+                mount: function() {
+                    i14(dn, y), i14([
+                        xn,
+                        bn
+                    ], r10);
+                },
+                destroy: y,
+                scroll: g,
+                cancel: r10
+            };
+        },
+        Drag: function(u, o, e) {
+            var c, f, a, s, l, d, v, r11, h, n193 = Pn(u), t101 = n193.on, p = n193.emit, g = n193.bind, m = n193.unbind, y = o.Move, w = o.Scroll, _ = o.Controller, b = o.Elements.track, i16 = (n193 = o.Direction).resolve, x = n193.orient, k = y.getPosition, A = y.exceededLimit, L = !1;
+            function E() {
+                var n194 = e.drag;
+                F(!n194), l = "free" === n194;
+            }
+            function S(n195) {
+                var t102, i;
+                r11 || (i = e.noDrag, t102 = j(n195), i = !i || !W(n195.target, i), v = !1, !i || !t102 && n195.button || (y.isBusy() ? U(n195, !0) : (h = t102 ? b : window, s = a = null, g(h, dt, z, lt), g(h, vt, P, lt), y.cancel(), w.cancel(), R(n195))));
+            }
+            function z(n196) {
+                var t103, i, r;
+                s || p("drag"), (s = n196).cancelable && (t103 = O(n196) - O(f), d ? (y.translate(c + t103 / (L && u.is(et) ? 5 : 1)), i = 200 < T(n196) - T(f), r = L !== (L = A()), (i || r) && R(n196), p("dragging"), v = !0, U(n196)) : (r = I(r = e.dragMinThreshold) ? r : {
+                    mouse: 0,
+                    touch: +r || 10
+                }, d = un(t103) > (j(n196) ? r.touch : r.mouse), M() && U(n196)));
+            }
+            function P(n197) {
+                m(h, dt, z), m(h, vt, P);
+                var t104, i17, r = u.index;
+                s ? ((d || n197.cancelable && M()) && (t104 = (function(n198) {
+                    if (u.is(ct) || !L) {
+                        var t105 = f === s && a || f, i = O(s) - O(t105), t105 = T(n198) - T(t105), n198 = T(n198) - T(s) < 200;
+                        if (t105 && n198) return i / t105;
+                    }
+                    return 0;
+                })(n197), i17 = t104, i17 = k() + cn(i17) * $(un(i17) * (e.flickPower || 600), l ? 1 / 0 : o.Layout.listSize() * (e.flickMaxPages || 1)), l ? _.scroll(i17) : u.is(ft) ? _.go(r + x(cn(t104))) : _.go(_.toDest(i17), !0), U(n197)), p("dragged")) : l || k() === y.toPosition(r) || _.go(r, !0), d = !1;
+            }
+            function R(n199) {
+                a = f, f = n199, c = k();
+            }
+            function D(n200) {
+                !r11 && v && U(n200, !0);
+            }
+            function M() {
+                var n201 = un(O(s) - O(f));
+                return un(O(s, !0) - O(f, !0)) < n201;
+            }
+            function O(n202, t) {
+                return (j(n202) ? n202.touches[0] : n202)["page" + i16(t ? "Y" : "X")];
+            }
+            function T(n203) {
+                return n203.timeStamp;
+            }
+            function j(n204) {
+                return "undefined" != typeof TouchEvent && n204 instanceof TouchEvent;
+            }
+            function F(n205) {
+                r11 = n205;
+            }
+            return {
+                mount: function() {
+                    g(b, dt, Z, lt), g(b, vt, Z, lt), g(b, "touchstart mousedown", S, lt), g(b, "click", D, {
+                        capture: !0
+                    }), g(b, "dragstart", U), t101([
+                        ln,
+                        xn
+                    ], E);
+                },
+                disable: F,
+                isDragging: function() {
+                    return d;
+                }
+            };
+        },
+        Keyboard: function(t106, n206, i) {
+            var r, u, o = Pn(t106), e = o.on, c = o.bind, f = o.unbind, a = t106.root, s = n206.Direction.resolve;
+            function l() {
+                var n207 = i.keyboard;
+                n207 && ("focused" === n207 ? j1(r = a, ut, 0) : r = window, c(r, pt, p));
+            }
+            function d() {
+                f(r, pt), y1(r) && T1(r, ut);
+            }
+            function v() {
+                var n208 = u;
+                u = !0, g1(function() {
+                    u = n208;
+                });
+            }
+            function h() {
+                d(), l();
+            }
+            function p(n209) {
+                u || (n209 = n209.key, (n209 = x1(ht, n209) ? "Arrow" + n209 : n209) === s("ArrowLeft") ? t106.go("<") : n209 === s("ArrowRight") && t106.go(">"));
+            }
+            return {
+                mount: function() {
+                    l(), e(xn, h), e(dn, v);
+                },
+                destroy: d,
+                disable: function(n210) {
+                    u = n210;
+                }
+            };
+        },
+        LazyLoad: function(i18, n211, e) {
+            var t107 = Pn(i18), r12 = t107.on, u5 = t107.off, o5 = t107.bind, c = t107.emit, f = "sequential" === e.lazyLoad, a = [], s = 0;
+            function l() {
+                v(), d();
+            }
+            function d() {
+                n211.Slides.forEach(function(o) {
+                    J(o.slide, yt).forEach(function(n212) {
+                        var t108, i, r = X(n212, gt), u = X(n212, mt);
+                        r === n212.src && u === n212.srcset || (t108 = e.classes.spinner, j1(i = P1(i = n212.parentElement, "." + t108) || F1("span", t108, i), $n, "presentation"), a.push({
+                            o: n212,
+                            e: o,
+                            src: r,
+                            srcset: u,
+                            c: i
+                        }), n212.src || N(n212, "none"));
+                    });
+                }), f && g();
+            }
+            function v() {
+                s = 0, a = [];
+            }
+            function h() {
+                (a = a.filter(function(n213) {
+                    var t109 = e.perPage * ((e.preloadPages || 1) + 1) - 1;
+                    return !n213.e.isWithin(i18.index, t109) || p(n213);
+                })).length || u5(vn);
+            }
+            function p(t110) {
+                var i19 = t110.o;
+                A1(t110.e.slide, Qn), o5(i19, "load error", function(n214) {
+                    !function(n215, t111) {
+                        var i = n215.e;
+                        K(i.slide, Qn), t111 || (H(n215.c), N(n215.o, ""), c(zn, n215.o, i), c(kn));
+                        f && g();
+                    }(t110, "error" === n214.type);
+                }), [
+                    "src",
+                    "srcset"
+                ].forEach(function(n216) {
+                    t110[n216] && (j1(i19, n216, t110[n216]), T1(i19, "src" === n216 ? gt : mt));
+                });
+            }
+            function g() {
+                s < a.length && p(a[s++]);
+            }
+            return {
+                mount: function() {
+                    e.lazyLoad && (d(), r12(bn, l), f || r12([
+                        ln,
+                        bn,
+                        vn,
+                        En
+                    ], h));
+                },
+                destroy: v
+            };
+        },
+        Pagination: function(l, n217, d) {
+            var v, t112 = Pn(l), i20 = t112.on, r13 = t112.emit, h = t112.bind, u6 = t112.unbind, p = n217.Slides, g = n217.Elements, o6 = n217.Controller, m = o6.hasFocus, e4 = o6.getIndex, y = [];
+            function c2() {
+                f2(), d.pagination && p.isEnough() && ((function() {
+                    var n218 = l.length, t113 = d.classes, i = d.i18n, r = d.perPage, u = "slider" === d.pagination && g.slider || g.root, o = m() ? n218 : rn(n218 / r);
+                    v = F1("ul", t113.pagination, u);
+                    for(var e = 0; e < o; e++){
+                        var c = F1("li", null, v), f = F1("button", {
+                            class: t113.page,
+                            type: "button"
+                        }, c), a = p.getIn(e).map(function(n219) {
+                            return n219.slide.id;
+                        }), s = !m() && 1 < r ? i.pageX : i.slideX;
+                        h(f, "click", w.bind(null, e)), j1(f, nt, a.join(" ")), j1(f, it, fn(s, e + 1)), y.push({
+                            li: c,
+                            button: f,
+                            page: e
+                        });
+                    }
+                })(), r13("pagination:mounted", {
+                    list: v,
+                    items: y
+                }, a2(l.index)), s2());
+            }
+            function f2() {
+                v && (H(v), y.forEach(function(n220) {
+                    u6(n220.button, "click");
+                }), _1(y), v = null);
+            }
+            function w(t114) {
+                o6.go(">" + t114, !0, function() {
+                    var n221 = p.getAt(o6.toIndex(t114));
+                    n221 && ((n221 = n221.slide).setActive && n221.setActive() || n221.focus({
+                        preventScroll: !0
+                    }));
+                });
+            }
+            function a2(n) {
+                return y[o6.toPage(n)];
+            }
+            function s2() {
+                var n222 = a2(e4(!0)), t115 = a2(e4());
+                n222 && (K(n222.button, qn), T1(n222.button, tt)), t115 && (A1(t115.button, qn), j1(t115.button, tt, !0)), r13("pagination:updated", {
+                    list: v,
+                    items: y
+                }, n222, t115);
+            }
+            return {
+                items: y,
+                mount: function() {
+                    c2(), i20([
+                        xn,
+                        bn
+                    ], c2), i20([
+                        dn,
+                        En
+                    ], s2);
+                },
+                destroy: f2,
+                getAt: a2,
+                update: s2
+            };
+        },
+        Sync: function(u, n223, i21) {
+            var r14 = n223.Elements.list, o = [];
+            function t116() {
+                var n224, t117;
+                u.splides.forEach(function(n225) {
+                    var i22;
+                    n225.isParent || (i22 = n225.splide, [
+                        u,
+                        i22
+                    ].forEach(function(n226) {
+                        var t118 = Pn(n226), r = n226 === u ? i22 : u;
+                        t118.on(dn, function(n227, t, i) {
+                            r.go(r.is(ct) ? i : n227);
+                        }), o.push(t118);
+                    }));
+                }), i21.isNavigation && (n224 = Pn(u), (t117 = n224.on)(pn, f), t117(_n, a), t117([
+                    ln,
+                    xn
+                ], c), j1(r14, $n, "menu"), o.push(n224), n224.emit(Sn, u.splides));
+            }
+            function e() {
+                T1(r14, ot), o.forEach(function(n228) {
+                    n228.destroy();
+                }), _1(o);
+            }
+            function c() {
+                j1(r14, p1, "ttb" !== i21.direction ? "horizontal" : null);
+            }
+            function f(n229) {
+                u.go(n229.index);
+            }
+            function a(n230, t119) {
+                x1(wt, t119.key) && (f(n230), U(t119));
+            }
+            return {
+                mount: t116,
+                destroy: e,
+                remount: function() {
+                    e(), t116();
+                }
+            };
+        },
+        Wheel: function(i, r, u) {
+            var n231 = Pn(i).bind;
+            function t120(n232) {
+                var t121;
+                !n232.cancelable || (t121 = n232.deltaY) && (i.go((t121 = t121 < 0) ? "<" : ">"), u.releaseWheel && !i.state.is(4) && -1 === r.Controller.getAdjacent(t121) || U(n232));
+            }
+            return {
+                mount: function() {
+                    u.wheel && n231(r.Elements.track, "wheel", t120, lt);
+                }
+            };
+        }
+    }), bt = {
+        type: "slide",
+        speed: 400,
+        waitForTransition: !0,
+        perPage: 1,
+        cloneStatus: !0,
+        arrows: !0,
+        pagination: !0,
+        interval: 5000,
+        pauseOnHover: !0,
+        pauseOnFocus: !0,
+        resetProgress: !0,
+        keyboard: !0,
+        easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+        drag: !0,
+        direction: "ltr",
+        slideFocus: !0,
+        trimSpace: !0,
+        focusableNodes: "a, button, textarea, input, select, iframe",
+        classes: {
+            slide: Fn,
+            clone: In,
+            arrows: Cn,
+            arrow: t2,
+            prev: Nn,
+            next: Xn,
+            pagination: i1,
+            page: i1 + "__page",
+            spinner: m1 + "__spinner"
+        },
+        i18n: {
+            prev: "Previous slide",
+            next: "Next slide",
+            first: "Go to first slide",
+            last: "Go to last slide",
+            slideX: "Go to slide %s",
+            pageX: "Go to page %s",
+            play: "Start autoplay",
+            pause: "Pause autoplay"
+        }
+    };
+    function xt(n233, r, t122) {
+        var i23 = Pn(n233).on;
+        return {
+            mount: function() {
+                i23([
+                    ln,
+                    bn
+                ], function() {
+                    g1(function() {
+                        r.Slides.style("transition", "opacity " + t122.speed + "ms " + t122.easing);
+                    });
+                });
+            },
+            start: function(n, t123) {
+                var i = r.Elements.track;
+                C(i, "height", V(G(i).height)), g1(function() {
+                    t123(), C(i, "height", "");
+                });
+            },
+            cancel: Z
+        };
+    }
+    function kt(o, n234, e) {
+        var c, t124 = Pn(o).bind, f = n234.Move, a = n234.Controller, i24 = n234.Elements.list;
+        function r15() {
+            s("");
+        }
+        function s(n235) {
+            C(i24, "transition", n235);
+        }
+        return {
+            mount: function() {
+                t124(i24, "transitionend", function(n236) {
+                    n236.target === i24 && c && (r15(), c());
+                });
+            },
+            start: function(n237, t125) {
+                var i25 = f.toPosition(n237, !0), r16 = f.getPosition(), u = function(n238) {
+                    var t126 = e.rewindSpeed;
+                    if (o.is(et) && t126) {
+                        var i = a.getIndex(!0), r = a.getEnd();
+                        if (0 === i && r <= n238 || r <= i && 0 === n238) return t126;
+                    }
+                    return e.speed;
+                }(n237);
+                1 <= un(i25 - r16) && 1 <= u ? (s("transform " + u + "ms " + e.easing), f.translate(i25, !0), c = t125) : (f.jump(n237), t125());
+            },
+            cancel: r15
+        };
+    }
+    i1 = (function() {
+        function i26(n240, t128) {
+            this.event = c1(), this.Components = {
+            }, this.state = d1(1), this.splides = [], this.f = {
+            }, this.a = {
+            };
+            n240 = D1(n240) ? q(document, n240) : n240;
+            Q(n240, n240 + " is invalid."), this.root = n240, l1(bt, i26.defaults), l1(l1(this.f, bt), t128 || {
+            });
+        }
+        var n239, t127, r17 = i26.prototype;
+        return r17.mount = function(n241, t129) {
+            var i = this, r = this.state, u = this.Components;
+            return Q(r.is([
+                1,
+                5
+            ]), "Already mounted!"), r.set(1), this.s = u, this.l = t129 || this.l || (this.is(ft) ? xt : kt), this.a = n241 || this.a, e1(O1({
+            }, _t, this.a, {
+                Transition: this.l
+            }), function(n242, t) {
+                n242 = n242(i, u, i.f);
+                (u[t] = n242).setup && n242.setup();
+            }), e1(u, function(n243) {
+                n243.mount && n243.mount();
+            }), this.emit(ln), A1(this.root, "is-initialized"), r.set(3), this.emit("ready"), this;
+        }, r17.sync = function(n244) {
+            return this.splides.push({
+                splide: n244
+            }), n244.splides.push({
+                splide: this,
+                isParent: !0
+            }), this.state.is(3) && (this.s.Sync.remount(), n244.Components.Sync.remount()), this;
+        }, r17.go = function(n245) {
+            return this.s.Controller.go(n245), this;
+        }, r17.on = function(n246, t130) {
+            return this.event.on(n246, t130, null, 20), this;
+        }, r17.off = function(n247) {
+            return this.event.off(n247), this;
+        }, r17.emit = function(n248) {
+            var t131;
+            return (t131 = this.event).emit.apply(t131, [
+                n248
+            ].concat(s1(arguments, 1))), this;
+        }, r17.add = function(n249, t132) {
+            return this.s.Slides.add(n249, t132), this;
+        }, r17.remove = function(n250) {
+            return this.s.Slides.remove(n250), this;
+        }, r17.is = function(n251) {
+            return this.f.type === n251;
+        }, r17.refresh = function() {
+            return this.emit(bn), this;
+        }, r17.destroy = function(t133) {
+            void 0 === t133 && (t133 = !0);
+            var n252 = this.event, i = this.state;
+            return i.is(1) ? n252.on("ready", this.destroy.bind(this, t133), this) : (e1(this.s, function(n253) {
+                n253.destroy && n253.destroy(t133);
+            }, !0), n252.emit(f1), n252.destroy(), t133 && _1(this.splides), i.set(5)), this;
+        }, n239 = i26, r17 = [
+            {
+                key: "options",
+                get: function() {
+                    return this.f;
+                },
+                set: function(n254) {
+                    var t134 = this.f;
+                    l1(t134, n254), this.state.is(1) || this.emit(xn, t134);
+                }
+            },
+            {
+                key: "length",
+                get: function() {
+                    return this.s.Slides.getLength(!0);
+                }
+            },
+            {
+                key: "index",
+                get: function() {
+                    return this.s.Controller.getIndex();
+                }
+            }
+        ], At(n239.prototype, r17), t127 && At(n239, t127), i26;
+    })();
+    return i1.defaults = {
+    }, i1.STATES = n2, i1;
+}, "object" == typeof exports && "undefined" != typeof module ? module.exports = t() : "function" == typeof define && define.amd ? define(t) : (n = "undefined" != typeof globalThis ? globalThis : n || self).Splide = t();
+
+},{}]},["5u3zE","14Tjh"], "14Tjh", "parcelRequire6566")
 
 </script>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.11/dist/css/splide.min.css">
         <!-----------End of Splide Components import-->
 
         <link rel="stylesheet" href="/index.4d663569.css">
@@ -11774,17 +13307,6 @@ exports.export = function(dest, destName, get) {
 
     
             <div id="navbar">
-                <sl-drawer open="" id="phoneNav">
-                    <a href="#water_Value">The Value of Water</a>
-                    <a href="#water_Uses">Uses of Water</a>
-                    <a href="#water_Sustains">How water sustains nature</a>
-                    <a href="#conserveH2O">Why Conserve water?</a>
-                    <a href="#waterAvail">How much water do we have?</a>
-                    <a href="#consq">The consequences of no water</a>
-                    <a href="#waterSupplies">Protecting our Water</a>
-                    <sl-button slot="footer" variant="primary" id="phoneNavBtnClose">Close</sl-button>
-                </sl-drawer>
-                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Menu"></sl-icon-button>
                 <div id="browserNav">
                     <div>
                         <sl-tooltip content="The Value of Water" placement="right">
@@ -11828,7 +13350,16 @@ exports.export = function(dest, destName, get) {
                     </div>
                     
                 </div>
-                    
+                <sl-drawer id="phoneNav">
+                    <a href="#water_Value">The Value of Water</a>
+                    <a href="#water_Uses">Uses of Water</a>
+                    <a href="#water_Sustains">How water sustains nature</a>
+                    <a href="#conserveH2O">Why Conserve water?</a>
+                    <a href="#waterAvail">How much water do we have?</a>
+                    <a href="#consq">The consequences of no water</a>
+                    <a href="#waterSupplies">Protecting our Water</a>
+                </sl-drawer>
+                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Navigation bar Menu"></sl-icon-button>    
             </div>
             
             <div class="value_h2O">
@@ -11931,14 +13462,14 @@ exports.export = function(dest, destName, get) {
                             <div id="overlayCollage01" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img01" src="/africa-deer-drinking-water.3ebee03e.png" alt="african deers drinking water">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage02" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img02" src="/Frog_During_Rain.6ee84823.jpg" alt="frog taking shelter under leaf from rain">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>
                                 
                             </div>
@@ -11946,28 +13477,28 @@ exports.export = function(dest, destName, get) {
                             <div id="overlayCollage03" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img03" src="/Bird_drinking_Water.4cd58449.png" alt="bird drinking water">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage04" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img04" src="/12_YT_SPARROW_1391748f.09f15205.jpg" alt="Sparrow drinking and playing from bird bath">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage05" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img05" src="/pexels-harrison-haines-3536511.1b37278b.jpg" alt="school of fish swimming in pattern">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
     
                             <div id="overlayCollage06" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img06" src="/pexels-holiho-1112186.dcabed88.jpg" alt="forest pathway">
-                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
+                                    <sl-button variant="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
                             </div>
 
@@ -12163,4 +13694,5 @@ exports.export = function(dest, destName, get) {
 
             <script src="/index.4d6bcbeb.js" defer=""></script> 
     </body>
+    
 </html>

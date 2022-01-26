@@ -524,21 +524,20 @@ var _splide = require("@splidejs/splide");
 var _splideDefault = parcelHelpers.interopDefault(_splide);
 var _shoelace = require("@shoelace-style/shoelace/dist/shoelace");
 var _drawerJs = require("@shoelace-style/shoelace/dist/components/drawer/drawer.js");
+var _buttonJs = require("@shoelace-style/shoelace/dist/components/button/button.js");
+var _iconButtonJs = require("@shoelace-style/shoelace/dist/components/icon-button/icon-button.js");
 /*------Sticky Navigation------*/ window.onscroll = function() {
-    myFunction();
+    stickyNav();
 };
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-function myFunction() {
+function stickyNav() {
     if (window.pageYOffset >= sticky) navbar.classList.add("sticky");
     else navbar.classList.remove("sticky");
 }
-/*---------------------------Hamburger Menu-----------------------*/ const navMenu = document.getElementById("phoneNav");
-const navOpen = document.getElementById("phoneNavBtn");
-const navClose = navMenu.getElementById("phoneNavBtnClose");
+/*---------------------------Hamburger Menu-----------------------*/ const navMenu = document.querySelector('#phoneNav');
+const navOpen = document.querySelector('#phoneNavBtn');
 navOpen.addEventListener('click', ()=>navMenu.show()
-);
-navClose.addEventListener('click', ()=>navMenu.hide()
 );
 /*--------Creating Modal images for How Water sustains nature Collage-------*/ //Get Overlay
 var overlay = document.querySelectorAll(".collageOverlay");
@@ -583,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
     slidesWaterAvail.mount();
 });
 
-},{"@splidejs/splide":"5CJev","@shoelace-style/shoelace/dist/shoelace":"6TTGm","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5CJev":[function(require,module,exports) {
+},{"@splidejs/splide":"5CJev","@shoelace-style/shoelace/dist/shoelace":"6TTGm","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5CJev":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "CLASSES", ()=>CLASSES
@@ -720,9 +719,9 @@ parcelHelpers.export(exports, "default", ()=>Splide
 );
 /*!
  * Splide.js
- * Version  : 3.6.9
+ * Version  : 3.6.11
  * License  : MIT
- * Copyright: 2021 Naotoshi Fujita
+ * Copyright: 2022 Naotoshi Fujita
  */ const PROJECT_CODE = "splide";
 const DATA_ATTRIBUTE = `data-${PROJECT_CODE}`;
 const CREATED = 1;
@@ -26932,6 +26931,52 @@ var _chunkFGQFMRZUJs = require("../../chunks/chunk.FGQFMRZU.js");
 var _chunk2VBMOEKGJs = require("../../chunks/chunk.2VBMOEKG.js");
 var _chunk4M3HOXYQJs = require("../../chunks/chunk.4M3HOXYQ.js");
 
-},{"../../chunks/chunk.5PGDTRSW.js":"i9chM","../../chunks/chunk.ZXQWYC2K.js":"luWMM","../../chunks/chunk.SXNB3LL3.js":"cN7v8","../../chunks/chunk.DTSUHNT6.js":"a7RTw","../../chunks/chunk.ST4GEPNZ.js":"ao9ex","../../chunks/chunk.5TL5QPK4.js":"akO45","../../chunks/chunk.QSLHMB3E.js":"2Tw6u","../../chunks/chunk.WCAFNYXW.js":"9Qo42","../../chunks/chunk.6JY65IM5.js":"d40Fl","../../chunks/chunk.UTEQRIIY.js":"h4h4P","../../chunks/chunk.W2WMQSCE.js":"9o2tn","../../chunks/chunk.AN2XMPAV.js":"2bW2A","../../chunks/chunk.IBSPWXHK.js":"bRaa7","../../chunks/chunk.L4IDTG64.js":"5bB1j","../../chunks/chunk.C7PPQWMA.js":"szhSB","../../chunks/chunk.NFF2HMIT.js":"fX0do","../../chunks/chunk.HEOUBJ7T.js":"3YVet","../../chunks/chunk.UJSH3WGM.js":"7vHmo","../../chunks/chunk.4KUWHA33.js":"69rgo","../../chunks/chunk.KJOCH52Q.js":"e6TXF","../../chunks/chunk.2JQPDYNA.js":"4Ri6Y","../../chunks/chunk.BD26TKS4.js":"1j2NX","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.5PPINAFI.js":"a2lYY","../../chunks/chunk.FGQFMRZU.js":"9cs7U","../../chunks/chunk.2VBMOEKG.js":"jJ4XN","../../chunks/chunk.4M3HOXYQ.js":"BRuiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["fcvSp","gLLPy"], "gLLPy", "parcelRequire6566")
+},{"../../chunks/chunk.5PGDTRSW.js":"i9chM","../../chunks/chunk.ZXQWYC2K.js":"luWMM","../../chunks/chunk.SXNB3LL3.js":"cN7v8","../../chunks/chunk.DTSUHNT6.js":"a7RTw","../../chunks/chunk.ST4GEPNZ.js":"ao9ex","../../chunks/chunk.5TL5QPK4.js":"akO45","../../chunks/chunk.QSLHMB3E.js":"2Tw6u","../../chunks/chunk.WCAFNYXW.js":"9Qo42","../../chunks/chunk.6JY65IM5.js":"d40Fl","../../chunks/chunk.UTEQRIIY.js":"h4h4P","../../chunks/chunk.W2WMQSCE.js":"9o2tn","../../chunks/chunk.AN2XMPAV.js":"2bW2A","../../chunks/chunk.IBSPWXHK.js":"bRaa7","../../chunks/chunk.L4IDTG64.js":"5bB1j","../../chunks/chunk.C7PPQWMA.js":"szhSB","../../chunks/chunk.NFF2HMIT.js":"fX0do","../../chunks/chunk.HEOUBJ7T.js":"3YVet","../../chunks/chunk.UJSH3WGM.js":"7vHmo","../../chunks/chunk.4KUWHA33.js":"69rgo","../../chunks/chunk.KJOCH52Q.js":"e6TXF","../../chunks/chunk.2JQPDYNA.js":"4Ri6Y","../../chunks/chunk.BD26TKS4.js":"1j2NX","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.5PPINAFI.js":"a2lYY","../../chunks/chunk.FGQFMRZU.js":"9cs7U","../../chunks/chunk.2VBMOEKG.js":"jJ4XN","../../chunks/chunk.4M3HOXYQ.js":"BRuiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9AbKL":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_chunk5IWLS7YMJs.SlButton
+);
+var _chunk5IWLS7YMJs = require("../../chunks/chunk.5IWLS7YM.js");
+var _chunkZNDHS74KJs = require("../../chunks/chunk.ZNDHS74K.js");
+var _chunk2G6AZSJBJs = require("../../chunks/chunk.2G6AZSJB.js");
+var _chunkNTBOGFL4Js = require("../../chunks/chunk.NTBOGFL4.js");
+var _chunk4654KI5LJs = require("../../chunks/chunk.4654KI5L.js");
+var _chunk5TL5QPK4Js = require("../../chunks/chunk.5TL5QPK4.js");
+var _chunkW2WMQSCEJs = require("../../chunks/chunk.W2WMQSCE.js");
+var _chunkAN2XMPAVJs = require("../../chunks/chunk.AN2XMPAV.js");
+var _chunkKJOCH52QJs = require("../../chunks/chunk.KJOCH52Q.js");
+var _chunk2JQPDYNAJs = require("../../chunks/chunk.2JQPDYNA.js");
+var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
+var _chunk5PPINAFIJs = require("../../chunks/chunk.5PPINAFI.js");
+var _chunkFGQFMRZUJs = require("../../chunks/chunk.FGQFMRZU.js");
+var _chunk2VBMOEKGJs = require("../../chunks/chunk.2VBMOEKG.js");
+var _chunk4M3HOXYQJs = require("../../chunks/chunk.4M3HOXYQ.js");
+
+},{"../../chunks/chunk.5IWLS7YM.js":"98Wo8","../../chunks/chunk.ZNDHS74K.js":"9L9Hz","../../chunks/chunk.2G6AZSJB.js":"7xhPc","../../chunks/chunk.NTBOGFL4.js":"45eD3","../../chunks/chunk.4654KI5L.js":"3AQaY","../../chunks/chunk.5TL5QPK4.js":"akO45","../../chunks/chunk.W2WMQSCE.js":"9o2tn","../../chunks/chunk.AN2XMPAV.js":"2bW2A","../../chunks/chunk.KJOCH52Q.js":"e6TXF","../../chunks/chunk.2JQPDYNA.js":"4Ri6Y","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.5PPINAFI.js":"a2lYY","../../chunks/chunk.FGQFMRZU.js":"9cs7U","../../chunks/chunk.2VBMOEKG.js":"jJ4XN","../../chunks/chunk.4M3HOXYQ.js":"BRuiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9ii4L":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_chunkQSLHMB3EJs.SlIconButton
+);
+var _chunkQSLHMB3EJs = require("../../chunks/chunk.QSLHMB3E.js");
+var _chunkWCAFNYXWJs = require("../../chunks/chunk.WCAFNYXW.js");
+var _chunkW2WMQSCEJs = require("../../chunks/chunk.W2WMQSCE.js");
+var _chunkAN2XMPAVJs = require("../../chunks/chunk.AN2XMPAV.js");
+var _chunkIBSPWXHKJs = require("../../chunks/chunk.IBSPWXHK.js");
+var _chunkL4IDTG64Js = require("../../chunks/chunk.L4IDTG64.js");
+var _chunkC7PPQWMAJs = require("../../chunks/chunk.C7PPQWMA.js");
+var _chunkNFF2HMITJs = require("../../chunks/chunk.NFF2HMIT.js");
+var _chunkHEOUBJ7TJs = require("../../chunks/chunk.HEOUBJ7T.js");
+var _chunkUJSH3WGMJs = require("../../chunks/chunk.UJSH3WGM.js");
+var _chunk4KUWHA33Js = require("../../chunks/chunk.4KUWHA33.js");
+var _chunkKJOCH52QJs = require("../../chunks/chunk.KJOCH52Q.js");
+var _chunk2JQPDYNAJs = require("../../chunks/chunk.2JQPDYNA.js");
+var _chunkBD26TKS4Js = require("../../chunks/chunk.BD26TKS4.js");
+var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
+var _chunk5PPINAFIJs = require("../../chunks/chunk.5PPINAFI.js");
+var _chunkFGQFMRZUJs = require("../../chunks/chunk.FGQFMRZU.js");
+var _chunk2VBMOEKGJs = require("../../chunks/chunk.2VBMOEKG.js");
+var _chunk4M3HOXYQJs = require("../../chunks/chunk.4M3HOXYQ.js");
+
+},{"../../chunks/chunk.QSLHMB3E.js":"2Tw6u","../../chunks/chunk.WCAFNYXW.js":"9Qo42","../../chunks/chunk.W2WMQSCE.js":"9o2tn","../../chunks/chunk.AN2XMPAV.js":"2bW2A","../../chunks/chunk.IBSPWXHK.js":"bRaa7","../../chunks/chunk.L4IDTG64.js":"5bB1j","../../chunks/chunk.C7PPQWMA.js":"szhSB","../../chunks/chunk.NFF2HMIT.js":"fX0do","../../chunks/chunk.HEOUBJ7T.js":"3YVet","../../chunks/chunk.UJSH3WGM.js":"7vHmo","../../chunks/chunk.4KUWHA33.js":"69rgo","../../chunks/chunk.KJOCH52Q.js":"e6TXF","../../chunks/chunk.2JQPDYNA.js":"4Ri6Y","../../chunks/chunk.BD26TKS4.js":"1j2NX","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.5PPINAFI.js":"a2lYY","../../chunks/chunk.FGQFMRZU.js":"9cs7U","../../chunks/chunk.2VBMOEKG.js":"jJ4XN","../../chunks/chunk.4M3HOXYQ.js":"BRuiO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["fcvSp","gLLPy"], "gLLPy", "parcelRequire6566")
 
 //# sourceMappingURL=index.4d6bcbeb.js.map

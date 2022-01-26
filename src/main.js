@@ -1,14 +1,16 @@
 import Splide from '@splidejs/splide';
 import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
+import '@shoelace-style/shoelace/dist/components/button/button.js';
+import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
 
 /*------Sticky Navigation------*/
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stickyNav()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function stickyNav() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
@@ -18,12 +20,9 @@ function myFunction() {
 
 /*---------------------------Hamburger Menu-----------------------*/
 
-  const navMenu = document.getElementById("phoneNav");
-  const navOpen = document.getElementById("phoneNavBtn");
-  const navClose = navMenu.getElementById("phoneNavBtnClose");
-
+  const navMenu = document.querySelector('#phoneNav');
+  const navOpen = document.querySelector('#phoneNavBtn');
   navOpen.addEventListener('click', () => navMenu.show());
-  navClose.addEventListener('click', () => navMenu.hide());
 
 /*--------Creating Modal images for How Water sustains nature Collage-------*/
 
