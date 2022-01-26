@@ -3,6 +3,7 @@ import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
+import { forEach } from 'lodash';
 
 /*------Sticky Navigation------*/
 window.onscroll = function() {stickyNav()};
@@ -33,9 +34,12 @@ function stickyNav() {
   //Get overlay to be active on clicking on image
     Array.from(imgFullScrn).forEach(function(imgFullScrnArray, i) {
       imgFullScrnArray.addEventListener('click', function() {
+        
         collageDrawer[i].show();
       });
     });
+
+  
 
 /*--------Setting up Slider for Uses of Water --------*/
 var slideWaterUses = new Splide('#slide_waterUses', {
@@ -52,18 +56,30 @@ document.addEventListener( 'DOMContentLoaded', function () {
   slideWaterUses.mount();
 } );
 
-/*--------Setting up Slider for Water Available --------*/
-var slidesWaterAvail = new Splide('#slider-waterAvail', {
-  type   : 'fade',
-  perPage: 1,
-  padding: 0,
-  rewind: true,
-  heightRatio: 0.4,
-  drag: true,  
-  cover: true,
-} ).mount();
+/*--------Setting up info tabs for Water Available --------*/
+  //Geting info panel
+    const waterAvailInfo = document.querySelectorAll(".waterAvail-info");
 
-document.addEventListener( 'DOMContentLoaded', function () {
-  slidesWaterAvail.mount();
-} );
+  //Getting water avail btn
+    const  waterAvailBtn = document.querySelectorAll(".waterAvail-img");
+  
+  //Getting info  tab being active on clicking
+    Array.from(waterAvailBtn).forEach(function(waterAvailBtnArray, i) {
+      waterAvailBtnArray.addEventListener('click', function() {
+        waterAvailInfo[i].show();
+      });
+    });
 
+/*--------Setting up info tabs for Consequences of no water --------*/
+  //Geting info panel
+  const waterConsqInfo = document.querySelectorAll(".consqDialog");
+
+  //Getting water avail btn
+    const  waterConsqBtn = document.querySelectorAll(".consqPic");
+  
+  //Getting info  tab being active on clicking
+    Array.from(waterConsqBtn).forEach(function(waterConsqBtnArray, i) {
+      waterConsqBtnArray.addEventListener('click', function() {
+        waterConsqInfo[i].show();
+      });
+    });
