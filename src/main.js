@@ -27,28 +27,15 @@ function stickyNav() {
 /*--------Creating Modal images for How Water sustains nature Collage-------*/
 
   //Get Overlay
-    var overlay = document.querySelectorAll(".collageOverlay");
-
+    var collageDrawer = document.querySelectorAll(".collageDrawer");
   //Get image. 
-    var collageImg = document.querySelectorAll(".ws-collagePic");
-
+    var imgFullScrn = document.querySelectorAll(".ws-collagePic");
   //Get overlay to be active on clicking on image
-    Array.from(collageImg).forEach(function(collageImgArray, i) {
-      collageImgArray.addEventListener('click',  function() {
-        overlay[i].style.display = "block";
+    Array.from(imgFullScrn).forEach(function(imgFullScrnArray, i) {
+      imgFullScrnArray.addEventListener('click', function() {
+        collageDrawer[i].show();
       });
     });
-  //Get icon button (x) that closes Overlay
-    var overlayClose = document.querySelectorAll(".overlay-CloseBtn");
-
-  // When the user clicks on icon button (x), close the overlay
-    Array.from(overlayClose).forEach(function(overlayCloseArray, i) {
-      overlayCloseArray.addEventListener('click', function() {
-        overlay[i].style.display = "none";
-      });
-    });
-
-
 
 /*--------Setting up Slider for Uses of Water --------*/
 var slideWaterUses = new Splide('#slide_waterUses', {
