@@ -1,13 +1,14 @@
 {
   "name": "water-conservation-pub",
   "source": "src/index.html",
+  "main": "dist/main.js",
   "browserslist": [
     "defaults",
     "since 2017"
   ],
   "scripts": {
-    "start": "parcel serve",
-    "watch": "parcel",
+    "start": "parcel",
+    "watch": "parcel watch",
     "build": "parcel build"
   },
   "dependencies": {
