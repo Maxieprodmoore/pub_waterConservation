@@ -1,7 +1,6 @@
 {
   "name": "water-conservation-pub",
   "source": "src/index.html",
-  "main": "dist/main.js",
   "browserslist": [
     "defaults",
     "since 2017"

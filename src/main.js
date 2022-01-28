@@ -3,7 +3,6 @@ import '@shoelace-style/shoelace/dist/shoelace';
 import '@shoelace-style/shoelace/dist/components/drawer/drawer.js';
 import '@shoelace-style/shoelace/dist/components/button/button.js';
 import '@shoelace-style/shoelace/dist/components/icon-button/icon-button.js';
-import { forEach } from 'lodash';
 
 /*------Sticky Navigation------*/
 window.onscroll = function() {stickyNav()};
