@@ -919,6 +919,10 @@ p.waterSustains_btn {
         font-size: 3.2rem;
     }
 
+    h2 {
+        font-size: 2.8rem;
+    }
+
     h4 {
         font-size: 2.0rem;
     }
@@ -1090,6 +1094,10 @@ p.waterSustains_btn {
 
     .intro h1 {
         font-size: 2.4rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
     }
 
     .intro h4 {
