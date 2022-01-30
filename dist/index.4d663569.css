@@ -109,13 +109,17 @@ sl-button.footer-btn::part(base){
 #phoneNavBtn{
     float: right;
     margin-right: 2%;
-    display: none;
+    display: none;    
+}
+
+#phoneNav::part(base){
+    --size: 70vw; 
 }
 
 #phoneNav::part(body){
     display: flex;
     flex-direction: column;    
-    --body-spacing: 5%;
+    --body-spacing: 5%;   
 }
 
 #phoneNav a {
@@ -164,7 +168,7 @@ sl-button.footer-btn::part(base){
     width: 100vw;   
     left: 0;
     top: 0;
-    z-index: initial;
+    z-index: 100;
     position: sticky;
     padding-top: 0.25%;
 }
@@ -385,7 +389,7 @@ p.waterSustains_btn {
         }
 
 .section-waterConserve{
-            left: 10%;
+            left: 23.2%;
         }
 
 /*----- END How much Water is really needed section -----*/
@@ -821,7 +825,7 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(43%, -560%);
+        transform: translate(50%, -700%);
     }
 
     #consequences-deer {
@@ -845,7 +849,7 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(43%, -560%);
+        transform: translate(50%, -720%);
     }
 
     #consequences-forest {
@@ -956,7 +960,7 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(35%, -500%);
+        transform: translate(50%, -640%);
     }
 
 }
@@ -1233,8 +1237,16 @@ p.waterSustains_btn {
         transform: translate(-48%, 1%);
     }
 
+    p.waterUses_btn {
+        transform: translate(50%, 7%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(3%, 30%);
+    }
+
     #consequences-Turtle {
-        transform: translate(65%, -300%);
+        transform: translate(65%, -315%);
     }
 
     #consequences-forest {
@@ -1248,7 +1260,7 @@ p.waterSustains_btn {
 
 @media only screen  and (max-width: 412px){
     .intro {
-        transform: translate(-45%, 1%);
+        transform: translate(-50%, 1%);
     }
 
     p.waterUses_btn {
@@ -1281,6 +1293,10 @@ p.waterSustains_btn {
 }
 
 @media only screen  and (max-width: 384px) {
+    p.waterSustains_btn {
+        transform: translate(0%, -20%);
+    }
+
     #consequences-bird {
         transform: translate(42%, -660%);
     }
@@ -1324,7 +1340,7 @@ p.waterSustains_btn {
     }
 
     #consequences-Turtle {
-        transform: translate(70%, -320%);
+        transform: translate(80%, -320%);
     }
 
     .clickPrmpt {
