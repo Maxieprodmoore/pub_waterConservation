@@ -544,9 +544,6 @@ var _tabPanelJs = require("@shoelace-style/shoelace/dist/components/tab-panel/ta
 var _tabJs = require("@shoelace-style/shoelace/dist/components/tab/tab.js");
 var _tooltipJs = require("@shoelace-style/shoelace/dist/components/tooltip/tooltip.js");
 var _switchJs = require("@shoelace-style/shoelace/dist/components/switch/switch.js");
-var _formJs = require("@shoelace-style/shoelace/dist/components/form/form.js");
-var _radioJs = require("@shoelace-style/shoelace/dist/components/radio/radio.js");
-var _radioGroupJs = require("@shoelace-style/shoelace/dist/components/radio-group/radio-group.js");
 var _dialogJs = require("@shoelace-style/shoelace/dist/components/dialog/dialog.js");
 var _splideMinJs = require("@splidejs/splide/dist/js/splide.min.js");
 var _shoelaceJs = require("@shoelace-style/shoelace/dist/shoelace.js");
@@ -554,7 +551,7 @@ var _basePathJs = require("@shoelace-style/shoelace/dist/utilities/base-path.js"
 // Set the base path to the folder you copied Shoelace's assets to
 _basePathJs.setBasePath('./../dist/shoelace'); /*--------Creating Modal images for How Water sustains nature Collage-------*/ 
 
-},{"@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js":"4Y9D5","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/icon/icon.js":"le94t","@shoelace-style/shoelace/dist/components/tab-group/tab-group.js":"3V6Ki","@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js":"7mIsr","@shoelace-style/shoelace/dist/components/tab/tab.js":"hsPiV","@shoelace-style/shoelace/dist/components/tooltip/tooltip.js":"6RAKh","@shoelace-style/shoelace/dist/components/switch/switch.js":"4qLvQ","@shoelace-style/shoelace/dist/components/form/form.js":"5jHu2","@shoelace-style/shoelace/dist/components/radio/radio.js":"38a9h","@shoelace-style/shoelace/dist/components/radio-group/radio-group.js":"9QHYQ","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","@splidejs/splide/dist/js/splide.min.js":"icOIL","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","@shoelace-style/shoelace/dist/utilities/base-path.js":"67MCn"}],"jjR64":[function() {},{}],"9AbKL":[function(require,module,exports) {
+},{"@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js":"4Y9D5","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/icon/icon.js":"le94t","@shoelace-style/shoelace/dist/components/tab-group/tab-group.js":"3V6Ki","@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js":"7mIsr","@shoelace-style/shoelace/dist/components/tab/tab.js":"hsPiV","@shoelace-style/shoelace/dist/components/tooltip/tooltip.js":"6RAKh","@shoelace-style/shoelace/dist/components/switch/switch.js":"4qLvQ","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","@splidejs/splide/dist/js/splide.min.js":"icOIL","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","@shoelace-style/shoelace/dist/utilities/base-path.js":"67MCn"}],"jjR64":[function() {},{}],"9AbKL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>_chunk2H57JAHYJs.SlButton
@@ -7572,701 +7569,7 @@ var l = _chunkE2OEF7AFJs.e(class extends _chunkE2OEF7AFJs.i {
     }
 });
 
-},{"./chunk.E2OEF7AF.js":"ewkiY","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5jHu2":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_chunk4QOFAQMBJs.SlForm
-);
-var _chunk4QOFAQMBJs = require("../../chunks/chunk.4QOFAQMB.js");
-var _chunkP2YZ2VL4Js = require("../../chunks/chunk.P2YZ2VL4.js");
-var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
-var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
-
-},{"../../chunks/chunk.4QOFAQMB.js":"8YFLl","../../chunks/chunk.P2YZ2VL4.js":"aSeYS","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8YFLl":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlForm", ()=>SlForm
-);
-var _chunkP2YZ2VL4Js = require("./chunk.P2YZ2VL4.js");
-var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/form/form.ts
-var SlForm = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.novalidate = false;
-    }
-    connectedCallback() {
-        super.connectedCallback();
-        this.formControls = [
-            {
-                tag: "button",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.type === "submit") this.submit();
-                }
-            },
-            {
-                tag: "input",
-                serialize: (el, formData)=>{
-                    if (!el.name || el.disabled) return;
-                    if ((el.type === "checkbox" || el.type === "radio") && !el.checked) return;
-                    if (el.type === "file") {
-                        [
-                            ...el.files
-                        ].map((file)=>formData.append(el.name, file)
-                        );
-                        return;
-                    }
-                    formData.append(el.name, el.value);
-                },
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.type === "submit") this.submit();
-                },
-                keyDown: (event)=>{
-                    const target = event.target;
-                    if (event.key === "Enter" && !event.defaultPrevented && ![
-                        "checkbox",
-                        "file",
-                        "radio"
-                    ].includes(target.type)) this.submit();
-                }
-            },
-            {
-                tag: "select",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) {
-                        if (el.multiple) {
-                            const selectedOptions = [
-                                ...el.querySelectorAll("option:checked")
-                            ];
-                            if (selectedOptions.length) selectedOptions.map((option)=>formData.append(el.name, option.value)
-                            );
-                            else formData.append(el.name, "");
-                        } else formData.append(el.name, el.value);
-                    }
-                }
-            },
-            {
-                tag: "sl-button",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.submit) this.submit();
-                }
-            },
-            {
-                tag: "sl-checkbox",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-color-picker",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-input",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                keyDown: (event)=>{
-                    if (event.key === "Enter" && !event.defaultPrevented) this.submit();
-                }
-            },
-            {
-                tag: "sl-radio",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-range",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) formData.append(el.name, el.value + "");
-                }
-            },
-            {
-                tag: "sl-select",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) {
-                        if (el.multiple) {
-                            const selectedOptions = [
-                                ...el.value
-                            ];
-                            if (selectedOptions.length) selectedOptions.map((value)=>formData.append(el.name, value)
-                            );
-                            else formData.append(el.name, "");
-                        } else formData.append(el.name, el.value + "");
-                    }
-                }
-            },
-            {
-                tag: "sl-switch",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-textarea",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "textarea",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            }
-        ];
-    }
-    getFormData() {
-        const formData = new FormData();
-        const formControls = this.getFormControls();
-        formControls.map((el)=>this.serializeElement(el, formData)
-        );
-        return formData;
-    }
-    getFormControls() {
-        const slot = this.form.querySelector("slot");
-        const tags = this.formControls.map((control)=>control.tag
-        );
-        return slot.assignedElements({
-            flatten: true
-        }).reduce((all, el)=>all.concat(el, [
-                ...el.querySelectorAll("*")
-            ])
-        , []).filter((el)=>tags.includes(el.tagName.toLowerCase())
-        );
-    }
-    submit() {
-        const formData = this.getFormData();
-        const formControls = this.getFormControls();
-        const formControlsThatReport = formControls.filter((el)=>typeof el.reportValidity === "function"
-        );
-        if (!this.novalidate) for (const el1 of formControlsThatReport){
-            const isValid = el1.reportValidity();
-            if (!isValid) return false;
-        }
-        _chunkI4TE3TJVJs.emit(this, "sl-submit", {
-            detail: {
-                formData,
-                formControls
-            }
-        });
-        return true;
-    }
-    handleClick(event) {
-        const target = event.target;
-        const tag = target.tagName.toLowerCase();
-        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.click) formControl.click(event);
-    }
-    handleKeyDown(event) {
-        const target = event.target;
-        const tag = target.tagName.toLowerCase();
-        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.keyDown) formControl.keyDown(event);
-    }
-    serializeElement(el, formData) {
-        const tag = el.tagName.toLowerCase();
-        for (const formControl of this.formControls){
-            if (formControl.tag === tag) return formControl.serialize(el, formData);
-        }
-        return null;
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <div part="base" class="form" role="form" @click=${this.handleClick} @keydown=${this.handleKeyDown}>
-        <slot></slot>
-      </div>
-    `;
-    }
-};
-SlForm.styles = _chunkP2YZ2VL4Js.form_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i(".form")
-], SlForm.prototype, "form", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlForm.prototype, "novalidate", 2);
-SlForm = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-form")
-], SlForm);
-
-},{"./chunk.P2YZ2VL4.js":"aSeYS","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aSeYS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "form_styles_default", ()=>form_styles_default
-);
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/form/form.styles.ts
-var form_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: block;
-  }
-`;
-
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"38a9h":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_chunkTR5WXO7IJs.SlRadio
-);
-var _chunkTR5WXO7IJs = require("../../chunks/chunk.TR5WXO7I.js");
-var _chunkKN23ZXT2Js = require("../../chunks/chunk.KN23ZXT2.js");
-var _chunkXHIXNY3NJs = require("../../chunks/chunk.XHIXNY3N.js");
-var _chunk4ILOKGDJJs = require("../../chunks/chunk.4ILOKGDJ.js");
-var _chunkZTYIYTKRJs = require("../../chunks/chunk.ZTYIYTKR.js");
-var _chunkCTBLW2HKJs = require("../../chunks/chunk.CTBLW2HK.js");
-var _chunkE2OEF7AFJs = require("../../chunks/chunk.E2OEF7AF.js");
-var _chunkBD26TKS4Js = require("../../chunks/chunk.BD26TKS4.js");
-var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
-var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
-
-},{"../../chunks/chunk.TR5WXO7I.js":"dThRH","../../chunks/chunk.KN23ZXT2.js":"bLHF9","../../chunks/chunk.XHIXNY3N.js":"iymOB","../../chunks/chunk.4ILOKGDJ.js":"4SH2Y","../../chunks/chunk.ZTYIYTKR.js":"3TdRG","../../chunks/chunk.CTBLW2HK.js":"67xnS","../../chunks/chunk.E2OEF7AF.js":"ewkiY","../../chunks/chunk.BD26TKS4.js":"1j2NX","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dThRH":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlRadio", ()=>SlRadio
-);
-var _chunkKN23ZXT2Js = require("./chunk.KN23ZXT2.js");
-var _chunkXHIXNY3NJs = require("./chunk.XHIXNY3N.js");
-var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
-var _chunkCTBLW2HKJs = require("./chunk.CTBLW2HK.js");
-var _chunkBD26TKS4Js = require("./chunk.BD26TKS4.js");
-var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/radio/radio.ts
-var id = 0;
-var SlRadio = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.inputId = `radio-${++id}`;
-        this.labelId = `radio-label-${id}`;
-        this.hasFocus = false;
-        this.disabled = false;
-        this.checked = false;
-        this.invalid = false;
-    }
-    click() {
-        this.input.click();
-    }
-    focus(options) {
-        this.input.focus(options);
-    }
-    blur() {
-        this.input.blur();
-    }
-    reportValidity() {
-        return this.input.reportValidity();
-    }
-    setCustomValidity(message) {
-        this.input.setCustomValidity(message);
-        this.invalid = !this.input.checkValidity();
-    }
-    getAllRadios() {
-        const radioGroup = this.closest("sl-radio-group");
-        if (!radioGroup) return [
-            this
-        ];
-        return [
-            ...radioGroup.querySelectorAll("sl-radio")
-        ].filter((radio)=>radio.name === this.name
-        );
-    }
-    getSiblingRadios() {
-        return this.getAllRadios().filter((radio)=>radio !== this
-        );
-    }
-    handleBlur() {
-        this.hasFocus = false;
-        _chunkI4TE3TJVJs.emit(this, "sl-blur");
-    }
-    handleCheckedChange() {
-        if (this.checked) this.getSiblingRadios().map((radio)=>radio.checked = false
-        );
-    }
-    handleClick() {
-        this.checked = true;
-        _chunkI4TE3TJVJs.emit(this, "sl-change");
-    }
-    handleDisabledChange() {
-        if (this.input) {
-            this.input.disabled = this.disabled;
-            this.invalid = !this.input.checkValidity();
-        }
-    }
-    handleFocus() {
-        this.hasFocus = true;
-        _chunkI4TE3TJVJs.emit(this, "sl-focus");
-    }
-    handleKeyDown(event) {
-        if ([
-            "ArrowUp",
-            "ArrowDown",
-            "ArrowLeft",
-            "ArrowRight"
-        ].includes(event.key)) {
-            const radios = this.getAllRadios().filter((radio)=>!radio.disabled
-            );
-            const incr = [
-                "ArrowUp",
-                "ArrowLeft"
-            ].includes(event.key) ? -1 : 1;
-            let index = radios.indexOf(this) + incr;
-            if (index < 0) index = radios.length - 1;
-            if (index > radios.length - 1) index = 0;
-            this.getAllRadios().map((radio)=>radio.checked = false
-            );
-            radios[index].focus();
-            radios[index].checked = true;
-            _chunkI4TE3TJVJs.emit(radios[index], "sl-change");
-            event.preventDefault();
-        }
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <label
-        part="base"
-        class=${_chunk4ILOKGDJJs.o({
-            radio: true,
-            "radio--checked": this.checked,
-            "radio--disabled": this.disabled,
-            "radio--focused": this.hasFocus
-        })}
-        for=${this.inputId}
-        @keydown=${this.handleKeyDown}
-      >
-        <input
-          id=${this.inputId}
-          class="radio__input"
-          type="radio"
-          name=${_chunkCTBLW2HKJs.l(this.name)}
-          value=${_chunkCTBLW2HKJs.l(this.value)}
-          .checked=${_chunkXHIXNY3NJs.l(this.checked)}
-          .disabled=${this.disabled}
-          aria-checked=${this.checked ? "true" : "false"}
-          aria-disabled=${this.disabled ? "true" : "false"}
-          aria-labelledby=${this.labelId}
-          @click=${this.handleClick}
-          @blur=${this.handleBlur}
-          @focus=${this.handleFocus}
-        />
-
-        <span part="control" class="radio__control">
-          <span part="checked-icon" class="radio__icon">
-            <svg viewBox="0 0 16 16">
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g fill="currentColor">
-                  <circle cx="8" cy="8" r="3.42857143"></circle>
-                </g>
-              </g>
-            </svg>
-          </span>
-        </span>
-
-        <span part="label" id=${this.labelId} class="radio__label">
-          <slot></slot>
-        </span>
-      </label>
-    `;
-    }
-};
-SlRadio.styles = _chunkKN23ZXT2Js.radio_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i('input[type="radio"]')
-], SlRadio.prototype, "input", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.t()
-], SlRadio.prototype, "hasFocus", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadio.prototype, "name", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadio.prototype, "value", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "disabled", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "checked", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "invalid", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkBD26TKS4Js.watch("checked", {
-        waitUntilFirstUpdate: true
-    })
-], SlRadio.prototype, "handleCheckedChange", 1);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkBD26TKS4Js.watch("disabled")
-], SlRadio.prototype, "handleDisabledChange", 1);
-SlRadio = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-radio")
-], SlRadio);
-
-},{"./chunk.KN23ZXT2.js":"bLHF9","./chunk.XHIXNY3N.js":"iymOB","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.CTBLW2HK.js":"67xnS","./chunk.BD26TKS4.js":"1j2NX","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bLHF9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "radio_styles_default", ()=>radio_styles_default
-);
-var _chunkZTYIYTKRJs = require("./chunk.ZTYIYTKR.js");
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/radio/radio.styles.ts
-var radio_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: inline-block;
-  }
-
-  .radio {
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--sl-input-font-family);
-    font-size: var(--sl-input-font-size-medium);
-    font-weight: var(--sl-input-font-weight);
-    color: var(--sl-input-color);
-    vertical-align: middle;
-    cursor: pointer;
-  }
-
-  .radio__icon {
-    display: inline-flex;
-    width: var(--sl-toggle-size);
-    height: var(--sl-toggle-size);
-  }
-
-  .radio__icon svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .radio__control {
-    flex: 0 0 auto;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--sl-toggle-size);
-    height: var(--sl-toggle-size);
-    border: solid var(--sl-input-border-width) var(--sl-input-border-color);
-    border-radius: 50%;
-    background-color: var(--sl-input-background-color);
-    color: transparent;
-    transition: var(--sl-transition-fast) border-color, var(--sl-transition-fast) background-color,
-      var(--sl-transition-fast) color, var(--sl-transition-fast) box-shadow;
-  }
-
-  .radio__input {
-    position: absolute;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
-  }
-
-  /* Hover */
-  .radio:not(.radio--checked):not(.radio--disabled) .radio__control:hover {
-    border-color: var(--sl-input-border-color-hover);
-    background-color: var(--sl-input-background-color-hover);
-  }
-
-  /* Focus */
-  .radio:not(.radio--checked):not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
-    border-color: var(--sl-input-border-color-focus);
-    background-color: var(--sl-input-background-color-focus);
-    box-shadow: var(--sl-focus-ring);
-  }
-
-  /* Checked */
-  .radio--checked .radio__control {
-    color: var(--sl-color-neutral-0);
-    border-color: var(--sl-color-primary-600);
-    background-color: var(--sl-color-primary-600);
-  }
-
-  /* Checked + hover */
-  .radio.radio--checked:not(.radio--disabled) .radio__control:hover {
-    border-color: var(--sl-color-primary-500);
-    background-color: var(--sl-color-primary-500);
-  }
-
-  /* Checked + focus */
-  .radio.radio--checked:not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
-    border-color: var(--sl-color-primary-500);
-    background-color: var(--sl-color-primary-500);
-    box-shadow: var(--sl-focus-ring);
-  }
-
-  /* Disabled */
-  .radio--disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-
-  /* When the control isn't checked, hide the circle for Windows High Contrast mode a11y */
-  .radio:not(.radio--checked) svg circle {
-    opacity: 0;
-  }
-
-  .radio__label {
-    line-height: var(--sl-toggle-size);
-    margin-left: 0.5em;
-    user-select: none;
-  }
-`;
-
-},{"./chunk.ZTYIYTKR.js":"3TdRG","./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9QHYQ":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "default", ()=>_chunkNRAUNAXBJs.SlRadioGroup
-);
-var _chunkNRAUNAXBJs = require("../../chunks/chunk.NRAUNAXB.js");
-var _chunk4EBLGZQKJs = require("../../chunks/chunk.4EBLGZQK.js");
-var _chunk4ILOKGDJJs = require("../../chunks/chunk.4ILOKGDJ.js");
-var _chunkE2OEF7AFJs = require("../../chunks/chunk.E2OEF7AF.js");
-var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
-var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
-
-},{"../../chunks/chunk.NRAUNAXB.js":"kOp5o","../../chunks/chunk.4EBLGZQK.js":"aMW5X","../../chunks/chunk.4ILOKGDJ.js":"4SH2Y","../../chunks/chunk.E2OEF7AF.js":"ewkiY","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kOp5o":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlRadioGroup", ()=>SlRadioGroup
-);
-var _chunk4EBLGZQKJs = require("./chunk.4EBLGZQK.js");
-var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/radio-group/radio-group.ts
-var SlRadioGroup = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.label = "";
-        this.fieldset = false;
-    }
-    handleFocusIn() {
-        requestAnimationFrame(()=>{
-            const checkedRadio = [
-                ...this.defaultSlot.assignedElements({
-                    flatten: true
-                })
-            ].find((el)=>el.tagName.toLowerCase() === "sl-radio" && el.checked
-            );
-            if (checkedRadio) checkedRadio.focus();
-        });
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <fieldset
-        part="base"
-        class=${_chunk4ILOKGDJJs.o({
-            "radio-group": true,
-            "radio-group--has-fieldset": this.fieldset
-        })}
-        role="radiogroup"
-        @focusin=${this.handleFocusIn}
-      >
-        <legend part="label" class="radio-group__label">
-          <slot name="label">${this.label}</slot>
-        </legend>
-        <slot></slot>
-      </fieldset>
-    `;
-    }
-};
-SlRadioGroup.styles = _chunk4EBLGZQKJs.radio_group_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i("slot:not([name])")
-], SlRadioGroup.prototype, "defaultSlot", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadioGroup.prototype, "label", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        attribute: "fieldset"
-    })
-], SlRadioGroup.prototype, "fieldset", 2);
-SlRadioGroup = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-radio-group")
-], SlRadioGroup);
-
-},{"./chunk.4EBLGZQK.js":"aMW5X","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aMW5X":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "radio_group_styles_default", ()=>radio_group_styles_default
-);
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/radio-group/radio-group.styles.ts
-var radio_group_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: block;
-  }
-
-  .radio-group {
-    border: solid var(--sl-panel-border-width) var(--sl-panel-border-color);
-    border-radius: var(--sl-border-radius-medium);
-    padding: var(--sl-spacing-large);
-    padding-top: var(--sl-spacing-x-small);
-  }
-
-  .radio-group .radio-group__label {
-    font-family: var(--sl-input-font-family);
-    font-size: var(--sl-input-font-size-medium);
-    font-weight: var(--sl-input-font-weight);
-    color: var(--sl-input-color);
-    padding: 0 var(--sl-spacing-2x-small);
-  }
-
-  ::slotted(sl-radio:not(:last-of-type)) {
-    display: block;
-    margin-bottom: var(--sl-spacing-2x-small);
-  }
-
-  .radio-group:not(.radio-group--has-fieldset) {
-    border: none;
-    padding: 0;
-    margin: 0;
-    min-width: 0;
-  }
-
-  .radio-group:not(.radio-group--has-fieldset) .radio-group__label {
-    position: absolute;
-    width: 0;
-    height: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    white-space: nowrap;
-  }
-`;
-
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqgv":[function(require,module,exports) {
+},{"./chunk.E2OEF7AF.js":"ewkiY","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqgv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>_chunkLHBQRIJZJs.SlDialog
@@ -12487,6 +11790,123 @@ var skeleton_styles_default = _chunkZ47RPZTXJs.r`
   }
 `;
 
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kOp5o":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlRadioGroup", ()=>SlRadioGroup
+);
+var _chunk4EBLGZQKJs = require("./chunk.4EBLGZQK.js");
+var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/radio-group/radio-group.ts
+var SlRadioGroup = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.label = "";
+        this.fieldset = false;
+    }
+    handleFocusIn() {
+        requestAnimationFrame(()=>{
+            const checkedRadio = [
+                ...this.defaultSlot.assignedElements({
+                    flatten: true
+                })
+            ].find((el)=>el.tagName.toLowerCase() === "sl-radio" && el.checked
+            );
+            if (checkedRadio) checkedRadio.focus();
+        });
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <fieldset
+        part="base"
+        class=${_chunk4ILOKGDJJs.o({
+            "radio-group": true,
+            "radio-group--has-fieldset": this.fieldset
+        })}
+        role="radiogroup"
+        @focusin=${this.handleFocusIn}
+      >
+        <legend part="label" class="radio-group__label">
+          <slot name="label">${this.label}</slot>
+        </legend>
+        <slot></slot>
+      </fieldset>
+    `;
+    }
+};
+SlRadioGroup.styles = _chunk4EBLGZQKJs.radio_group_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i("slot:not([name])")
+], SlRadioGroup.prototype, "defaultSlot", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadioGroup.prototype, "label", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        attribute: "fieldset"
+    })
+], SlRadioGroup.prototype, "fieldset", 2);
+SlRadioGroup = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-radio-group")
+], SlRadioGroup);
+
+},{"./chunk.4EBLGZQK.js":"aMW5X","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aMW5X":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "radio_group_styles_default", ()=>radio_group_styles_default
+);
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/radio-group/radio-group.styles.ts
+var radio_group_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: block;
+  }
+
+  .radio-group {
+    border: solid var(--sl-panel-border-width) var(--sl-panel-border-color);
+    border-radius: var(--sl-border-radius-medium);
+    padding: var(--sl-spacing-large);
+    padding-top: var(--sl-spacing-x-small);
+  }
+
+  .radio-group .radio-group__label {
+    font-family: var(--sl-input-font-family);
+    font-size: var(--sl-input-font-size-medium);
+    font-weight: var(--sl-input-font-weight);
+    color: var(--sl-input-color);
+    padding: 0 var(--sl-spacing-2x-small);
+  }
+
+  ::slotted(sl-radio:not(:last-of-type)) {
+    display: block;
+    margin-bottom: var(--sl-spacing-2x-small);
+  }
+
+  .radio-group:not(.radio-group--has-fieldset) {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .radio-group:not(.radio-group--has-fieldset) .radio-group__label {
+    position: absolute;
+    width: 0;
+    height: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+`;
+
 },{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4d9OA":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -15554,7 +14974,313 @@ var qr_code_styles_default = _chunkZ47RPZTXJs.r`
   }
 `;
 
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aW2f8":[function(require,module,exports) {
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dThRH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlRadio", ()=>SlRadio
+);
+var _chunkKN23ZXT2Js = require("./chunk.KN23ZXT2.js");
+var _chunkXHIXNY3NJs = require("./chunk.XHIXNY3N.js");
+var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
+var _chunkCTBLW2HKJs = require("./chunk.CTBLW2HK.js");
+var _chunkBD26TKS4Js = require("./chunk.BD26TKS4.js");
+var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/radio/radio.ts
+var id = 0;
+var SlRadio = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.inputId = `radio-${++id}`;
+        this.labelId = `radio-label-${id}`;
+        this.hasFocus = false;
+        this.disabled = false;
+        this.checked = false;
+        this.invalid = false;
+    }
+    click() {
+        this.input.click();
+    }
+    focus(options) {
+        this.input.focus(options);
+    }
+    blur() {
+        this.input.blur();
+    }
+    reportValidity() {
+        return this.input.reportValidity();
+    }
+    setCustomValidity(message) {
+        this.input.setCustomValidity(message);
+        this.invalid = !this.input.checkValidity();
+    }
+    getAllRadios() {
+        const radioGroup = this.closest("sl-radio-group");
+        if (!radioGroup) return [
+            this
+        ];
+        return [
+            ...radioGroup.querySelectorAll("sl-radio")
+        ].filter((radio)=>radio.name === this.name
+        );
+    }
+    getSiblingRadios() {
+        return this.getAllRadios().filter((radio)=>radio !== this
+        );
+    }
+    handleBlur() {
+        this.hasFocus = false;
+        _chunkI4TE3TJVJs.emit(this, "sl-blur");
+    }
+    handleCheckedChange() {
+        if (this.checked) this.getSiblingRadios().map((radio)=>radio.checked = false
+        );
+    }
+    handleClick() {
+        this.checked = true;
+        _chunkI4TE3TJVJs.emit(this, "sl-change");
+    }
+    handleDisabledChange() {
+        if (this.input) {
+            this.input.disabled = this.disabled;
+            this.invalid = !this.input.checkValidity();
+        }
+    }
+    handleFocus() {
+        this.hasFocus = true;
+        _chunkI4TE3TJVJs.emit(this, "sl-focus");
+    }
+    handleKeyDown(event) {
+        if ([
+            "ArrowUp",
+            "ArrowDown",
+            "ArrowLeft",
+            "ArrowRight"
+        ].includes(event.key)) {
+            const radios = this.getAllRadios().filter((radio)=>!radio.disabled
+            );
+            const incr = [
+                "ArrowUp",
+                "ArrowLeft"
+            ].includes(event.key) ? -1 : 1;
+            let index = radios.indexOf(this) + incr;
+            if (index < 0) index = radios.length - 1;
+            if (index > radios.length - 1) index = 0;
+            this.getAllRadios().map((radio)=>radio.checked = false
+            );
+            radios[index].focus();
+            radios[index].checked = true;
+            _chunkI4TE3TJVJs.emit(radios[index], "sl-change");
+            event.preventDefault();
+        }
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <label
+        part="base"
+        class=${_chunk4ILOKGDJJs.o({
+            radio: true,
+            "radio--checked": this.checked,
+            "radio--disabled": this.disabled,
+            "radio--focused": this.hasFocus
+        })}
+        for=${this.inputId}
+        @keydown=${this.handleKeyDown}
+      >
+        <input
+          id=${this.inputId}
+          class="radio__input"
+          type="radio"
+          name=${_chunkCTBLW2HKJs.l(this.name)}
+          value=${_chunkCTBLW2HKJs.l(this.value)}
+          .checked=${_chunkXHIXNY3NJs.l(this.checked)}
+          .disabled=${this.disabled}
+          aria-checked=${this.checked ? "true" : "false"}
+          aria-disabled=${this.disabled ? "true" : "false"}
+          aria-labelledby=${this.labelId}
+          @click=${this.handleClick}
+          @blur=${this.handleBlur}
+          @focus=${this.handleFocus}
+        />
+
+        <span part="control" class="radio__control">
+          <span part="checked-icon" class="radio__icon">
+            <svg viewBox="0 0 16 16">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g fill="currentColor">
+                  <circle cx="8" cy="8" r="3.42857143"></circle>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </span>
+
+        <span part="label" id=${this.labelId} class="radio__label">
+          <slot></slot>
+        </span>
+      </label>
+    `;
+    }
+};
+SlRadio.styles = _chunkKN23ZXT2Js.radio_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i('input[type="radio"]')
+], SlRadio.prototype, "input", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.t()
+], SlRadio.prototype, "hasFocus", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadio.prototype, "name", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadio.prototype, "value", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "disabled", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "checked", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "invalid", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkBD26TKS4Js.watch("checked", {
+        waitUntilFirstUpdate: true
+    })
+], SlRadio.prototype, "handleCheckedChange", 1);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkBD26TKS4Js.watch("disabled")
+], SlRadio.prototype, "handleDisabledChange", 1);
+SlRadio = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-radio")
+], SlRadio);
+
+},{"./chunk.KN23ZXT2.js":"bLHF9","./chunk.XHIXNY3N.js":"iymOB","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.CTBLW2HK.js":"67xnS","./chunk.BD26TKS4.js":"1j2NX","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bLHF9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "radio_styles_default", ()=>radio_styles_default
+);
+var _chunkZTYIYTKRJs = require("./chunk.ZTYIYTKR.js");
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/radio/radio.styles.ts
+var radio_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: inline-block;
+  }
+
+  .radio {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--sl-input-font-family);
+    font-size: var(--sl-input-font-size-medium);
+    font-weight: var(--sl-input-font-weight);
+    color: var(--sl-input-color);
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .radio__icon {
+    display: inline-flex;
+    width: var(--sl-toggle-size);
+    height: var(--sl-toggle-size);
+  }
+
+  .radio__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .radio__control {
+    flex: 0 0 auto;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--sl-toggle-size);
+    height: var(--sl-toggle-size);
+    border: solid var(--sl-input-border-width) var(--sl-input-border-color);
+    border-radius: 50%;
+    background-color: var(--sl-input-background-color);
+    color: transparent;
+    transition: var(--sl-transition-fast) border-color, var(--sl-transition-fast) background-color,
+      var(--sl-transition-fast) color, var(--sl-transition-fast) box-shadow;
+  }
+
+  .radio__input {
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  /* Hover */
+  .radio:not(.radio--checked):not(.radio--disabled) .radio__control:hover {
+    border-color: var(--sl-input-border-color-hover);
+    background-color: var(--sl-input-background-color-hover);
+  }
+
+  /* Focus */
+  .radio:not(.radio--checked):not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
+    border-color: var(--sl-input-border-color-focus);
+    background-color: var(--sl-input-background-color-focus);
+    box-shadow: var(--sl-focus-ring);
+  }
+
+  /* Checked */
+  .radio--checked .radio__control {
+    color: var(--sl-color-neutral-0);
+    border-color: var(--sl-color-primary-600);
+    background-color: var(--sl-color-primary-600);
+  }
+
+  /* Checked + hover */
+  .radio.radio--checked:not(.radio--disabled) .radio__control:hover {
+    border-color: var(--sl-color-primary-500);
+    background-color: var(--sl-color-primary-500);
+  }
+
+  /* Checked + focus */
+  .radio.radio--checked:not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
+    border-color: var(--sl-color-primary-500);
+    background-color: var(--sl-color-primary-500);
+    box-shadow: var(--sl-focus-ring);
+  }
+
+  /* Disabled */
+  .radio--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* When the control isn't checked, hide the circle for Windows High Contrast mode a11y */
+  .radio:not(.radio--checked) svg circle {
+    opacity: 0;
+  }
+
+  .radio__label {
+    line-height: var(--sl-toggle-size);
+    margin-left: 0.5em;
+    user-select: none;
+  }
+`;
+
+},{"./chunk.ZTYIYTKR.js":"3TdRG","./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aW2f8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SlMenu", ()=>SlMenu
@@ -16547,7 +16273,232 @@ SlFormatNumber = _chunkJHDFAWWCJs.__decorateClass([
     _chunkPOKKIWRQJs.n("sl-format-number")
 ], SlFormatNumber);
 
-},{"./chunk.L2FOHD47.js":"heLvq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5DkMg":[function(require,module,exports) {
+},{"./chunk.L2FOHD47.js":"heLvq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8YFLl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlForm", ()=>SlForm
+);
+var _chunkP2YZ2VL4Js = require("./chunk.P2YZ2VL4.js");
+var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/form/form.ts
+var SlForm = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.novalidate = false;
+    }
+    connectedCallback() {
+        super.connectedCallback();
+        this.formControls = [
+            {
+                tag: "button",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.type === "submit") this.submit();
+                }
+            },
+            {
+                tag: "input",
+                serialize: (el, formData)=>{
+                    if (!el.name || el.disabled) return;
+                    if ((el.type === "checkbox" || el.type === "radio") && !el.checked) return;
+                    if (el.type === "file") {
+                        [
+                            ...el.files
+                        ].map((file)=>formData.append(el.name, file)
+                        );
+                        return;
+                    }
+                    formData.append(el.name, el.value);
+                },
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.type === "submit") this.submit();
+                },
+                keyDown: (event)=>{
+                    const target = event.target;
+                    if (event.key === "Enter" && !event.defaultPrevented && ![
+                        "checkbox",
+                        "file",
+                        "radio"
+                    ].includes(target.type)) this.submit();
+                }
+            },
+            {
+                tag: "select",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) {
+                        if (el.multiple) {
+                            const selectedOptions = [
+                                ...el.querySelectorAll("option:checked")
+                            ];
+                            if (selectedOptions.length) selectedOptions.map((option)=>formData.append(el.name, option.value)
+                            );
+                            else formData.append(el.name, "");
+                        } else formData.append(el.name, el.value);
+                    }
+                }
+            },
+            {
+                tag: "sl-button",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.submit) this.submit();
+                }
+            },
+            {
+                tag: "sl-checkbox",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-color-picker",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-input",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                keyDown: (event)=>{
+                    if (event.key === "Enter" && !event.defaultPrevented) this.submit();
+                }
+            },
+            {
+                tag: "sl-radio",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-range",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) formData.append(el.name, el.value + "");
+                }
+            },
+            {
+                tag: "sl-select",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) {
+                        if (el.multiple) {
+                            const selectedOptions = [
+                                ...el.value
+                            ];
+                            if (selectedOptions.length) selectedOptions.map((value)=>formData.append(el.name, value)
+                            );
+                            else formData.append(el.name, "");
+                        } else formData.append(el.name, el.value + "");
+                    }
+                }
+            },
+            {
+                tag: "sl-switch",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-textarea",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "textarea",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            }
+        ];
+    }
+    getFormData() {
+        const formData = new FormData();
+        const formControls = this.getFormControls();
+        formControls.map((el)=>this.serializeElement(el, formData)
+        );
+        return formData;
+    }
+    getFormControls() {
+        const slot = this.form.querySelector("slot");
+        const tags = this.formControls.map((control)=>control.tag
+        );
+        return slot.assignedElements({
+            flatten: true
+        }).reduce((all, el)=>all.concat(el, [
+                ...el.querySelectorAll("*")
+            ])
+        , []).filter((el)=>tags.includes(el.tagName.toLowerCase())
+        );
+    }
+    submit() {
+        const formData = this.getFormData();
+        const formControls = this.getFormControls();
+        const formControlsThatReport = formControls.filter((el)=>typeof el.reportValidity === "function"
+        );
+        if (!this.novalidate) for (const el1 of formControlsThatReport){
+            const isValid = el1.reportValidity();
+            if (!isValid) return false;
+        }
+        _chunkI4TE3TJVJs.emit(this, "sl-submit", {
+            detail: {
+                formData,
+                formControls
+            }
+        });
+        return true;
+    }
+    handleClick(event) {
+        const target = event.target;
+        const tag = target.tagName.toLowerCase();
+        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.click) formControl.click(event);
+    }
+    handleKeyDown(event) {
+        const target = event.target;
+        const tag = target.tagName.toLowerCase();
+        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.keyDown) formControl.keyDown(event);
+    }
+    serializeElement(el, formData) {
+        const tag = el.tagName.toLowerCase();
+        for (const formControl of this.formControls){
+            if (formControl.tag === tag) return formControl.serialize(el, formData);
+        }
+        return null;
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <div part="base" class="form" role="form" @click=${this.handleClick} @keydown=${this.handleKeyDown}>
+        <slot></slot>
+      </div>
+    `;
+    }
+};
+SlForm.styles = _chunkP2YZ2VL4Js.form_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i(".form")
+], SlForm.prototype, "form", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlForm.prototype, "novalidate", 2);
+SlForm = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-form")
+], SlForm);
+
+},{"./chunk.P2YZ2VL4.js":"aSeYS","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aSeYS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "form_styles_default", ()=>form_styles_default
+);
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/form/form.styles.ts
+var form_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: block;
+  }
+`;
+
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5DkMg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SlFormatBytes", ()=>SlFormatBytes

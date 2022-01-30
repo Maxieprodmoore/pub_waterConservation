@@ -1,10 +1,6 @@
 {
   "name": "water-conservation-pub",
   "source": "src/index.html",
-  "browserslist": [
-    "defaults",
-    "since 2017"
-  ],
   "scripts": {
     "start": "parcel serve",
     "watch": "parcel",
