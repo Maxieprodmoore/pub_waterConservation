@@ -493,7 +493,7 @@ sl-tooltip::part(base)::after{
         }
 
         #consequences-Turtle {
-            transform: translate(83%, -190%);
+            transform: translate(90%, -190%);
         }
 
         /*Styling big image BG--------*/
