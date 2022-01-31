@@ -24,9 +24,6 @@
                 import '@shoelace-style/shoelace/dist/components/tab/tab.js';
                 import '@shoelace-style/shoelace/dist/components/tooltip/tooltip.js';
                 import '@shoelace-style/shoelace/dist/components/switch/switch.js';
-                import '@shoelace-style/shoelace/dist/components/form/form.js';
-                import '@shoelace-style/shoelace/dist/components/radio/radio.js';
-                import '@shoelace-style/shoelace/dist/components/radio-group/radio-group.js';
                 import '@shoelace-style/shoelace/dist/components/dialog/dialog.js';
                 import '@splidejs/splide/dist/js/splide.min.js';
                 import '@shoelace-style/shoelace/dist/shoelace.js';
@@ -66,48 +63,57 @@
             <div id="navbar">
                 <div id="browserNav">
                     <div>
-                        <sl-tooltip content="The Value of Water" placement="top-end">
+                        <sl-tooltip content="The Value of Water" placement="right">
                             <sl-button type="primary" size="medium" circle href="#water_Value"></sl-button>
                         </sl-tooltip>
                     </div>
                     <div>
-                        <sl-tooltip content="Uses of Water" placement="top-end" >
+                        <sl-tooltip content="Uses of Water" placement="right">
                             <sl-button type="primary" size="medium" circle href="#water_Uses"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="How water sustains nature" placement="top-end" >
+                        <sl-tooltip content="How water sustains nature" placement="right">
                             <sl-button type="primary" size="medium" circle href="#water_Sustains"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="Why Conserve water?" placement="top-end" >
+                        <sl-tooltip content="Why Conserve water?" placement="right">
                             <sl-button type="primary" size="medium" circle href="#conserveH2O"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="How much water do we have?" placement="top-end" >
+                        <sl-tooltip content="How much water do we have?" placement="right">
                             <sl-button type="primary" size="medium" circle href="#waterAvail"></sl-button>
                         </sl-tooltip>
                     </div>
                    
                     <div>
-                        <sl-tooltip content="The consequences of having no water." placement="top-end" >
+                        <sl-tooltip content="The consequences of no water" placement="right">
                             <sl-button type="primary" size="medium" circle href="#consq"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip hoist content="Protecting Singapore's Water" placement="top-end" >
+                        <sl-tooltip hoist content="Protecting our Water" placement="right">
                             <sl-button type="primary" size="medium" circle href="#waterSupplies"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                 </div>
-                    
+                <sl-drawer id="phoneNav">
+                    <a href="#water_Value" >The Value of Water</a>
+                    <a href="#water_Uses" >Uses of Water</a>
+                    <a href="#water_Sustains" >How water sustains nature</a>
+                    <a href="#conserveH2O" >Why Conserve water?</a>
+                    <a href="#waterAvail" >How much water do we have?</a>
+                    <a href="#consq" >The consequences of no water</a>
+                    <a href="#waterSupplies" >Protecting our Water</a>
+                </sl-drawer>
+                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Navigation bar Menu"></sl-icon-button>    
             </div>
             
             <div class="value_h2O">
@@ -117,7 +123,7 @@
                         <h2>The Value of Water</h2>
                         
                         <p>Water is very important to each and every one of us.</p>
-                        <p>Click on the buttons bellow to find out the details!</p>
+                        <p><span class="clickPrmpt">Click</span> on the buttons bellow to find out the details!</p>
         
                         
 
@@ -204,51 +210,51 @@
                     <div class="section-waterSustains" >
                         <h3> How water sustains nature</h3>
                         <br>
-                        <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
+                        <p id="waterSustains_para"><span class="clickPrmpt">Click</span> the Animals and Plants to see how they interact with Nature everyday!</p>
                         <div class="waterSustains_collagesht">
                             <!-----Creating Overlay and full image-->
-                            <div id="overlayCollage01" class="collageOverlay">
+                            <sl-drawer id="overlayCollage01" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img01" src="./../images/africa-deer-drinking-water.png" alt="african deers drinking water">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Living things need water to live. </p>
                                 </div>                                
-                            </div>
+                            </sl-drawer>
     
-                            <div id="overlayCollage02" class="collageOverlay">
+                            <sl-drawer id="overlayCollage02" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img02" src="./../images/Frog_During_Rain.jpg" alt="frog taking shelter under leaf from rain">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Frogs are amphibians, and grow from tadpoles. Tadpoles live in water.</p>
                                 </div>
                                 
-                            </div>
+                            </sl-drawer>
     
-                            <div id="overlayCollage03" class="collageOverlay">
+                           <sl-drawer id="overlayCollage03" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img03" src="./../images/Bird_drinking_Water.png" alt="bird drinking water">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Besides water for drinking, this bird lives on fishes, which live in water.</p>
                                 </div>                                
-                            </div>
+                            </sl-drawer>
     
-                            <div id="overlayCollage04" class="collageOverlay">
+                            <sl-drawer id="overlayCollage04" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img04" src="./../images/12_YT_SPARROW_1391748f.jpg" alt="Sparrow drinking and playing from bird bath">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Certain birds play in water from time to time when they bath.</p>
                                 </div>                                
-                            </div>
+                            </sl-drawer>
     
-                            <div id="overlayCollage05" class="collageOverlay">
+                            <sl-drawer id="overlayCollage05" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img05" src="./../images/pexels-harrison-haines-3536511.jpg" alt="school of fish swimming in pattern">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Fishes live in water.</p>
                                 </div>                                
-                            </div>
+                            </sl-drawer>
     
-                            <div id="overlayCollage06" class="collageOverlay">
+                            <sl-drawer id="overlayCollage06" class="collageDrawer" placement="bottom">
                                 <div>
                                     <img class="overlay-Content" id="img06" src="./../images/pexels-holiho-1112186.jpg" alt="forest pathway">
-                                    <sl-button type="primary" pill class="overlay-CloseBtn">Close Button</sl-button>
+                                    <p>Trees and plants require water to keep growing, in turn allowing places to remain beautiful.</p>
                                 </div>                                
-                            </div>
+                            </sl-drawer>
 
                             <!----Creating the collage picture-->
                             <div class="waterSustains_collagepic">
@@ -294,22 +300,34 @@
                 <section>
                     <div class="section-waterAvail" id="waterAvail">
                         <h3>How much water do we have?</h3>
-                        <p>Ever wondered how much each national tap adds to our water supplies? Click to find out more!</p>
+                        <p>Ever wondered how much each national tap adds to our water supplies? <span class="clickPrmpt">Click</span> to find out more!</p>
                         <div class="waterAvail-gallery">
+                            <sl-dialog class="waterAvail-info" label="Imported Water">
+                                Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.
+                            </sl-dialog>
+
+                            <sl-dialog class="waterAvail-info" label="NEWater">
+                                NEWater make up to 40% of our water sources currently.
+                            </sl-dialog>
+
+                            <sl-dialog class="waterAvail-info" label="Desalinated Water">
+                                Desalinated water treated make up to 25% of our water sources currently.
+                            </sl-dialog>
+
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom-start" trigger="click" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
+                                <sl-tooltip  placement="bottom" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
                                     <img src="./../images/Imported_water_sq.png" alt="Pipes with Water from Malaysia">
                                 </sl-tooltip>
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom" trigger="click" content="NEWater make up to 40% of our water sources currently">
+                                <sl-tooltip  placement="bottom" content="NEWater make up to 40% of our water sources currently.">
                                     <img src="./../images/NEWaterPlant_exteriorSq.png" alt="Exterior of a NEWater plant">
                                 </sl-tooltip> 
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip  placement="bottom-end" trigger="click" content="Desalinated water treated make up to 25% of our water sources currently">
+                                <sl-tooltip  placement="bottom" content="Desalinated water treated make up to 25% of our water sources currently.">
                                     <img src="./../images/Tuas-Desalination-Plant-sq.png" alt="Exterior of the Desalination plant in Tuas">
                                 </sl-tooltip>
                             </div>
@@ -321,43 +339,57 @@
 
                 <section id="consq">
                     <h3>Consequences of No Water</h3>
-                    <p>Click on the images in he collage to see the consequences of having no water.</p>
+                    <p><span class="clickPrmpt">Click</span> on the images in the collage to see the consequences of having no water.</p>
+                    <sl-dialog class="consqDialog" label="For our living space:">
+                        <p>We lose the things that make up our beautiful landscapes.</p>
+                                                
+                    </sl-dialog>
+                    <sl-dialog class="consqDialog" label="For our food chain:">
+                        <p>Certain animals will lose their food sources.</p>
+                                                
+                    </sl-dialog>
+                    <sl-dialog class="consqDialog" label="For our health:">
+                        <p>We lose our sources of hydration and eventually die of thirst.</p>
+                                                
+                    </sl-dialog>
+                    <sl-dialog class="consqDialog" label="For our environment:">
+                        <p>Plants will wither and die, and the soil gets eroded without the plants roots to anchor them.</p>
+                                                
+                    </sl-dialog>
+                    <sl-dialog class="consqDialog" label="For the creatures in the sea:">
+                        <p>Creatures of the water will lose their habitats.</p>
+                                                
+                    </sl-dialog>
                     <div class="consequences-imgGallery"> 
                         <sl-tooltip hoist id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
-                            <img src="./../images/sea_B4_City.jpg"  alt="city view from a lake-side">
+                            <img src="./../images/sea_B4_City.jpg"  alt="city view from a lake-side" class="consqPic">
                         </sl-tooltip>   
                         <div class="consequences-imgCollage">                       
                                                                                 
-                            <div id="consequences-bird">
+                            <div id="consequences-bird" class="consqPic">
                                 <sl-tooltip hoist placement="top" content="Certain animals will lose their food sources." trigger="click">
                                     <img src="./../images/Bird_drinking_Water_preview.png"  alt="bird catching fish from waters">
                                 </sl-tooltip>
-                            </div>                   
-                            
-                            <div>                                
+                            </div>                                                   
                                 
-                                <div id="consequences-deer">
+                                <div id="consequences-deer" class="consqPic">
                                     <sl-tooltip hoist placement="top" content="We lose our sources of hydration and eventually die of thirst." trigger="click">
-                                        <img src="./../images/africa-deer-drinking-water-preview.png"  alt="deer drinking from river">
+                                        <img src="./../images/pexels-esteban-arango-deer.png"  alt="deer drinking from river">
                                     </sl-tooltip>
                                 </div>
                                 
-                                <div id="consequences-forest">
+                                <div id="consequences-forest" class="consqPic">
                                     <sl-tooltip  hoist placement="top" content="Plants will wither and die, and the soil gets eroded without the plants roots to anchor them." trigger="click">
                                         <img src="./../images/pexels-holiho-forest-preview.png"  alt="pathway through the forest">
                                     </sl-tooltip> 
                                 </div>
 
-                                <div id="consequences-Turtle">
+                                <div id="consequences-Turtle" class="consqPic">
                                     <sl-tooltip  hoist placement="top" content="Creatures of the water will lose their habitats." trigger="click">
                                         <img src="./../images/sea_Turtle-preview.png"  alt="turtle swimming">
                                     </sl-tooltip>
-                                </div>
-                                
-                            </div>
-                            
-                                           
-                            
+                                </div>                       
+                                                                
                         </div>
                         
                     </div>
@@ -372,15 +404,10 @@
                         <h3>Sources of Water in Singapore</h3>
 
                         <p>Ever wondered what happens to the water before it is pumped into Singapore's water supply?</p>
-                        <p>Click on the images to find out more!</p>
+                        <p><span class="clickPrmpt">Click</span> on the images to find out more!</p>
 
                         <div id="supply-Gallery">
                                 <div class="flip-card">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
-                                            <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/water-Pipes_CNA.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
@@ -390,16 +417,10 @@
                                                 <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
                                             </div>
                                         </div>   
-                                    </sl-tooltip>
                                      
                                 </div>                            
                           
                                 <div class="flip-card" id="card-desalinationPlant">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Water Treatment </h6>
-                                            <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/Tuas-Desalination-Plant.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
@@ -409,16 +430,10 @@
                                                 <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-NEWater">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
-                                                <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/NEWaterPlant_exterior.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
@@ -428,16 +443,10 @@
                                                 <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-reservoir">
-                                    <sl-tooltip trigger="click">
-                                        <div slot="content" class="flipCard-Tooltip">
-                                            <h6 class="flip-card-TitleTxt">Reservoirs </h6>
-                                                <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
-                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="./../images/singapore-marinabarragereservoir_PUB.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
@@ -447,18 +456,18 @@
                                                 <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
                                             </div>
                                         </div>
-                                    </sl-tooltip>
                                         
                                 </div>
                                                        
                         </div>                     
                         <div class="footer">
-                            <sl-button size="large" pill class="footer-btn"  href="#water_Value">Back to top <sl-icon src="./../dist/shoelace/assets/icons/chevron-bar-up.svg"></sl-icon></sl-button>
+                            <sl-button size="large" pill class="footer-btn"  href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
                         </div>
                     </section>
                                   
             </div> 
 
-            <script type="module" src="main.js"></script> 
+            <script type="module" src="./main.js"></script> 
     </body>
+    
 </html>
