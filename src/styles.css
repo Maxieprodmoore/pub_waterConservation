@@ -600,11 +600,6 @@ sl-tooltip::part(base)::after{
             margin-bottom: 0;
         }
 
-    /*Switch to activate Quiz----*/
-        #switchQuiz{
-            margin: 2% 0;
-            transform: translateX(110%);
-        }
 
         /*-----END Sources of Water in Singapore section----*/
 
@@ -658,6 +653,10 @@ sl-tooltip::part(base)::after{
 
     #consequences-Turtle {
         transform: translate(83%, -180%);
+    }
+
+    sl-button.footer-btn::part(base) {
+        transform: translate(400%, 0%);
     }
 
 }
