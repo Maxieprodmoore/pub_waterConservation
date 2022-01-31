@@ -544,6 +544,9 @@ var _tabPanelJs = require("@shoelace-style/shoelace/dist/components/tab-panel/ta
 var _tabJs = require("@shoelace-style/shoelace/dist/components/tab/tab.js");
 var _tooltipJs = require("@shoelace-style/shoelace/dist/components/tooltip/tooltip.js");
 var _switchJs = require("@shoelace-style/shoelace/dist/components/switch/switch.js");
+var _formJs = require("@shoelace-style/shoelace/dist/components/form/form.js");
+var _radioJs = require("@shoelace-style/shoelace/dist/components/radio/radio.js");
+var _radioGroupJs = require("@shoelace-style/shoelace/dist/components/radio-group/radio-group.js");
 var _dialogJs = require("@shoelace-style/shoelace/dist/components/dialog/dialog.js");
 var _splideMinJs = require("@splidejs/splide/dist/js/splide.min.js");
 var _shoelaceJs = require("@shoelace-style/shoelace/dist/shoelace.js");
@@ -551,7 +554,7 @@ var _basePathJs = require("@shoelace-style/shoelace/dist/utilities/base-path.js"
 // Set the base path to the folder you copied Shoelace's assets to
 _basePathJs.setBasePath('./../dist/shoelace'); /*--------Creating Modal images for How Water sustains nature Collage-------*/ 
 
-},{"@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js":"4Y9D5","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/icon/icon.js":"le94t","@shoelace-style/shoelace/dist/components/tab-group/tab-group.js":"3V6Ki","@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js":"7mIsr","@shoelace-style/shoelace/dist/components/tab/tab.js":"hsPiV","@shoelace-style/shoelace/dist/components/tooltip/tooltip.js":"6RAKh","@shoelace-style/shoelace/dist/components/switch/switch.js":"4qLvQ","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","@splidejs/splide/dist/js/splide.min.js":"icOIL","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","@shoelace-style/shoelace/dist/utilities/base-path.js":"67MCn"}],"jjR64":[function() {},{}],"9AbKL":[function(require,module,exports) {
+},{"@shoelace-style/shoelace/dist/themes/light.css":"jjR64","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/progress-bar/progress-bar.js":"4Y9D5","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/icon/icon.js":"le94t","@shoelace-style/shoelace/dist/components/tab-group/tab-group.js":"3V6Ki","@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js":"7mIsr","@shoelace-style/shoelace/dist/components/tab/tab.js":"hsPiV","@shoelace-style/shoelace/dist/components/tooltip/tooltip.js":"6RAKh","@shoelace-style/shoelace/dist/components/switch/switch.js":"4qLvQ","@shoelace-style/shoelace/dist/components/form/form.js":"5jHu2","@shoelace-style/shoelace/dist/components/radio/radio.js":"38a9h","@shoelace-style/shoelace/dist/components/radio-group/radio-group.js":"9QHYQ","@shoelace-style/shoelace/dist/components/dialog/dialog.js":"2Kqgv","@splidejs/splide/dist/js/splide.min.js":"icOIL","@shoelace-style/shoelace/dist/shoelace.js":"6TTGm","@shoelace-style/shoelace/dist/utilities/base-path.js":"67MCn"}],"jjR64":[function() {},{}],"9AbKL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>_chunk2H57JAHYJs.SlButton
@@ -7569,7 +7572,701 @@ var l = _chunkE2OEF7AFJs.e(class extends _chunkE2OEF7AFJs.i {
     }
 });
 
-},{"./chunk.E2OEF7AF.js":"ewkiY","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqgv":[function(require,module,exports) {
+},{"./chunk.E2OEF7AF.js":"ewkiY","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5jHu2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_chunk4QOFAQMBJs.SlForm
+);
+var _chunk4QOFAQMBJs = require("../../chunks/chunk.4QOFAQMB.js");
+var _chunkP2YZ2VL4Js = require("../../chunks/chunk.P2YZ2VL4.js");
+var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
+var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
+
+},{"../../chunks/chunk.4QOFAQMB.js":"8YFLl","../../chunks/chunk.P2YZ2VL4.js":"aSeYS","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8YFLl":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlForm", ()=>SlForm
+);
+var _chunkP2YZ2VL4Js = require("./chunk.P2YZ2VL4.js");
+var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/form/form.ts
+var SlForm = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.novalidate = false;
+    }
+    connectedCallback() {
+        super.connectedCallback();
+        this.formControls = [
+            {
+                tag: "button",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.type === "submit") this.submit();
+                }
+            },
+            {
+                tag: "input",
+                serialize: (el, formData)=>{
+                    if (!el.name || el.disabled) return;
+                    if ((el.type === "checkbox" || el.type === "radio") && !el.checked) return;
+                    if (el.type === "file") {
+                        [
+                            ...el.files
+                        ].map((file)=>formData.append(el.name, file)
+                        );
+                        return;
+                    }
+                    formData.append(el.name, el.value);
+                },
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.type === "submit") this.submit();
+                },
+                keyDown: (event)=>{
+                    const target = event.target;
+                    if (event.key === "Enter" && !event.defaultPrevented && ![
+                        "checkbox",
+                        "file",
+                        "radio"
+                    ].includes(target.type)) this.submit();
+                }
+            },
+            {
+                tag: "select",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) {
+                        if (el.multiple) {
+                            const selectedOptions = [
+                                ...el.querySelectorAll("option:checked")
+                            ];
+                            if (selectedOptions.length) selectedOptions.map((option)=>formData.append(el.name, option.value)
+                            );
+                            else formData.append(el.name, "");
+                        } else formData.append(el.name, el.value);
+                    }
+                }
+            },
+            {
+                tag: "sl-button",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                click: (event)=>{
+                    const target = event.target;
+                    if (target.submit) this.submit();
+                }
+            },
+            {
+                tag: "sl-checkbox",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-color-picker",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-input",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+                ,
+                keyDown: (event)=>{
+                    if (event.key === "Enter" && !event.defaultPrevented) this.submit();
+                }
+            },
+            {
+                tag: "sl-radio",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-range",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) formData.append(el.name, el.value + "");
+                }
+            },
+            {
+                tag: "sl-select",
+                serialize: (el, formData)=>{
+                    if (el.name && !el.disabled) {
+                        if (el.multiple) {
+                            const selectedOptions = [
+                                ...el.value
+                            ];
+                            if (selectedOptions.length) selectedOptions.map((value)=>formData.append(el.name, value)
+                            );
+                            else formData.append(el.name, "");
+                        } else formData.append(el.name, el.value + "");
+                    }
+                }
+            },
+            {
+                tag: "sl-switch",
+                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "sl-textarea",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            },
+            {
+                tag: "textarea",
+                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
+            }
+        ];
+    }
+    getFormData() {
+        const formData = new FormData();
+        const formControls = this.getFormControls();
+        formControls.map((el)=>this.serializeElement(el, formData)
+        );
+        return formData;
+    }
+    getFormControls() {
+        const slot = this.form.querySelector("slot");
+        const tags = this.formControls.map((control)=>control.tag
+        );
+        return slot.assignedElements({
+            flatten: true
+        }).reduce((all, el)=>all.concat(el, [
+                ...el.querySelectorAll("*")
+            ])
+        , []).filter((el)=>tags.includes(el.tagName.toLowerCase())
+        );
+    }
+    submit() {
+        const formData = this.getFormData();
+        const formControls = this.getFormControls();
+        const formControlsThatReport = formControls.filter((el)=>typeof el.reportValidity === "function"
+        );
+        if (!this.novalidate) for (const el1 of formControlsThatReport){
+            const isValid = el1.reportValidity();
+            if (!isValid) return false;
+        }
+        _chunkI4TE3TJVJs.emit(this, "sl-submit", {
+            detail: {
+                formData,
+                formControls
+            }
+        });
+        return true;
+    }
+    handleClick(event) {
+        const target = event.target;
+        const tag = target.tagName.toLowerCase();
+        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.click) formControl.click(event);
+    }
+    handleKeyDown(event) {
+        const target = event.target;
+        const tag = target.tagName.toLowerCase();
+        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.keyDown) formControl.keyDown(event);
+    }
+    serializeElement(el, formData) {
+        const tag = el.tagName.toLowerCase();
+        for (const formControl of this.formControls){
+            if (formControl.tag === tag) return formControl.serialize(el, formData);
+        }
+        return null;
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <div part="base" class="form" role="form" @click=${this.handleClick} @keydown=${this.handleKeyDown}>
+        <slot></slot>
+      </div>
+    `;
+    }
+};
+SlForm.styles = _chunkP2YZ2VL4Js.form_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i(".form")
+], SlForm.prototype, "form", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlForm.prototype, "novalidate", 2);
+SlForm = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-form")
+], SlForm);
+
+},{"./chunk.P2YZ2VL4.js":"aSeYS","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aSeYS":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "form_styles_default", ()=>form_styles_default
+);
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/form/form.styles.ts
+var form_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: block;
+  }
+`;
+
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"38a9h":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_chunkTR5WXO7IJs.SlRadio
+);
+var _chunkTR5WXO7IJs = require("../../chunks/chunk.TR5WXO7I.js");
+var _chunkKN23ZXT2Js = require("../../chunks/chunk.KN23ZXT2.js");
+var _chunkXHIXNY3NJs = require("../../chunks/chunk.XHIXNY3N.js");
+var _chunk4ILOKGDJJs = require("../../chunks/chunk.4ILOKGDJ.js");
+var _chunkZTYIYTKRJs = require("../../chunks/chunk.ZTYIYTKR.js");
+var _chunkCTBLW2HKJs = require("../../chunks/chunk.CTBLW2HK.js");
+var _chunkE2OEF7AFJs = require("../../chunks/chunk.E2OEF7AF.js");
+var _chunkBD26TKS4Js = require("../../chunks/chunk.BD26TKS4.js");
+var _chunkI4TE3TJVJs = require("../../chunks/chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
+var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
+
+},{"../../chunks/chunk.TR5WXO7I.js":"dThRH","../../chunks/chunk.KN23ZXT2.js":"bLHF9","../../chunks/chunk.XHIXNY3N.js":"iymOB","../../chunks/chunk.4ILOKGDJ.js":"4SH2Y","../../chunks/chunk.ZTYIYTKR.js":"3TdRG","../../chunks/chunk.CTBLW2HK.js":"67xnS","../../chunks/chunk.E2OEF7AF.js":"ewkiY","../../chunks/chunk.BD26TKS4.js":"1j2NX","../../chunks/chunk.I4TE3TJV.js":"i4CGq","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dThRH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlRadio", ()=>SlRadio
+);
+var _chunkKN23ZXT2Js = require("./chunk.KN23ZXT2.js");
+var _chunkXHIXNY3NJs = require("./chunk.XHIXNY3N.js");
+var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
+var _chunkCTBLW2HKJs = require("./chunk.CTBLW2HK.js");
+var _chunkBD26TKS4Js = require("./chunk.BD26TKS4.js");
+var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/radio/radio.ts
+var id = 0;
+var SlRadio = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.inputId = `radio-${++id}`;
+        this.labelId = `radio-label-${id}`;
+        this.hasFocus = false;
+        this.disabled = false;
+        this.checked = false;
+        this.invalid = false;
+    }
+    click() {
+        this.input.click();
+    }
+    focus(options) {
+        this.input.focus(options);
+    }
+    blur() {
+        this.input.blur();
+    }
+    reportValidity() {
+        return this.input.reportValidity();
+    }
+    setCustomValidity(message) {
+        this.input.setCustomValidity(message);
+        this.invalid = !this.input.checkValidity();
+    }
+    getAllRadios() {
+        const radioGroup = this.closest("sl-radio-group");
+        if (!radioGroup) return [
+            this
+        ];
+        return [
+            ...radioGroup.querySelectorAll("sl-radio")
+        ].filter((radio)=>radio.name === this.name
+        );
+    }
+    getSiblingRadios() {
+        return this.getAllRadios().filter((radio)=>radio !== this
+        );
+    }
+    handleBlur() {
+        this.hasFocus = false;
+        _chunkI4TE3TJVJs.emit(this, "sl-blur");
+    }
+    handleCheckedChange() {
+        if (this.checked) this.getSiblingRadios().map((radio)=>radio.checked = false
+        );
+    }
+    handleClick() {
+        this.checked = true;
+        _chunkI4TE3TJVJs.emit(this, "sl-change");
+    }
+    handleDisabledChange() {
+        if (this.input) {
+            this.input.disabled = this.disabled;
+            this.invalid = !this.input.checkValidity();
+        }
+    }
+    handleFocus() {
+        this.hasFocus = true;
+        _chunkI4TE3TJVJs.emit(this, "sl-focus");
+    }
+    handleKeyDown(event) {
+        if ([
+            "ArrowUp",
+            "ArrowDown",
+            "ArrowLeft",
+            "ArrowRight"
+        ].includes(event.key)) {
+            const radios = this.getAllRadios().filter((radio)=>!radio.disabled
+            );
+            const incr = [
+                "ArrowUp",
+                "ArrowLeft"
+            ].includes(event.key) ? -1 : 1;
+            let index = radios.indexOf(this) + incr;
+            if (index < 0) index = radios.length - 1;
+            if (index > radios.length - 1) index = 0;
+            this.getAllRadios().map((radio)=>radio.checked = false
+            );
+            radios[index].focus();
+            radios[index].checked = true;
+            _chunkI4TE3TJVJs.emit(radios[index], "sl-change");
+            event.preventDefault();
+        }
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <label
+        part="base"
+        class=${_chunk4ILOKGDJJs.o({
+            radio: true,
+            "radio--checked": this.checked,
+            "radio--disabled": this.disabled,
+            "radio--focused": this.hasFocus
+        })}
+        for=${this.inputId}
+        @keydown=${this.handleKeyDown}
+      >
+        <input
+          id=${this.inputId}
+          class="radio__input"
+          type="radio"
+          name=${_chunkCTBLW2HKJs.l(this.name)}
+          value=${_chunkCTBLW2HKJs.l(this.value)}
+          .checked=${_chunkXHIXNY3NJs.l(this.checked)}
+          .disabled=${this.disabled}
+          aria-checked=${this.checked ? "true" : "false"}
+          aria-disabled=${this.disabled ? "true" : "false"}
+          aria-labelledby=${this.labelId}
+          @click=${this.handleClick}
+          @blur=${this.handleBlur}
+          @focus=${this.handleFocus}
+        />
+
+        <span part="control" class="radio__control">
+          <span part="checked-icon" class="radio__icon">
+            <svg viewBox="0 0 16 16">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                <g fill="currentColor">
+                  <circle cx="8" cy="8" r="3.42857143"></circle>
+                </g>
+              </g>
+            </svg>
+          </span>
+        </span>
+
+        <span part="label" id=${this.labelId} class="radio__label">
+          <slot></slot>
+        </span>
+      </label>
+    `;
+    }
+};
+SlRadio.styles = _chunkKN23ZXT2Js.radio_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i('input[type="radio"]')
+], SlRadio.prototype, "input", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.t()
+], SlRadio.prototype, "hasFocus", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadio.prototype, "name", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadio.prototype, "value", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "disabled", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "checked", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        reflect: true
+    })
+], SlRadio.prototype, "invalid", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkBD26TKS4Js.watch("checked", {
+        waitUntilFirstUpdate: true
+    })
+], SlRadio.prototype, "handleCheckedChange", 1);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkBD26TKS4Js.watch("disabled")
+], SlRadio.prototype, "handleDisabledChange", 1);
+SlRadio = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-radio")
+], SlRadio);
+
+},{"./chunk.KN23ZXT2.js":"bLHF9","./chunk.XHIXNY3N.js":"iymOB","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.CTBLW2HK.js":"67xnS","./chunk.BD26TKS4.js":"1j2NX","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bLHF9":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "radio_styles_default", ()=>radio_styles_default
+);
+var _chunkZTYIYTKRJs = require("./chunk.ZTYIYTKR.js");
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/radio/radio.styles.ts
+var radio_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: inline-block;
+  }
+
+  .radio {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--sl-input-font-family);
+    font-size: var(--sl-input-font-size-medium);
+    font-weight: var(--sl-input-font-weight);
+    color: var(--sl-input-color);
+    vertical-align: middle;
+    cursor: pointer;
+  }
+
+  .radio__icon {
+    display: inline-flex;
+    width: var(--sl-toggle-size);
+    height: var(--sl-toggle-size);
+  }
+
+  .radio__icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .radio__control {
+    flex: 0 0 auto;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--sl-toggle-size);
+    height: var(--sl-toggle-size);
+    border: solid var(--sl-input-border-width) var(--sl-input-border-color);
+    border-radius: 50%;
+    background-color: var(--sl-input-background-color);
+    color: transparent;
+    transition: var(--sl-transition-fast) border-color, var(--sl-transition-fast) background-color,
+      var(--sl-transition-fast) color, var(--sl-transition-fast) box-shadow;
+  }
+
+  .radio__input {
+    position: absolute;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+  }
+
+  /* Hover */
+  .radio:not(.radio--checked):not(.radio--disabled) .radio__control:hover {
+    border-color: var(--sl-input-border-color-hover);
+    background-color: var(--sl-input-background-color-hover);
+  }
+
+  /* Focus */
+  .radio:not(.radio--checked):not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
+    border-color: var(--sl-input-border-color-focus);
+    background-color: var(--sl-input-background-color-focus);
+    box-shadow: var(--sl-focus-ring);
+  }
+
+  /* Checked */
+  .radio--checked .radio__control {
+    color: var(--sl-color-neutral-0);
+    border-color: var(--sl-color-primary-600);
+    background-color: var(--sl-color-primary-600);
+  }
+
+  /* Checked + hover */
+  .radio.radio--checked:not(.radio--disabled) .radio__control:hover {
+    border-color: var(--sl-color-primary-500);
+    background-color: var(--sl-color-primary-500);
+  }
+
+  /* Checked + focus */
+  .radio.radio--checked:not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
+    border-color: var(--sl-color-primary-500);
+    background-color: var(--sl-color-primary-500);
+    box-shadow: var(--sl-focus-ring);
+  }
+
+  /* Disabled */
+  .radio--disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* When the control isn't checked, hide the circle for Windows High Contrast mode a11y */
+  .radio:not(.radio--checked) svg circle {
+    opacity: 0;
+  }
+
+  .radio__label {
+    line-height: var(--sl-toggle-size);
+    margin-left: 0.5em;
+    user-select: none;
+  }
+`;
+
+},{"./chunk.ZTYIYTKR.js":"3TdRG","./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9QHYQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "default", ()=>_chunkNRAUNAXBJs.SlRadioGroup
+);
+var _chunkNRAUNAXBJs = require("../../chunks/chunk.NRAUNAXB.js");
+var _chunk4EBLGZQKJs = require("../../chunks/chunk.4EBLGZQK.js");
+var _chunk4ILOKGDJJs = require("../../chunks/chunk.4ILOKGDJ.js");
+var _chunkE2OEF7AFJs = require("../../chunks/chunk.E2OEF7AF.js");
+var _chunkPOKKIWRQJs = require("../../chunks/chunk.POKKIWRQ.js");
+var _chunkIFFIK3XEJs = require("../../chunks/chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("../../chunks/chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("../../chunks/chunk.JHDFAWWC.js");
+
+},{"../../chunks/chunk.NRAUNAXB.js":"kOp5o","../../chunks/chunk.4EBLGZQK.js":"aMW5X","../../chunks/chunk.4ILOKGDJ.js":"4SH2Y","../../chunks/chunk.E2OEF7AF.js":"ewkiY","../../chunks/chunk.POKKIWRQ.js":"cCsFp","../../chunks/chunk.IFFIK3XE.js":"gngQm","../../chunks/chunk.Z47RPZTX.js":"id6er","../../chunks/chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kOp5o":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "SlRadioGroup", ()=>SlRadioGroup
+);
+var _chunk4EBLGZQKJs = require("./chunk.4EBLGZQK.js");
+var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
+var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
+// src/components/radio-group/radio-group.ts
+var SlRadioGroup = class extends _chunkZ47RPZTXJs.s {
+    constructor(){
+        super(...arguments);
+        this.label = "";
+        this.fieldset = false;
+    }
+    handleFocusIn() {
+        requestAnimationFrame(()=>{
+            const checkedRadio = [
+                ...this.defaultSlot.assignedElements({
+                    flatten: true
+                })
+            ].find((el)=>el.tagName.toLowerCase() === "sl-radio" && el.checked
+            );
+            if (checkedRadio) checkedRadio.focus();
+        });
+    }
+    render() {
+        return _chunkZ47RPZTXJs.p`
+      <fieldset
+        part="base"
+        class=${_chunk4ILOKGDJJs.o({
+            "radio-group": true,
+            "radio-group--has-fieldset": this.fieldset
+        })}
+        role="radiogroup"
+        @focusin=${this.handleFocusIn}
+      >
+        <legend part="label" class="radio-group__label">
+          <slot name="label">${this.label}</slot>
+        </legend>
+        <slot></slot>
+      </fieldset>
+    `;
+    }
+};
+SlRadioGroup.styles = _chunk4EBLGZQKJs.radio_group_styles_default;
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.i("slot:not([name])")
+], SlRadioGroup.prototype, "defaultSlot", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e()
+], SlRadioGroup.prototype, "label", 2);
+_chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.e({
+        type: Boolean,
+        attribute: "fieldset"
+    })
+], SlRadioGroup.prototype, "fieldset", 2);
+SlRadioGroup = _chunkJHDFAWWCJs.__decorateClass([
+    _chunkPOKKIWRQJs.n("sl-radio-group")
+], SlRadioGroup);
+
+},{"./chunk.4EBLGZQK.js":"aMW5X","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aMW5X":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "radio_group_styles_default", ()=>radio_group_styles_default
+);
+var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
+var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
+// src/components/radio-group/radio-group.styles.ts
+var radio_group_styles_default = _chunkZ47RPZTXJs.r`
+  ${_chunkIFFIK3XEJs.component_styles_default}
+
+  :host {
+    display: block;
+  }
+
+  .radio-group {
+    border: solid var(--sl-panel-border-width) var(--sl-panel-border-color);
+    border-radius: var(--sl-border-radius-medium);
+    padding: var(--sl-spacing-large);
+    padding-top: var(--sl-spacing-x-small);
+  }
+
+  .radio-group .radio-group__label {
+    font-family: var(--sl-input-font-family);
+    font-size: var(--sl-input-font-size-medium);
+    font-weight: var(--sl-input-font-weight);
+    color: var(--sl-input-color);
+    padding: 0 var(--sl-spacing-2x-small);
+  }
+
+  ::slotted(sl-radio:not(:last-of-type)) {
+    display: block;
+    margin-bottom: var(--sl-spacing-2x-small);
+  }
+
+  .radio-group:not(.radio-group--has-fieldset) {
+    border: none;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .radio-group:not(.radio-group--has-fieldset) .radio-group__label {
+    position: absolute;
+    width: 0;
+    height: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    white-space: nowrap;
+  }
+`;
+
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2Kqgv":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>_chunkLHBQRIJZJs.SlDialog
@@ -11790,123 +12487,6 @@ var skeleton_styles_default = _chunkZ47RPZTXJs.r`
   }
 `;
 
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kOp5o":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlRadioGroup", ()=>SlRadioGroup
-);
-var _chunk4EBLGZQKJs = require("./chunk.4EBLGZQK.js");
-var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/radio-group/radio-group.ts
-var SlRadioGroup = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.label = "";
-        this.fieldset = false;
-    }
-    handleFocusIn() {
-        requestAnimationFrame(()=>{
-            const checkedRadio = [
-                ...this.defaultSlot.assignedElements({
-                    flatten: true
-                })
-            ].find((el)=>el.tagName.toLowerCase() === "sl-radio" && el.checked
-            );
-            if (checkedRadio) checkedRadio.focus();
-        });
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <fieldset
-        part="base"
-        class=${_chunk4ILOKGDJJs.o({
-            "radio-group": true,
-            "radio-group--has-fieldset": this.fieldset
-        })}
-        role="radiogroup"
-        @focusin=${this.handleFocusIn}
-      >
-        <legend part="label" class="radio-group__label">
-          <slot name="label">${this.label}</slot>
-        </legend>
-        <slot></slot>
-      </fieldset>
-    `;
-    }
-};
-SlRadioGroup.styles = _chunk4EBLGZQKJs.radio_group_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i("slot:not([name])")
-], SlRadioGroup.prototype, "defaultSlot", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadioGroup.prototype, "label", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        attribute: "fieldset"
-    })
-], SlRadioGroup.prototype, "fieldset", 2);
-SlRadioGroup = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-radio-group")
-], SlRadioGroup);
-
-},{"./chunk.4EBLGZQK.js":"aMW5X","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aMW5X":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "radio_group_styles_default", ()=>radio_group_styles_default
-);
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/radio-group/radio-group.styles.ts
-var radio_group_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: block;
-  }
-
-  .radio-group {
-    border: solid var(--sl-panel-border-width) var(--sl-panel-border-color);
-    border-radius: var(--sl-border-radius-medium);
-    padding: var(--sl-spacing-large);
-    padding-top: var(--sl-spacing-x-small);
-  }
-
-  .radio-group .radio-group__label {
-    font-family: var(--sl-input-font-family);
-    font-size: var(--sl-input-font-size-medium);
-    font-weight: var(--sl-input-font-weight);
-    color: var(--sl-input-color);
-    padding: 0 var(--sl-spacing-2x-small);
-  }
-
-  ::slotted(sl-radio:not(:last-of-type)) {
-    display: block;
-    margin-bottom: var(--sl-spacing-2x-small);
-  }
-
-  .radio-group:not(.radio-group--has-fieldset) {
-    border: none;
-    padding: 0;
-    margin: 0;
-    min-width: 0;
-  }
-
-  .radio-group:not(.radio-group--has-fieldset) .radio-group__label {
-    position: absolute;
-    width: 0;
-    height: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    white-space: nowrap;
-  }
-`;
-
 },{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4d9OA":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -14974,313 +15554,7 @@ var qr_code_styles_default = _chunkZ47RPZTXJs.r`
   }
 `;
 
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dThRH":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlRadio", ()=>SlRadio
-);
-var _chunkKN23ZXT2Js = require("./chunk.KN23ZXT2.js");
-var _chunkXHIXNY3NJs = require("./chunk.XHIXNY3N.js");
-var _chunk4ILOKGDJJs = require("./chunk.4ILOKGDJ.js");
-var _chunkCTBLW2HKJs = require("./chunk.CTBLW2HK.js");
-var _chunkBD26TKS4Js = require("./chunk.BD26TKS4.js");
-var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/radio/radio.ts
-var id = 0;
-var SlRadio = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.inputId = `radio-${++id}`;
-        this.labelId = `radio-label-${id}`;
-        this.hasFocus = false;
-        this.disabled = false;
-        this.checked = false;
-        this.invalid = false;
-    }
-    click() {
-        this.input.click();
-    }
-    focus(options) {
-        this.input.focus(options);
-    }
-    blur() {
-        this.input.blur();
-    }
-    reportValidity() {
-        return this.input.reportValidity();
-    }
-    setCustomValidity(message) {
-        this.input.setCustomValidity(message);
-        this.invalid = !this.input.checkValidity();
-    }
-    getAllRadios() {
-        const radioGroup = this.closest("sl-radio-group");
-        if (!radioGroup) return [
-            this
-        ];
-        return [
-            ...radioGroup.querySelectorAll("sl-radio")
-        ].filter((radio)=>radio.name === this.name
-        );
-    }
-    getSiblingRadios() {
-        return this.getAllRadios().filter((radio)=>radio !== this
-        );
-    }
-    handleBlur() {
-        this.hasFocus = false;
-        _chunkI4TE3TJVJs.emit(this, "sl-blur");
-    }
-    handleCheckedChange() {
-        if (this.checked) this.getSiblingRadios().map((radio)=>radio.checked = false
-        );
-    }
-    handleClick() {
-        this.checked = true;
-        _chunkI4TE3TJVJs.emit(this, "sl-change");
-    }
-    handleDisabledChange() {
-        if (this.input) {
-            this.input.disabled = this.disabled;
-            this.invalid = !this.input.checkValidity();
-        }
-    }
-    handleFocus() {
-        this.hasFocus = true;
-        _chunkI4TE3TJVJs.emit(this, "sl-focus");
-    }
-    handleKeyDown(event) {
-        if ([
-            "ArrowUp",
-            "ArrowDown",
-            "ArrowLeft",
-            "ArrowRight"
-        ].includes(event.key)) {
-            const radios = this.getAllRadios().filter((radio)=>!radio.disabled
-            );
-            const incr = [
-                "ArrowUp",
-                "ArrowLeft"
-            ].includes(event.key) ? -1 : 1;
-            let index = radios.indexOf(this) + incr;
-            if (index < 0) index = radios.length - 1;
-            if (index > radios.length - 1) index = 0;
-            this.getAllRadios().map((radio)=>radio.checked = false
-            );
-            radios[index].focus();
-            radios[index].checked = true;
-            _chunkI4TE3TJVJs.emit(radios[index], "sl-change");
-            event.preventDefault();
-        }
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <label
-        part="base"
-        class=${_chunk4ILOKGDJJs.o({
-            radio: true,
-            "radio--checked": this.checked,
-            "radio--disabled": this.disabled,
-            "radio--focused": this.hasFocus
-        })}
-        for=${this.inputId}
-        @keydown=${this.handleKeyDown}
-      >
-        <input
-          id=${this.inputId}
-          class="radio__input"
-          type="radio"
-          name=${_chunkCTBLW2HKJs.l(this.name)}
-          value=${_chunkCTBLW2HKJs.l(this.value)}
-          .checked=${_chunkXHIXNY3NJs.l(this.checked)}
-          .disabled=${this.disabled}
-          aria-checked=${this.checked ? "true" : "false"}
-          aria-disabled=${this.disabled ? "true" : "false"}
-          aria-labelledby=${this.labelId}
-          @click=${this.handleClick}
-          @blur=${this.handleBlur}
-          @focus=${this.handleFocus}
-        />
-
-        <span part="control" class="radio__control">
-          <span part="checked-icon" class="radio__icon">
-            <svg viewBox="0 0 16 16">
-              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                <g fill="currentColor">
-                  <circle cx="8" cy="8" r="3.42857143"></circle>
-                </g>
-              </g>
-            </svg>
-          </span>
-        </span>
-
-        <span part="label" id=${this.labelId} class="radio__label">
-          <slot></slot>
-        </span>
-      </label>
-    `;
-    }
-};
-SlRadio.styles = _chunkKN23ZXT2Js.radio_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i('input[type="radio"]')
-], SlRadio.prototype, "input", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.t()
-], SlRadio.prototype, "hasFocus", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadio.prototype, "name", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e()
-], SlRadio.prototype, "value", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "disabled", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "checked", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlRadio.prototype, "invalid", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkBD26TKS4Js.watch("checked", {
-        waitUntilFirstUpdate: true
-    })
-], SlRadio.prototype, "handleCheckedChange", 1);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkBD26TKS4Js.watch("disabled")
-], SlRadio.prototype, "handleDisabledChange", 1);
-SlRadio = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-radio")
-], SlRadio);
-
-},{"./chunk.KN23ZXT2.js":"bLHF9","./chunk.XHIXNY3N.js":"iymOB","./chunk.4ILOKGDJ.js":"4SH2Y","./chunk.CTBLW2HK.js":"67xnS","./chunk.BD26TKS4.js":"1j2NX","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"bLHF9":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "radio_styles_default", ()=>radio_styles_default
-);
-var _chunkZTYIYTKRJs = require("./chunk.ZTYIYTKR.js");
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/radio/radio.styles.ts
-var radio_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: inline-block;
-  }
-
-  .radio {
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--sl-input-font-family);
-    font-size: var(--sl-input-font-size-medium);
-    font-weight: var(--sl-input-font-weight);
-    color: var(--sl-input-color);
-    vertical-align: middle;
-    cursor: pointer;
-  }
-
-  .radio__icon {
-    display: inline-flex;
-    width: var(--sl-toggle-size);
-    height: var(--sl-toggle-size);
-  }
-
-  .radio__icon svg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .radio__control {
-    flex: 0 0 auto;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--sl-toggle-size);
-    height: var(--sl-toggle-size);
-    border: solid var(--sl-input-border-width) var(--sl-input-border-color);
-    border-radius: 50%;
-    background-color: var(--sl-input-background-color);
-    color: transparent;
-    transition: var(--sl-transition-fast) border-color, var(--sl-transition-fast) background-color,
-      var(--sl-transition-fast) color, var(--sl-transition-fast) box-shadow;
-  }
-
-  .radio__input {
-    position: absolute;
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-    pointer-events: none;
-  }
-
-  /* Hover */
-  .radio:not(.radio--checked):not(.radio--disabled) .radio__control:hover {
-    border-color: var(--sl-input-border-color-hover);
-    background-color: var(--sl-input-background-color-hover);
-  }
-
-  /* Focus */
-  .radio:not(.radio--checked):not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
-    border-color: var(--sl-input-border-color-focus);
-    background-color: var(--sl-input-background-color-focus);
-    box-shadow: var(--sl-focus-ring);
-  }
-
-  /* Checked */
-  .radio--checked .radio__control {
-    color: var(--sl-color-neutral-0);
-    border-color: var(--sl-color-primary-600);
-    background-color: var(--sl-color-primary-600);
-  }
-
-  /* Checked + hover */
-  .radio.radio--checked:not(.radio--disabled) .radio__control:hover {
-    border-color: var(--sl-color-primary-500);
-    background-color: var(--sl-color-primary-500);
-  }
-
-  /* Checked + focus */
-  .radio.radio--checked:not(.radio--disabled) .radio__input${_chunkZTYIYTKRJs.focusVisibleSelector} ~ .radio__control {
-    border-color: var(--sl-color-primary-500);
-    background-color: var(--sl-color-primary-500);
-    box-shadow: var(--sl-focus-ring);
-  }
-
-  /* Disabled */
-  .radio--disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
-
-  /* When the control isn't checked, hide the circle for Windows High Contrast mode a11y */
-  .radio:not(.radio--checked) svg circle {
-    opacity: 0;
-  }
-
-  .radio__label {
-    line-height: var(--sl-toggle-size);
-    margin-left: 0.5em;
-    user-select: none;
-  }
-`;
-
-},{"./chunk.ZTYIYTKR.js":"3TdRG","./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aW2f8":[function(require,module,exports) {
+},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aW2f8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SlMenu", ()=>SlMenu
@@ -16273,232 +16547,7 @@ SlFormatNumber = _chunkJHDFAWWCJs.__decorateClass([
     _chunkPOKKIWRQJs.n("sl-format-number")
 ], SlFormatNumber);
 
-},{"./chunk.L2FOHD47.js":"heLvq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8YFLl":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "SlForm", ()=>SlForm
-);
-var _chunkP2YZ2VL4Js = require("./chunk.P2YZ2VL4.js");
-var _chunkI4TE3TJVJs = require("./chunk.I4TE3TJV.js");
-var _chunkPOKKIWRQJs = require("./chunk.POKKIWRQ.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-var _chunkJHDFAWWCJs = require("./chunk.JHDFAWWC.js");
-// src/components/form/form.ts
-var SlForm = class extends _chunkZ47RPZTXJs.s {
-    constructor(){
-        super(...arguments);
-        this.novalidate = false;
-    }
-    connectedCallback() {
-        super.connectedCallback();
-        this.formControls = [
-            {
-                tag: "button",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.type === "submit") this.submit();
-                }
-            },
-            {
-                tag: "input",
-                serialize: (el, formData)=>{
-                    if (!el.name || el.disabled) return;
-                    if ((el.type === "checkbox" || el.type === "radio") && !el.checked) return;
-                    if (el.type === "file") {
-                        [
-                            ...el.files
-                        ].map((file)=>formData.append(el.name, file)
-                        );
-                        return;
-                    }
-                    formData.append(el.name, el.value);
-                },
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.type === "submit") this.submit();
-                },
-                keyDown: (event)=>{
-                    const target = event.target;
-                    if (event.key === "Enter" && !event.defaultPrevented && ![
-                        "checkbox",
-                        "file",
-                        "radio"
-                    ].includes(target.type)) this.submit();
-                }
-            },
-            {
-                tag: "select",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) {
-                        if (el.multiple) {
-                            const selectedOptions = [
-                                ...el.querySelectorAll("option:checked")
-                            ];
-                            if (selectedOptions.length) selectedOptions.map((option)=>formData.append(el.name, option.value)
-                            );
-                            else formData.append(el.name, "");
-                        } else formData.append(el.name, el.value);
-                    }
-                }
-            },
-            {
-                tag: "sl-button",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                click: (event)=>{
-                    const target = event.target;
-                    if (target.submit) this.submit();
-                }
-            },
-            {
-                tag: "sl-checkbox",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-color-picker",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-input",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-                ,
-                keyDown: (event)=>{
-                    if (event.key === "Enter" && !event.defaultPrevented) this.submit();
-                }
-            },
-            {
-                tag: "sl-radio",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-range",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) formData.append(el.name, el.value + "");
-                }
-            },
-            {
-                tag: "sl-select",
-                serialize: (el, formData)=>{
-                    if (el.name && !el.disabled) {
-                        if (el.multiple) {
-                            const selectedOptions = [
-                                ...el.value
-                            ];
-                            if (selectedOptions.length) selectedOptions.map((value)=>formData.append(el.name, value)
-                            );
-                            else formData.append(el.name, "");
-                        } else formData.append(el.name, el.value + "");
-                    }
-                }
-            },
-            {
-                tag: "sl-switch",
-                serialize: (el, formData)=>el.name && el.checked && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "sl-textarea",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            },
-            {
-                tag: "textarea",
-                serialize: (el, formData)=>el.name && !el.disabled ? formData.append(el.name, el.value) : null
-            }
-        ];
-    }
-    getFormData() {
-        const formData = new FormData();
-        const formControls = this.getFormControls();
-        formControls.map((el)=>this.serializeElement(el, formData)
-        );
-        return formData;
-    }
-    getFormControls() {
-        const slot = this.form.querySelector("slot");
-        const tags = this.formControls.map((control)=>control.tag
-        );
-        return slot.assignedElements({
-            flatten: true
-        }).reduce((all, el)=>all.concat(el, [
-                ...el.querySelectorAll("*")
-            ])
-        , []).filter((el)=>tags.includes(el.tagName.toLowerCase())
-        );
-    }
-    submit() {
-        const formData = this.getFormData();
-        const formControls = this.getFormControls();
-        const formControlsThatReport = formControls.filter((el)=>typeof el.reportValidity === "function"
-        );
-        if (!this.novalidate) for (const el1 of formControlsThatReport){
-            const isValid = el1.reportValidity();
-            if (!isValid) return false;
-        }
-        _chunkI4TE3TJVJs.emit(this, "sl-submit", {
-            detail: {
-                formData,
-                formControls
-            }
-        });
-        return true;
-    }
-    handleClick(event) {
-        const target = event.target;
-        const tag = target.tagName.toLowerCase();
-        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.click) formControl.click(event);
-    }
-    handleKeyDown(event) {
-        const target = event.target;
-        const tag = target.tagName.toLowerCase();
-        for (const formControl of this.formControls)if (formControl.tag === tag && formControl.keyDown) formControl.keyDown(event);
-    }
-    serializeElement(el, formData) {
-        const tag = el.tagName.toLowerCase();
-        for (const formControl of this.formControls){
-            if (formControl.tag === tag) return formControl.serialize(el, formData);
-        }
-        return null;
-    }
-    render() {
-        return _chunkZ47RPZTXJs.p`
-      <div part="base" class="form" role="form" @click=${this.handleClick} @keydown=${this.handleKeyDown}>
-        <slot></slot>
-      </div>
-    `;
-    }
-};
-SlForm.styles = _chunkP2YZ2VL4Js.form_styles_default;
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.i(".form")
-], SlForm.prototype, "form", 2);
-_chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.e({
-        type: Boolean,
-        reflect: true
-    })
-], SlForm.prototype, "novalidate", 2);
-SlForm = _chunkJHDFAWWCJs.__decorateClass([
-    _chunkPOKKIWRQJs.n("sl-form")
-], SlForm);
-
-},{"./chunk.P2YZ2VL4.js":"aSeYS","./chunk.I4TE3TJV.js":"i4CGq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"aSeYS":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "form_styles_default", ()=>form_styles_default
-);
-var _chunkIFFIK3XEJs = require("./chunk.IFFIK3XE.js");
-var _chunkZ47RPZTXJs = require("./chunk.Z47RPZTX.js");
-// src/components/form/form.styles.ts
-var form_styles_default = _chunkZ47RPZTXJs.r`
-  ${_chunkIFFIK3XEJs.component_styles_default}
-
-  :host {
-    display: block;
-  }
-`;
-
-},{"./chunk.IFFIK3XE.js":"gngQm","./chunk.Z47RPZTX.js":"id6er","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5DkMg":[function(require,module,exports) {
+},{"./chunk.L2FOHD47.js":"heLvq","./chunk.POKKIWRQ.js":"cCsFp","./chunk.Z47RPZTX.js":"id6er","./chunk.JHDFAWWC.js":"5ew7r","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5DkMg":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "SlFormatBytes", ()=>SlFormatBytes
@@ -28842,57 +28891,48 @@ exports.export = function(dest, destName, get) {
             <div id="navbar">
                 <div id="browserNav">
                     <div>
-                        <sl-tooltip content="The Value of Water" placement="right">
+                        <sl-tooltip content="The Value of Water" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#water_Value"></sl-button>
                         </sl-tooltip>
                     </div>
                     <div>
-                        <sl-tooltip content="Uses of Water" placement="right">
+                        <sl-tooltip content="Uses of Water" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#water_Uses"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="How water sustains nature" placement="right">
+                        <sl-tooltip content="How water sustains nature" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#water_Sustains"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="Why Conserve water?" placement="right">
+                        <sl-tooltip content="Why Conserve water?" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#conserveH2O"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip content="How much water do we have?" placement="right">
+                        <sl-tooltip content="How much water do we have?" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#waterAvail"></sl-button>
                         </sl-tooltip>
                     </div>
                    
                     <div>
-                        <sl-tooltip content="The consequences of no water" placement="right">
+                        <sl-tooltip content="The consequences of having no water." placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#consq"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                     <div>
-                        <sl-tooltip hoist="" content="Protecting our Water" placement="right">
+                        <sl-tooltip hoist="" content="Protecting Singapore's Water" placement="top-end">
                             <sl-button type="primary" size="medium" circle="" href="#waterSupplies"></sl-button>
                         </sl-tooltip>
                     </div>
                     
                 </div>
-                <sl-drawer id="phoneNav">
-                    <a href="#water_Value">The Value of Water</a>
-                    <a href="#water_Uses">Uses of Water</a>
-                    <a href="#water_Sustains">How water sustains nature</a>
-                    <a href="#conserveH2O">Why Conserve water?</a>
-                    <a href="#waterAvail">How much water do we have?</a>
-                    <a href="#consq">The consequences of no water</a>
-                    <a href="#waterSupplies">Protecting our Water</a>
-                </sl-drawer>
-                <sl-icon-button id="phoneNavBtn" style="font-size: 2rem;" name="list" label="Navigation bar Menu"></sl-icon-button>    
+                    
             </div>
             
             <div class="value_h2O">
@@ -28902,7 +28942,7 @@ exports.export = function(dest, destName, get) {
                         <h2>The Value of Water</h2>
                         
                         <p>Water is very important to each and every one of us.</p>
-                        <p><span class="clickPrmpt">Click</span> on the buttons bellow to find out the details!</p>
+                        <p>Click on the buttons bellow to find out the details!</p>
         
                         
 
@@ -28989,51 +29029,51 @@ exports.export = function(dest, destName, get) {
                     <div class="section-waterSustains">
                         <h3> How water sustains nature</h3>
                         <br>
-                        <p id="waterSustains_para"><span class="clickPrmpt">Click</span> the Animals and Plants to see how they interact with Nature everyday!</p>
+                        <p id="waterSustains_para">Click the Animals and Plants to see how they interact with Nature everyday!</p>
                         <div class="waterSustains_collagesht">
                             <!-----Creating Overlay and full image-->
-                            <sl-drawer id="overlayCollage01" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage01" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img01" src="/africa-deer-drinking-water.3ebee03e.png" alt="african deers drinking water">
-                                    <p>Living things need water to live. </p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
-                            </sl-drawer>
+                            </div>
     
-                            <sl-drawer id="overlayCollage02" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage02" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img02" src="/Frog_During_Rain.6ee84823.jpg" alt="frog taking shelter under leaf from rain">
-                                    <p>Frogs are amphibians, and grow from tadpoles. Tadpoles live in water.</p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>
                                 
-                            </sl-drawer>
+                            </div>
     
-                           <sl-drawer id="overlayCollage03" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage03" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img03" src="/Bird_drinking_Water.4cd58449.png" alt="bird drinking water">
-                                    <p>Besides water for drinking, this bird lives on fishes, which live in water.</p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
-                            </sl-drawer>
+                            </div>
     
-                            <sl-drawer id="overlayCollage04" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage04" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img04" src="/12_YT_SPARROW_1391748f.09f15205.jpg" alt="Sparrow drinking and playing from bird bath">
-                                    <p>Certain birds play in water from time to time when they bath.</p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
-                            </sl-drawer>
+                            </div>
     
-                            <sl-drawer id="overlayCollage05" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage05" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img05" src="/pexels-harrison-haines-3536511.1b37278b.jpg" alt="school of fish swimming in pattern">
-                                    <p>Fishes live in water.</p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
-                            </sl-drawer>
+                            </div>
     
-                            <sl-drawer id="overlayCollage06" class="collageDrawer" placement="bottom">
+                            <div id="overlayCollage06" class="collageOverlay">
                                 <div>
                                     <img class="overlay-Content" id="img06" src="/pexels-holiho-1112186.dcabed88.jpg" alt="forest pathway">
-                                    <p>Trees and plants require water to keep growing, in turn allowing places to remain beautiful.</p>
+                                    <sl-button type="primary" pill="" class="overlay-CloseBtn">Close Button</sl-button>
                                 </div>                                
-                            </sl-drawer>
+                            </div>
 
                             <!----Creating the collage picture-->
                             <div class="waterSustains_collagepic">
@@ -29079,34 +29119,22 @@ exports.export = function(dest, destName, get) {
                 <section>
                     <div class="section-waterAvail" id="waterAvail">
                         <h3>How much water do we have?</h3>
-                        <p>Ever wondered how much each national tap adds to our water supplies? <span class="clickPrmpt">Click</span> to find out more!</p>
+                        <p>Ever wondered how much each national tap adds to our water supplies? Click to find out more!</p>
                         <div class="waterAvail-gallery">
-                            <sl-dialog class="waterAvail-info" label="Imported Water">
-                                Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.
-                            </sl-dialog>
-
-                            <sl-dialog class="waterAvail-info" label="NEWater">
-                                NEWater make up to 40% of our water sources currently.
-                            </sl-dialog>
-
-                            <sl-dialog class="waterAvail-info" label="Desalinated Water">
-                                Desalinated water treated make up to 25% of our water sources currently.
-                            </sl-dialog>
-
                             <div class="waterAvail-img">
-                                <sl-tooltip placement="bottom" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
+                                <sl-tooltip placement="bottom-start" trigger="click" content="Imported Water from our nearest neighbour alongside rain water make up to 35% of our water sources currently.">
                                     <img src="/Imported_water_sq.d7cccf79.png" alt="Pipes with Water from Malaysia">
                                 </sl-tooltip>
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip placement="bottom" content="NEWater make up to 40% of our water sources currently.">
+                                <sl-tooltip placement="bottom" trigger="click" content="NEWater make up to 40% of our water sources currently">
                                     <img src="/NEWaterPlant_exteriorSq.b1a863db.png" alt="Exterior of a NEWater plant">
                                 </sl-tooltip> 
                             </div>
                             
                             <div class="waterAvail-img">
-                                <sl-tooltip placement="bottom" content="Desalinated water treated make up to 25% of our water sources currently.">
+                                <sl-tooltip placement="bottom-end" trigger="click" content="Desalinated water treated make up to 25% of our water sources currently">
                                     <img src="/Tuas-Desalination-Plant-sq.faf14543.png" alt="Exterior of the Desalination plant in Tuas">
                                 </sl-tooltip>
                             </div>
@@ -29118,57 +29146,43 @@ exports.export = function(dest, destName, get) {
 
                 <section id="consq">
                     <h3>Consequences of No Water</h3>
-                    <p><span class="clickPrmpt">Click</span> on the images in the collage to see the consequences of having no water.</p>
-                    <sl-dialog class="consqDialog" label="For our living space:">
-                        <p>We lose the things that make up our beautiful landscapes.</p>
-                                                
-                    </sl-dialog>
-                    <sl-dialog class="consqDialog" label="For our food chain:">
-                        <p>Certain animals will lose their food sources.</p>
-                                                
-                    </sl-dialog>
-                    <sl-dialog class="consqDialog" label="For our health:">
-                        <p>We lose our sources of hydration and eventually die of thirst.</p>
-                                                
-                    </sl-dialog>
-                    <sl-dialog class="consqDialog" label="For our environment:">
-                        <p>Plants will wither and die, and the soil gets eroded without the plants roots to anchor them.</p>
-                                                
-                    </sl-dialog>
-                    <sl-dialog class="consqDialog" label="For the creatures in the sea:">
-                        <p>Creatures of the water will lose their habitats.</p>
-                                                
-                    </sl-dialog>
+                    <p>Click on the images in he collage to see the consequences of having no water.</p>
                     <div class="consequences-imgGallery"> 
                         <sl-tooltip hoist="" id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
-                            <img src="/sea_B4_City.6f7ac96b.jpg" alt="city view from a lake-side" class="consqPic">
+                            <img src="/sea_B4_City.6f7ac96b.jpg" alt="city view from a lake-side">
                         </sl-tooltip>   
                         <div class="consequences-imgCollage">                       
                                                                                 
-                            <div id="consequences-bird" class="consqPic">
+                            <div id="consequences-bird">
                                 <sl-tooltip hoist="" placement="top" content="Certain animals will lose their food sources." trigger="click">
                                     <img src="/Bird_drinking_Water_preview.1df63a6d.png" alt="bird catching fish from waters">
                                 </sl-tooltip>
-                            </div>                                                   
+                            </div>                   
+                            
+                            <div>                                
                                 
-                                <div id="consequences-deer" class="consqPic">
+                                <div id="consequences-deer">
                                     <sl-tooltip hoist="" placement="top" content="We lose our sources of hydration and eventually die of thirst." trigger="click">
-                                        <img src="/pexels-esteban-arango-deer.77579d81.png" alt="deer drinking from river">
+                                        <img src="/africa-deer-drinking-water-preview.b3c390d1.png" alt="deer drinking from river">
                                     </sl-tooltip>
                                 </div>
                                 
-                                <div id="consequences-forest" class="consqPic">
+                                <div id="consequences-forest">
                                     <sl-tooltip hoist="" placement="top" content="Plants will wither and die, and the soil gets eroded without the plants roots to anchor them." trigger="click">
                                         <img src="/pexels-holiho-forest-preview.cd4fff68.png" alt="pathway through the forest">
                                     </sl-tooltip> 
                                 </div>
 
-                                <div id="consequences-Turtle" class="consqPic">
+                                <div id="consequences-Turtle">
                                     <sl-tooltip hoist="" placement="top" content="Creatures of the water will lose their habitats." trigger="click">
                                         <img src="/sea_Turtle-preview.3d8bb615.png" alt="turtle swimming">
                                     </sl-tooltip>
-                                </div>                       
-                                                                
+                                </div>
+                                
+                            </div>
+                            
+                                           
+                            
                         </div>
                         
                     </div>
@@ -29183,10 +29197,15 @@ exports.export = function(dest, destName, get) {
                         <h3>Sources of Water in Singapore</h3>
 
                         <p>Ever wondered what happens to the water before it is pumped into Singapore's water supply?</p>
-                        <p><span class="clickPrmpt">Click</span> on the images to find out more!</p>
+                        <p>Click on the images to find out more!</p>
 
                         <div id="supply-Gallery">
                                 <div class="flip-card">
+                                    <sl-tooltip trigger="click">
+                                        <div slot="content" class="flipCard-Tooltip">
+                                            <h6 class="flip-card-TitleTxt">Water catchments and Drainages </h6>
+                                            <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
+                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="/water-Pipes_CNA.8669475d.png" class="waterSupply-GalleryImg" alt="Water pipes to carry water all around Singapore">
@@ -29196,10 +29215,16 @@ exports.export = function(dest, destName, get) {
                                                 <p class="flip-card-Txt">Water is collected from the water catchments and drains and sent along via the water pipes for treatment.</p>
                                             </div>
                                         </div>   
+                                    </sl-tooltip>
                                      
                                 </div>                            
                           
                                 <div class="flip-card" id="card-desalinationPlant">
+                                    <sl-tooltip trigger="click">
+                                        <div slot="content" class="flipCard-Tooltip">
+                                            <h6 class="flip-card-TitleTxt">Water Treatment </h6>
+                                            <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
+                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="/Tuas-Desalination-Plant.4367258e.jpg" class="waterSupply-GalleryImg" alt="water treatment plant">
@@ -29209,10 +29234,16 @@ exports.export = function(dest, destName, get) {
                                                 <p class="flip-card-Txt">At water treatment plants, water is chemically treated, filtered and disinfected, thereby making it safe for drinking.</p>
                                             </div>
                                         </div>
+                                    </sl-tooltip>
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-NEWater">
+                                    <sl-tooltip trigger="click">
+                                        <div slot="content" class="flipCard-Tooltip">
+                                            <h6 class="flip-card-TitleTxt"> Water Tanks </h6>
+                                                <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
+                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="/NEWaterPlant_exterior.f656a358.png" class="waterSupply-GalleryImg" alt="NEWwater tanks">
@@ -29222,10 +29253,16 @@ exports.export = function(dest, destName, get) {
                                                 <p class="flip-card-Txt">Water is then channeled to water tanks, ready to be pumped into our reservoirs.</p>
                                             </div>
                                         </div>
+                                    </sl-tooltip>
                                         
                                 </div>                            
 
                                 <div class="flip-card" id="card-reservoir">
+                                    <sl-tooltip trigger="click">
+                                        <div slot="content" class="flipCard-Tooltip">
+                                            <h6 class="flip-card-TitleTxt">Reservoirs </h6>
+                                                <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
+                                        </div>
                                         <div class="flip-card-inner">
                                             <div class="flip-card-front">
                                                 <img src="/singapore-marinabarragereservoir_PUB.ff974069.jpg" class="waterSupply-GalleryImg" alt="Aerial photo of Marina Barrage reservoir">
@@ -29235,12 +29272,13 @@ exports.export = function(dest, destName, get) {
                                                 <p class="flip-card-Txt">Water is finally pumped out for our use at home or in our industries.</p>
                                             </div>
                                         </div>
+                                    </sl-tooltip>
                                         
                                 </div>
                                                        
                         </div>                     
                         <div class="footer">
-                            <sl-button size="large" pill="" class="footer-btn" href="#water_Value">Back to top <sl-icon name="chevron-up"></sl-icon></sl-button>
+                            <sl-button size="large" pill="" class="footer-btn" href="#water_Value">Back to top <sl-icon src="./../dist/shoelace/assets/icons/chevron-bar-up.svg"></sl-icon></sl-button>
                         </div>
                     </section>
                                   
@@ -29248,5 +29286,4 @@ exports.export = function(dest, destName, get) {
 
             <script src="/index.4d6bcbeb.js" defer=""></script> 
     </body>
-    
 </html>

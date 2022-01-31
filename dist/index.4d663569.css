@@ -50,9 +50,9 @@ p{
 
 section{
     margin: 0 5%;
+    padding: 0 3% 2%;
     width: calc(100vw - 10%);
     display: block;
-    overflow: hidden;
 }
 
 .section-waterConserve, .section-waterAvail, .proteccH2O, .section-waterSustains {
@@ -72,11 +72,6 @@ img {
 
 button {
     cursor: pointer;
-}
-
-.clickPrmpt{
-    color: red;
-    font-size: 1.6rem;
 }
 
 .footer {
@@ -106,26 +101,6 @@ sl-button.footer-btn::part(base){
     padding-top: 2%;
 }
 
-#phoneNavBtn{
-    float: right;
-    margin-right: 2%;
-    display: none;    
-}
-
-#phoneNav::part(base){
-    --size: 70vw; 
-}
-
-#phoneNav::part(body){
-    display: flex;
-    flex-direction: column;    
-    --body-spacing: 5%;   
-}
-
-#phoneNav a {
-    margin-bottom: 2%;
-}
-
 /*-----Intro section------*/
 
 #imgHero {
@@ -149,7 +124,6 @@ sl-button.footer-btn::part(base){
     left: 50%;
     top: 50%;
     transform: translate(-70%,-15%);
-    overflow: hidden;
 }
 
 .intro h1, .intro h4, .intro p {
@@ -165,10 +139,10 @@ sl-button.footer-btn::part(base){
 #navbar {
     overflow: hidden;
     display: inline-block;
-    width: 100vw;   
+    width: 100%;   
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: initial;
     position: sticky;
     padding-top: 0.25%;
 }
@@ -258,7 +232,6 @@ sl-tooltip::part(base)::after{
         margin: 0 1%;
         padding: 0;
         object-fit: contain;
-        position: relative;
     }
 
 p.waterUses_btn, p.waterSustains_btn{
@@ -282,7 +255,7 @@ p.waterUses_btn {
     }
 
 p.waterSustains_btn {
-        transform: translate(18%, 400%);
+        transform: translate(13%, 400%);
         color: white;
     }
 
@@ -328,34 +301,59 @@ p.waterSustains_btn {
 
 /*-----Overlay Background---*/
 
-.collageDrawer {
-                    --size: 100vh; /* Full width */
-                    --body-spacing: 5%;
+.collageOverlay {
+                    display: none; /* Hidden by default */
+                    position: fixed; /* Stay in place */
+                    z-index: 200; /* Sit on top */
+                    
+                    left: 0;
+                    top: 0;
+                    width: 100vw; /* Full width */
+                    height: 100vh; /* Full height */
+                    max-height: 100%;
+                    overflow: auto; /* Enable scroll if needed */
+                    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
                 }
 
-.collageDrawer::part(panel) {
-                    background-color: rgba(224, 224, 224, 0.9); /* Black w/ opacity */
-                }
-
-.collageDrawer div{
+.collageOverlay div{
                     display: flex;
                     flex-direction: column;
-                     /* Location of the box */
+                    padding: 4% 3%; /* Location of the box */
                     width: 100%;
                     height: 100%;
-                    object-fit: contain;
-                }
-
-.collageDrawer div p {
-                    font-size: 2rem;
-                    text-align: center;
                 }
 
 /*-----Overlay Image---*/
 
 .overlay-Content {
-                    margin-bottom: .5%;
+                    margin-bottom: 1%;
+                    width: 100%;
                     
+                    /*Add animation*/
+                    -webkit-animation-name: zoom;
+                    -webkit-animation-duration: 0.6s;
+                    animation-name: zoom;
+                    animation-duration: 0.6s;
+                }
+
+@-webkit-keyframes zoom {
+                    from {-webkit-transform:scale(0)} 
+                    to {-webkit-transform:scale(1)}
+                }
+
+@keyframes zoom {
+                    from {transform:scale(0)}
+                    to {transform:scale(1)}
+                }
+
+/*The close button-----*/
+
+.overlay-CloseBtn::part(base) {
+                    width: 100%;
+                }
+
+.overlay-CloseBtn::part(base)::after {
+                    clear: both;
                 }
 
 /*-----END How Water sustains Nature section -----*/
@@ -367,7 +365,7 @@ p.waterSustains_btn {
 /*----- How much Water is really needed section -----*/
 
 .waterNeed-img {
-            width: 100%;
+            width: 48%;
             object-fit: contain;
             padding: 1%;
         }
@@ -389,7 +387,7 @@ p.waterSustains_btn {
         }
 
 .section-waterConserve{
-            left: 23.2%;
+            left: 10%;
         }
 
 /*----- END How much Water is really needed section -----*/
@@ -419,7 +417,6 @@ p.waterSustains_btn {
             margin: 2% 1% 1.5%;
             padding: 0;
             object-fit: contain;
-            cursor: pointer;
         }
 
 .waterAvail-img::after {
@@ -442,17 +439,20 @@ p.waterSustains_btn {
         }
 
 .consequences-imgGallery{
-            display: inline-block;
+            display: flex;
             width: 100%;
             transform: translate(-2.5%, 0);
             margin-bottom: 2%;
-            position: relative;
+        }
+
+.consequences-imgGallery::after{
+            clear: both;
         }
 
 /*-----Consequences of No Water Collage -----*/
 
 .consequences-imgCollage{
-            position: relative;
+            position: absolute;
         }
 
 .consequences-imgCollage::after{
@@ -462,32 +462,28 @@ p.waterSustains_btn {
         }
 
 #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
-            z-index: 3; 
-            position: absolute;  
-            overflow: hidden;        
-            cursor: pointer;
+            z-index: 3;            
         }
 
 #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
             width: 11.5%;
             border-radius: 50%;
-            object-fit: contain;
         }
 
 #consequences-forest {
-            transform: translate(55%, -150%);
+            transform: translate(55%, 110%);
         }
 
 #consequences-deer {
-            transform: translate(11%, -135%);
+            transform: translate(11%, 150%);
         }
 
 #consequences-bird {
-            transform: translate(43%, -530%);
+            transform: translate(43%, 20%);
         }
 
 #consequences-Turtle {
-            transform: translate(83%, -190%);
+            transform: translate(83%, -40%);
         }
 
 /*Styling big image BG--------*/
@@ -495,12 +491,6 @@ p.waterSustains_btn {
 #city_lake{
             width: 100%;
             display: inline-block;
-            position: relative;
-        }
-
-#city_lake img{
-            max-width: 100%;
-            max-height: 100%;
         }
 
 /*-----END Consequences of No Water Collages -----*/
@@ -529,7 +519,6 @@ p.waterSustains_btn {
 .waterSupply-GalleryImg {
             width: 100%;
             height: 100%;    
-            cursor: pointer;
         }
 
 /*Creating the flipcards----*/
@@ -579,7 +568,7 @@ p.waterSustains_btn {
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 20% 10% 20%;
+            padding: 8% 3% 5%;
             
         }
 
@@ -605,290 +594,10 @@ p.waterSustains_btn {
 
 /*-------END Protecting Singapore's Water supply Section------*/
 
-@media only screen and (max-width: 1600px) {
-    p.waterUses_btn {
-        transform: translate(50%, 90%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(3.5%, 400%);
-    }
-
-    #consequences-forest {
-        transform: translate(55%, -120%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -400%);
-    }
-}
-
-@media only screen and (max-width: 1366px) {
-    .section-waterConserve {
-        left: initial;
-    }
-
-    p.waterUses_btn {
-        transform: translate(35%,50%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%,70%);
-    }
-}
-
-@media only screen and (max-width: 1280px) {
-    
-    p.waterUses_btn {
-        transform: translate(38%,10%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%,150%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -400%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(83%, -180%);
-    }
-
-}
-
-@media only screen and (max-width: 1080px) {
-    p.waterUses_btn {
-        transform: translate(30%,10%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%,100%);
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .intro {
-        width: 90%;
-        margin: 0 5%;
-        transform: translate(-55%,2%);
-    }
-
-    section {
-        margin: 0 2%;
-        width: calc(100vw - 4%);
-    }
-
-    p.waterUses_btn {
-        transform: translate(15%,10%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(1%,70%);
-    }
-
-    #navbar{
-        position: relative;
-    }
-
-    #phoneNavBtn{
-        display: block;
-    }
-
-    #browserNav {
-        display: none;
-    }
-
-    .collageDrawer{
-        --size: 100vh;
-    }
-
-    .section-waterConserve {
-        left: initial;
-    }
-
-    #consq {
-        width: 64vw;
-        margin: 0 3vw;
-    }
-
-    #city_lake img{
-        max-width: initial;
-        max-height: initial;
-        height: 60vh;
-        width: 60vw;
-        object-fit: cover;
-    }
-
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
-        width: 18%;
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -160%);
-      }
-
-    #consequences-Turtle {
-        transform: translate(75%, -300%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -660%);
-    }
-
-    #consequences-forest {
-        transform: translate(55%, -135%);
-    }
-
-}
-
-@media only screen and (max-width: 926px) {
-    #city_lake img {
-        height: 85vh;
-        width: 85vw;
-    }
-
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
-        width: 20%;
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -120%);
-    }
-
-    #consequences-forest {
-        transform: translate(50%, -120%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(80%, -150%);
-    }
-
-    #consequences-bird {
-        transform: translate(60%, -280%);
-    }
-
-}
-
-@media only screen and (max-width: 915px) {
-
-    #consequences-deer {
-        transform: translate(11%, -120%);
-    }
-
-    #consequences-forest {
-        transform: translate(30%, -110%);
-    }
-
-    #consequences-bird {
-        transform: translate(50%, -300%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(75%, -150%);
-    }
-}
-
-@media only screen and (max-width: 896px) {
-    p.waterUses_btn {
-        transform: translate(15%,-20%);
-    }
-
-
-    #city_lake img {
-        height: 95vh;
-        width: 95vw;
-    }
-
-    #consequences-forest {
-        transform: translate(35%, -110%);
-    }
-
-    #consequences-bird {
-        transform: translate(60%, -330%);
-    }
-}
-
-@media only screen and (max-width: 844px) {
-    #consequences-bird {
-        transform: translate(50%, -270%);
-    }
-}
-
-@media only screen and (max-width: 834px) {
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
-        width: 15%;
-    }
-
-    #consequences-Turtle {
-        transform: translate(60%, -300%);
-    }
-
-    #consequences-bird {
-        transform: translate(50%, -700%);
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -160%);
-    }
-
-    #consequences-forest {
-        transform: translate(30%, -120%);
-    }
-
-    #consq {
-        width: 96vw;
-        margin: 0 2vw;
-    }
-
-}
-
-@media only screen and (max-width: 820px) {
-    p.waterUses_btn {
-        transform: translate(10%,-20%);
-    }
-
-    #consequences-bird {
-        transform: translate(50%, -720%);
-    }
-
-    #consequences-forest {
-        transform: translate(30%, -120%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(60%, -300%);
-    }
-}
-
-@media only screen and (max-width: 812px) {
-    #city_lake img {
-        height: 90vh;
-        width: 90vw;
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -120%);
-    }
-
-    #consequences-bird {
-        transform: translate(45%, -270%);
-    }
-
-    #consequences-forest {
-        transform: translate(30%, -120%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(75%, -150%);
-    }
-}
-
 @media only screen and (max-width: 810px) {
     section {
-        padding: 0 2.5%;
-        margin: 0;
-        width: 100vw;
+        margin: 0 2.5%;
+        width: calc(100vw - 5%);
     }
 
     .valueWater_btns{
@@ -900,16 +609,12 @@ p.waterSustains_btn {
         margin: 0 0.5%;
     }
 
-    p.waterSustains_btn, p.waterUses_btn {
-        font-size: 2rem;
-    }
-
     p.waterSustains_btn {
-        transform: translate(0%, 160%);
+        transform: translate(0%, 40%);
     }
 
     p.waterUses_btn {
-        transform: translate(30%, 7%);
+        transform: translate(35%, 7%);
     }
 
     .ws-collagePic {
@@ -947,196 +652,20 @@ p.waterSustains_btn {
         height: 50vw;
     }
 
-    #consequences-deer {
-        transform: translate(11%, -130%);
-    }
-
-    #consequences-forest {
-        transform: translate(45%, -105%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(60%, -270%);
-    }
-
-    #consequences-bird {
-        transform: translate(50%, -640%);
-    }
-
-}
-
-@media only screen and (max-width: 800px) {
-    p.waterSustains_btn {
-        transform: translate(0%, 130%);
-    }
-
-    #city_lake img {
-        height: 90vh;
-        width: 90vw;
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -110%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -270%);
-    }
-    
-    #consequences-Turtle {
-        transform: translate(75%, -150%);
-      }
-
-}
-
-@media only screen and (max-width: 768px) {
-    
-
-    #consequences-deer {
-        transform: translate(10%, -150%);
-    }
-
-    #consequences-forest {
-        transform: translate(30%, -105%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -640%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(75%, -300%);
-    }
-}
-
-@media only screen and (max-width: 760px) {
-    
-
-    #consequences-deer {
-        transform: translate(11%, -120%);
-    }
-
-    #consequences-bird {
-        transform: translate(38%, -280%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(75%, -150%);
-    }
-}
-
-@media only screen and (max-width: 720px) {
-    .intro {
-        transform: translate(-55%, 1%);
-    }
-    
-    h1 {
-        margin-bottom: 3%;
-    }
-
-    h4 {
-        font-size: 2.5rem;
-        margin-top: 0;
-    }
-
-    .welcome {
-        margin-top: 0;
-    }
-    
-    p.waterSustains_btn, p.waterUses_btn {
-        font-size: 1.8rem;
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%, 130%);
-    }
-
-    p.waterUses_btn {
-        transform: translate(30%, 7%);
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -150%);
-    }
-
-    #consequences-bird {
-        transform: translate(43%, -660%);
-    }
-
-    #consequences-forest {
-        transform: translate(55%, -125%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(85%, -285%);
-      }
-
-
-}
-
-@media only screen and (max-width: 667px) {
-    #city_lake img {
-        height: 95vh;
-        width: 95vw;
-    }
-    
-
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
-        width: 18%;
-    }
-
-    #consequences-deer {
-        transform: translate(11%, -120%);
-    }
-
-    #consequences-forest {
-        transform: translate(50%, -120%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(80%, -180%);
-    }
-
-    #consequences-bird {
-        transform: translate(60%, -300%);
-    }
-
 }
 
 @media only screen and (max-width: 428px) {
     section {
-        margin: 0;
-        width: 100vw;
+        margin: 0 0.5%;
+        width: calc(100vw - 1%);
     }
 
     h1, h2, h3, h4, h5, h6, p {
         text-align: left;
     }
 
-    h1 {
-        font-size: 3.2rem;
-    }
-
-    h2 {
-        font-size: 2.8rem;
-    }
-
-    h4 {
-        font-size: 2.0rem;
-    }
-
     h3{
-        font-size: 2.4rem;
-    }
-
-    .intro {
-        width: 99%;
-        margin: 0 0.5%;
-        transform: translate(-45%, 1%);
-    }
-
-    p.waterUses_btn {
-        transform: translate(55%, 7%);
+        font-size: 1.3rem;
     }
 
     #browserNav {
@@ -1157,24 +686,22 @@ p.waterSustains_btn {
     }
 
     p.waterSustains_btn {
-        transform: translate(5%, 30%);
+        transform: initial;
         color: white;
     }
 
     .ws-collagePic {
-        width: 100%;
-        margin: 0 0 2%;
+        width: 98%;
+        margin-bottom: 2%;
     }
 
     .waterAvail-img {
         width: 100%;
-        height: 100%;
-        margin: 0 0 2%;
     }
 
     .valueWater_img {
         width: 99%;
-        margin: 0 0 3%;
+        margin: 0 0.5% 3%;
     }
 
     #supply-Gallery {
@@ -1182,41 +709,29 @@ p.waterSustains_btn {
         flex-direction: column;
     }
 
-    #city_lake img {
-        height: 80vh;
-        width: auto;
-        object-fit: cover;
-        margin-bottom: 3%;
-    }
-
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
-        width: 24%;
+        width: 20%;
     }
 
     #consequences-bird {
-        transform: translate(42%, -680%);
+        transform: translate(42%, 7%);
     }
 
     #consequences-deer {
-        transform: translate(2%, -160%);
+        transform: translate(2%, 10%);
     }
 
     #consequences-forest {
-        transform: translate(35%, -155%);
+        transform: translate(35%, -65%);
     }
 
     #consequences-Turtle {
-        transform: translate(65%, -320%);
+        transform: translate(65%, -210%);
     }
 
     .waterAvail-gallery {
         display: flex;
         flex-direction: column;
-    }
-
-    .waterSustains_collagesht {
-        width: 100%;
-        margin: 0 0% 5%;
     }
 
     .flip-card {
@@ -1228,144 +743,6 @@ p.waterSustains_btn {
     sl-button.footer-btn::part(base) {
         transform: translate(70%, 0%);
     }
-}
-
-@media only screen  and (max-width: 414px){
-    
-
-    .intro {
-        transform: translate(-48%, 1%);
-    }
-
-    p.waterUses_btn {
-        transform: translate(50%, 7%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(3%, 30%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(65%, -315%);
-    }
-
-    #consequences-forest {
-        transform: translate(35%, -135%);
-    }
-
-    #consequences-bird {
-        transform: translate(42%, -600%);
-    }
-}
-
-@media only screen  and (max-width: 412px){
-    .intro {
-        transform: translate(-50%, 1%);
-    }
-
-    p.waterUses_btn {
-        transform: translate(50%, 7%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(3%, 60%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(70%, -320%);
-    }
-
-    #consequences-bird {
-        transform: translate(42%, -600%);
-    }
-
-}
-
-@media only screen  and (max-width: 390px){
-    p.waterUses_btn {
-        transform: translate(47%, 7%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%, 60%);
-    }
-
-}
-
-@media only screen  and (max-width: 384px) {
-    p.waterSustains_btn {
-        transform: translate(0%, -20%);
-    }
-
-    #consequences-bird {
-        transform: translate(42%, -660%);
-    }
-}
-
-@media only screen  and (max-width: 375px) {
-    .intro {
-        transform: translate(-48%, 2%);
-    }
-
-    .intro h1 {
-        font-size: 2.4rem;
-    }
-    
-    h2 {
-        font-size: 2rem;
-    }
-
-    h3 {
-        font-size: 1.6rem;
-    }
-
-    .intro h4 {
-        font-size: 1.4rem;
-    }
-
-    .welcome {
-        font-size: 1.2rem;
-    }
-
-    p.waterSustains_btn {
-        transform: translate(0%, -25%);    
-    }
-
-    p.waterUses_btn {
-        transform: translate(42%, 7%);
-    }
-
-    #consequences-bird {
-        transform: translate(42%, -600%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(80%, -320%);
-    }
-
-    .clickPrmpt {
-        font-size: 1.4rem;
-    }
-
-}
-
-@media only screen  and (max-width: 360px) {
-    p.waterUses_btn {
-        transform: translate(36%, 7%);
-    }
-
-    p.waterSustains_btn {
-        transform: translate(-1%, -25%);
-    }
-
-    #consequences-bird {
-        transform: translate(42%, -680%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(70%, -320%);
-    }
-
 }
 
 :root,
