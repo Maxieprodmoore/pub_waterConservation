@@ -86,7 +86,7 @@ button {
 }
 
 sl-button.footer-btn::part(base){
-    transform: translate(500%, 0%);
+    transform: translate(540%, 0%);
     padding: 2%;
 }
 
