@@ -298,6 +298,11 @@ p.waterSustains_btn {
             transform: translateY(10%);
         }
 
+#slide_waterUses {
+            height: initial;
+            object-fit: contain;
+        }
+
 /*-----END Uses of Water section -----*/
 
 /*-----How Water sustains Nature section -----*/
@@ -390,6 +395,7 @@ p.waterSustains_btn {
 
 .section-waterConserve{
             left: 23.2%;
+            right: auto;
         }
 
 /*----- END How much Water is really needed section -----*/
@@ -599,6 +605,14 @@ p.waterSustains_btn {
 /*-------END Protecting Singapore's Water supply Section------*/
 
 @media only screen and (max-width: 1600px) {
+    #phoneNavBtn{
+        display: block;
+    }
+
+    #browserNav {
+        display: none;
+    }
+
     p.waterUses_btn {
         transform: translate(50%, 90%);
     }
@@ -654,6 +668,12 @@ p.waterSustains_btn {
 
 }
 
+@media only screen and (max-width: 1194px) {
+    sl-button.footer-btn::part(base) {
+        transform: translate(330%, 0%);
+    }
+}
+
 @media only screen and (max-width: 1180px) {
     sl-button.footer-btn::part(base) {
         transform: translate(330%, 0%);
@@ -661,12 +681,26 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 1080px) {
+    #phoneNavBtn{
+        display: none;
+    }
+
+    #browserNav {
+        display: block;
+    }
+
+
     p.waterUses_btn {
         transform: translate(30%,10%);
     }
 
     p.waterSustains_btn {
         transform: translate(0%,100%);
+    }
+
+    #consq {
+        width: 94vw;
+        margin: 0 3vw;
     }
 
     sl-button.footer-btn::part(base) {
@@ -682,8 +716,7 @@ p.waterSustains_btn {
     }
 
     section {
-        margin: 0 2%;
-        width: calc(100vw - 4%);
+        width: initial;
     }
 
     p.waterUses_btn {
@@ -706,24 +739,27 @@ p.waterSustains_btn {
         display: none;
     }
 
+    #slide_waterUses {
+        height: 75vh;
+        object-fit: cover;
+    }
+
     .collageDrawer{
         --size: 100vh;
     }
 
     .section-waterConserve {
-        left: initial;
+        left: auto;
+        right: auto;
     }
 
-    #consq {
-        width: 64vw;
-        margin: 0 3vw;
-    }
+    
 
     #city_lake img{
         max-width: initial;
         max-height: initial;
         height: 60vh;
-        width: 60vw;
+        width: auto;
         object-fit: cover;
     }
 
@@ -750,9 +786,13 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 926px) {
+    section {
+        margin: initial;
+    }
+
     #city_lake img {
         height: 85vh;
-        width: 85vw;
+        width: auto;
     }
 
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
@@ -811,7 +851,7 @@ p.waterSustains_btn {
 
     #city_lake img {
         height: 95vh;
-        width: 95vw;
+        width: auto;
     }
 
     #consequences-forest {
@@ -852,6 +892,8 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 834px) {
+    
+
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
         width: 15%;
     }
@@ -908,7 +950,7 @@ p.waterSustains_btn {
 @media only screen and (max-width: 812px) {
     #city_lake img {
         height: 90vh;
-        width: 90vw;
+        width: auto;
     }
 
     #consequences-deer {
@@ -929,11 +971,6 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 810px) {
-    section {
-        padding: 0 2.5%;
-        margin: 0;
-        width: 100vw;
-    }
 
     .valueWater_btns{
         margin-left: 0px;

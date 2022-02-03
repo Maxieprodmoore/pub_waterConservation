@@ -298,6 +298,11 @@ sl-tooltip::part(base)::after{
         .section-waterUses_Title{
             transform: translateY(10%);
         }
+
+        #slide_waterUses {
+            height: initial;
+            object-fit: contain;
+        }
         /*-----END Uses of Water section -----*/
 
         /*-----How Water sustains Nature section -----*/
@@ -395,6 +400,7 @@ sl-tooltip::part(base)::after{
 
         .section-waterConserve{
             left: 23.2%;
+            right: auto;
         }
         
         
@@ -606,6 +612,14 @@ sl-tooltip::part(base)::after{
 
 /*-------END Protecting Singapore's Water supply Section------*/
 @media only screen and (max-width: 1600px) {
+    #phoneNavBtn{
+        display: block;
+    }
+
+    #browserNav {
+        display: none;
+    }
+
     p.waterUses_btn {
         transform: translate(50%, 90%);
     }
@@ -661,6 +675,12 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-width: 1194px) {
+    sl-button.footer-btn::part(base) {
+        transform: translate(330%, 0%);
+    }
+}
+
 @media only screen and (max-width: 1180px) {
     sl-button.footer-btn::part(base) {
         transform: translate(330%, 0%);
@@ -668,6 +688,15 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 1080px) {
+    #phoneNavBtn{
+        display: none;
+    }
+
+    #browserNav {
+        display: block;
+    }
+
+
     p.waterUses_btn {
         transform: translate(30%,10%);
     }
@@ -694,7 +723,6 @@ sl-tooltip::part(base)::after{
     }
 
     section {
-        margin: initial;
         width: initial;
     }
 
@@ -718,12 +746,18 @@ sl-tooltip::part(base)::after{
         display: none;
     }
 
+    #slide_waterUses {
+        height: 75vh;
+        object-fit: cover;
+    }
+
     .collageDrawer{
         --size: 100vh;
     }
 
     .section-waterConserve {
-        left: initial;
+        left: auto;
+        right: auto;
     }
 
     
@@ -732,7 +766,7 @@ sl-tooltip::part(base)::after{
         max-width: initial;
         max-height: initial;
         height: 60vh;
-        width: 60vw;
+        width: auto;
         object-fit: cover;
     }
 
@@ -759,9 +793,13 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 926px) {
+    section {
+        margin: initial;
+    }
+
     #city_lake img {
         height: 85vh;
-        width: 85vw;
+        width: auto;
     }
 
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
@@ -820,7 +858,7 @@ sl-tooltip::part(base)::after{
 
     #city_lake img {
         height: 95vh;
-        width: 95vw;
+        width: auto;
     }
 
     #consequences-forest {
@@ -919,7 +957,7 @@ sl-tooltip::part(base)::after{
 @media only screen and (max-width: 812px) {
     #city_lake img {
         height: 90vh;
-        width: 90vw;
+        width: auto;
     }
 
     #consequences-deer {
