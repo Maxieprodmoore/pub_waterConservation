@@ -940,11 +940,6 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 810px) {
-    section {
-        padding: 0 2.5%;
-        margin: 0;
-        width: 100vw;
-    }
 
     .valueWater_btns{
         margin-left: 0px;
