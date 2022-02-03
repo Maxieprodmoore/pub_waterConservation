@@ -676,6 +676,21 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-width: 1200px) {
+    .section-waterConserve {
+        left: 8%;
+    }
+
+    #slide_waterUses {
+        height: 25vh;
+        object-fit: contain;
+    }
+
+    sl-button.footer-btn::part(base) {
+        transform: translate(328%, 0%);
+    }
+}
+
 @media only screen and (max-width: 1194px) {
     .intro {
         width: calc(100vw - 10%);
