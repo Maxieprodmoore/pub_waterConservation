@@ -694,8 +694,8 @@ sl-tooltip::part(base)::after{
     }
 
     section {
-        margin: 0 2%;
-        width: calc(100vw - 4%);
+        margin: initial;
+        width: initial;
     }
 
     p.waterUses_btn {
@@ -861,10 +861,7 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 834px) {
-    section {
-        margin: initial;
-        width: initial;
-    }
+    
 
     #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
         width: 15%;
