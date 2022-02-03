@@ -674,6 +674,10 @@ p.waterSustains_btn {
         transform: translate(0%,150%);
     }
 
+    .section-waterConserve {
+        left: 11%;
+    }
+
     #consequences-bird {
         transform: translate(43%, -400%);
     }
@@ -700,6 +704,10 @@ p.waterSustains_btn {
     #slide_waterUses {
         height: 25vh;
         object-fit: contain;
+    }
+
+    .ws-collagePic {
+        width: 47%;
     }
 
     sl-button.footer-btn::part(base) {
@@ -804,10 +812,6 @@ p.waterSustains_btn {
     .section-waterConserve {
         left: auto;
         right: auto;
-    }
-
-    .ws-collagePic {
-        width: 47%;
     }
 
     #city_lake img{
