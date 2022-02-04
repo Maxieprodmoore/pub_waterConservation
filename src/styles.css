@@ -1106,7 +1106,6 @@ sl-tooltip::part(base)::after{
 
     #city_lake img {
         height: 90vh;
-        width: 90vw;
     }
 
     #consequences-deer {
@@ -1227,7 +1226,6 @@ sl-tooltip::part(base)::after{
 @media only screen and (max-width: 667px) {
     #city_lake img {
         height: 95vh;
-        width: 95vw;
     }
     
 
@@ -1276,11 +1274,11 @@ sl-tooltip::part(base)::after{
     }
 
     h1 {
-        font-size: 3.2rem;
+        font-size: 2.8rem;
     }
 
     h2 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     h4 {
@@ -1288,7 +1286,7 @@ sl-tooltip::part(base)::after{
     }
 
     h3{
-        font-size: 2.4rem;
+        font-size: 2.2rem;
     }
 
     p.waterUses_btn {
@@ -1302,6 +1300,7 @@ sl-tooltip::part(base)::after{
     .welcome {
         text-align: left;
         margin-bottom: 0;
+        font-size: 1.25rem;
     }
 
     .valueWater_btns {
