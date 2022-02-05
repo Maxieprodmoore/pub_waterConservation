@@ -1387,7 +1387,7 @@ p.waterSustains_btn {
 @media only screen  and (max-width: 414px){
 
     .intro {
-        transform: translate(-48%, 1%);
+        transform: translate(-48%, 0%);
     }
 
     p.waterUses_btn {
@@ -1417,7 +1417,7 @@ p.waterSustains_btn {
 
 @media only screen  and (max-width: 412px){
     .intro {
-        transform: translate(-50%, 1%);
+        transform: translate(-50%, 0%);
     }
 
     p.waterUses_btn {
@@ -1472,7 +1472,7 @@ p.waterSustains_btn {
 
 @media only screen  and (max-width: 375px) {
     .intro {
-        transform: translate(-48%, 2%);
+        transform: translate(-48%, 0%);
     }
 
     .intro h1 {
