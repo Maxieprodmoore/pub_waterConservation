@@ -1251,11 +1251,11 @@ p.waterSustains_btn {
     .intro {
         width: calc(100vw - 1%);
         margin: 0 0.5%;
-        transform: translate(-49%, 1%);
+        transform: translate(-49%, 0%);
     }
 
     .intro-btn::part(base) {
-        transform: translate(-2.5%,0);
+        transform: translate(-2.5%, -10%);
     }
 
     section {
