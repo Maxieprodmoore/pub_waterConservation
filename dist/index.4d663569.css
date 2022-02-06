@@ -1395,6 +1395,10 @@ p.waterSustains_btn {
         transform: translate(-48%, 0%);
     }
 
+    .intro-btn::part(base) {
+        transform: translate(-2.75%, -10%);
+    }
+
     p.waterUses_btn {
         transform: translate(50%, 7%);
     }
@@ -1422,7 +1426,7 @@ p.waterSustains_btn {
 
 @media only screen  and (max-width: 412px){
     .intro {
-        transform: translate(-50%, 0%);
+        transform: translate(-49.25%, 0%);
     }
 
     .intro-btn::part(base) {
@@ -1470,6 +1474,14 @@ p.waterSustains_btn {
 }
 
 @media only screen  and (max-width: 384px) {
+    .intro {
+        transform: translate(-48.5%, 0%);
+    }
+
+    .intro-btn::part(base) {
+        transform: translate(-3%, -10%);
+    }
+
     p.waterSustains_btn {
         transform: translate(0%, -20%);
     }
@@ -1535,6 +1547,14 @@ p.waterSustains_btn {
 }
 
 @media only screen  and (max-width: 360px) {
+    .intro {
+        transform: translate(-50%, 0%);
+    }
+
+    .intro-btn::part(base) {
+        transform: translate(-0.9%, -10%);
+    }
+
     p.waterUses_btn {
         transform: translate(36%, 7%);
     }
