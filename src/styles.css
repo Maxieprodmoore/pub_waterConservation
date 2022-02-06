@@ -1528,7 +1528,7 @@ sl-tooltip::part(base)::after{
     }
 
     .intro-btn::part(base) {
-        transform: translate(-5%, -10%);
+        transform: translate(-3.3%, -10%);
     }
 
     p.waterSustains_btn {
