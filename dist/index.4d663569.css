@@ -63,6 +63,7 @@ section{
 
 section::after , .section-waterConserve::after, .section-waterAvail::after, .proteccH2O::after{
     clear: both;
+    content: "";
 }
 
 img {
@@ -138,6 +139,7 @@ sl-button.footer-btn::part(base){
     background-repeat: no-repeat;
     background-size: contain ;
     position: relative;
+    margin: -2%;
 }
 
 .intro{
@@ -149,7 +151,7 @@ sl-button.footer-btn::part(base){
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-65%,-15%);
+    transform: translate(-60%,-15%);
     overflow: hidden;
 }
 
@@ -665,7 +667,10 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 1280px) {
-    
+    #navbar {
+        margin-top: 2%;
+    }
+
     p.waterUses_btn {
         transform: translate(38%,10%);
     }
@@ -1250,7 +1255,7 @@ p.waterSustains_btn {
 @media only screen and (max-width: 428px) {
     .intro {
         width: calc(100vw - 1%);
-        margin: 0 0.5%;
+        margin: 0 0.5% 2.25%;
         transform: translate(-49%, 0%);
     }
 
@@ -1420,6 +1425,10 @@ p.waterSustains_btn {
         transform: translate(-50%, 0%);
     }
 
+    .intro-btn::part(base) {
+        transform: translate(-2%, -10%);
+    }
+
     p.waterUses_btn {
         transform: translate(50%, 7%);
     }
@@ -1443,6 +1452,10 @@ p.waterSustains_btn {
 }
 
 @media only screen  and (max-width: 390px){
+    .intro {
+        transform: translate(-48%, 0%);
+    }
+
     p.waterUses_btn {
         transform: translate(47%, 7%);
     }
@@ -1493,6 +1506,10 @@ p.waterSustains_btn {
 
     .welcome {
         font-size: 1.2rem;
+    }
+
+    .intro-btn::part(base) {
+        transform: translate(-5%, -10%);
     }
 
     p.waterSustains_btn {
