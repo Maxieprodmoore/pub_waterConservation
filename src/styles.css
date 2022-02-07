@@ -492,7 +492,7 @@ sl-tooltip::part(base)::after{
             cursor: pointer;
         }
 
-        #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
+        .consqPic img{
             width: 11.5%;
             border-radius: 50%;
             object-fit: contain;
@@ -839,7 +839,7 @@ sl-tooltip::part(base)::after{
         object-fit: cover;
     }
 
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
+    .consqPic img {
         width: 18%;
     }
 
@@ -871,7 +871,7 @@ sl-tooltip::part(base)::after{
         width: auto;
     }
 
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
+    .consqPic img {
         width: 20%;
     }
 
@@ -970,7 +970,7 @@ sl-tooltip::part(base)::after{
 @media only screen and (max-width: 834px) {
     
 
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
+    .consqPic img {
         width: 15%;
     }
 
@@ -1122,17 +1122,25 @@ sl-tooltip::part(base)::after{
         height: 90vh;
     }
 
+    .consqPic img{
+        width: 17.5%;
+    }
+
     #consequences-deer {
-        transform: translate(11%, -110%);
+        transform: translate(11%, -160%);
+    }
+
+    #consequences-forest {
+        transform: translate(45%, -120%);
     }
 
     #consequences-bird {
-        transform: translate(43%, -270%);
+        transform: translate(35%, -700%);
     }
     
     #consequences-Turtle {
-        transform: translate(75%, -150%);
-      }
+        transform: translate(60%, -330%);
+    }
 
     sl-button.footer-btn::part(base) {
         transform: translate(206.5%, 0%);
@@ -1243,7 +1251,7 @@ sl-tooltip::part(base)::after{
     }
     
 
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img {
+    .consqPic img {
         width: 18%;
     }
 
@@ -1366,7 +1374,7 @@ sl-tooltip::part(base)::after{
         margin-bottom: 3%;
     }
 
-    #consequences-forest img, #consequences-deer img, #consequences-Turtle img, #consequences-bird img{
+    .consqPic img{
         width: 24%;
     }
 
@@ -1496,6 +1504,10 @@ sl-tooltip::part(base)::after{
 
     .intro-btn::part(base) {
         transform: translate(-3%, -10%);
+    }
+
+    p.waterUses_btn {
+        transform: translate(41%, 7%);
     }
 
     p.waterSustains_btn {
