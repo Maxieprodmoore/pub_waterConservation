@@ -664,7 +664,7 @@ sl-tooltip::part(base)::after{
     }
 
     sl-button.footer-btn::part(base) {
-        transform: translate(445%, 0%);
+        transform: translate(472%, 0%);
     }
 }
 
