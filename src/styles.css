@@ -91,42 +91,6 @@ sl-button.footer-btn::part(base){
     padding: 2%;
 }
 
-/*----Sticky Navigation-----*/
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .conserveH2O {
-    padding-top: 2%;
-}
-
-.sticky + .proteccH2O {
-    padding-top: 2%;
-}
-
-#phoneNavBtn{
-    float: right;
-    margin-right: 2%;
-    display: none;    
-}
-
-#phoneNav::part(base){
-    --size: 70vw; 
-}
-
-#phoneNav::part(body){
-    display: flex;
-    flex-direction: column;    
-    --body-spacing: 5%;   
-}
-
-#phoneNav a {
-    margin-bottom: 2%;
-    font-size: 1.5rem;
-}
-
 /*-----Intro section------*/
 #imgHero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
@@ -167,6 +131,20 @@ sl-button.footer-btn::part(base){
     position: initial;
 }
 
+/*----Sticky Navigation-----*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .conserveH2O {
+    padding-top: 2%;
+}
+
+.sticky + .proteccH2O {
+    padding-top: 2%;
+}
 
 #navbar {
     overflow: hidden;
@@ -185,6 +163,33 @@ sl-button.footer-btn::part(base){
     content: "";
     clear: both;
     position: initial;
+}
+
+#phoneNavBtn{
+    float: right;
+    margin-right: 2%;
+    display: none;    
+}
+
+#phoneNav::part(base){
+    --size: 70vw; 
+}
+
+#phoneNav::part(body){
+    display: flex;
+    flex-direction: column;    
+    --body-spacing: 5%;   
+}
+
+#phoneNav a {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+}
+
+#browserNav div sl-tooltip sl-icon-button::part(base) {
+    font-size: 2rem;
+    margin-top: 0;
+    color: #1976c7;
 }
 
 sl-tooltip::part(base){
@@ -210,12 +215,12 @@ sl-tooltip::part(base)::after{
 }
 
 #browserNav div {
-    margin-bottom: 0.95%;
+    margin-bottom: 0;
     opacity: 0.7;
 }
 
-#browserNav div sl-tooltop::part(base){
-    transform: translateX(10%) ;
+#browserNav div sl-tooltip::part(base){
+    transform: translate(30%, -120%);
 }
 
 
