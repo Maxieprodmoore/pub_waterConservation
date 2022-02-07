@@ -644,7 +644,7 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(50%, 90%);
+        transform: translate(57%, 90%);
     }
 
     p.waterSustains_btn {
@@ -657,6 +657,14 @@ sl-tooltip::part(base)::after{
 
     #consequences-bird {
         transform: translate(43%, -400%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(80%, -190%);
+    }
+
+    sl-button.footer-btn::part(base) {
+        transform: translate(445%, 0%);
     }
 }
 
@@ -1237,7 +1245,7 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-Turtle {
-        transform: translate(85%, -285%);
+        transform: translate(75%, -405%);
     }
 
     sl-button.footer-btn::part(base) {
