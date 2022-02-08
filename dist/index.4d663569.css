@@ -154,7 +154,7 @@ sl-button.footer-btn::part(base){
     width: 100vw;   
     left: 0;
     top: 0;
-    z-index: 100;
+    z-index: 2;
     position: sticky;
     padding-top: 0.25%;
 }
