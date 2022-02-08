@@ -1450,6 +1450,17 @@ sl-tooltip::part(base)::after{
         transform: translate(42%, -600%);
     }
 
+    .flip-card-TitleTxt { 
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .flip-card-Txt {
+        font-size: initial;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
     sl-button.footer-btn::part(base) {
       transform: translate(84.5%, 0%);
     }
