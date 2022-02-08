@@ -460,7 +460,6 @@ sl-tooltip::part(base)::after{
         .consequences-imgGallery{
             display: inline-block;
             width: 100%;
-            transform: translate(-2.5%, 0);
             margin-bottom: 2%;
             position: relative;
         }
@@ -666,8 +665,20 @@ sl-tooltip::part(base)::after{
         transform: translate(0%,70%);
     }
 
+    #consequences-deer {
+        transform: translate(-35%, -135%);
+    }
+
+    #consequences-bird {
+        transform: translate(20%, -400%);
+    }
+
+    #consequences-forest {
+        transform: translate(-5%, -120%);
+    }
+
     #consequences-Turtle {
-        transform: translate(80%, -190%);
+        transform: translate(40%, -190%);
     }
 }
 
@@ -685,11 +696,11 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(43%, -400%);
+        transform: translate(20%, -400%);
     }
 
     #consequences-Turtle {
-        transform: translate(83%, -180%);
+        transform: translate(40%, -180%);
     }
 
     .flip-card {
@@ -722,9 +733,6 @@ sl-tooltip::part(base)::after{
         height: initial;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(330%, 0%);
-    }
 }
 
 @media only screen and (max-width: 1180px) {
@@ -809,19 +817,24 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-deer {
-        transform: translate(11%, -160%);
-      }
+        transform: translate(-30%, -135%);
+    }
 
     #consequences-Turtle {
-        transform: translate(75%, -190%);
+        transform: translate(35%, -190%);
     }
 
     #consequences-bird {
-        transform: translate(43%, -440%);
+        transform: translate(-5%, -440%);
     }
 
     #consequences-forest {
-        transform: translate(55%, -135%);
+        transform: translate(5%, -135%);
+    }
+
+    .flip-card {
+        width: calc(50vw - 1.8%);
+        height: 30vw;
     }
 
 }
@@ -919,25 +932,28 @@ sl-tooltip::part(base)::after{
 
 @media only screen and (max-width: 834px) {
     
-
     .consqPic img {
         width: 15%;
     }
 
+    #city_lake img {
+        height: 75vh;
+    }
+
     #consequences-Turtle {
-        transform: translate(60%, -300%);
+        transform: translate(40%, -300%);
     }
 
     #consequences-bird {
-        transform: translate(50%, -700%);
+        transform: translate(10%, -700%);
     }
 
     #consequences-deer {
-        transform: translate(11%, -160%);
+        transform: translate(-30%, -160%);
     }
 
     #consequences-forest {
-        transform: translate(30%, -120%);
+        transform: translate(-5%, -120%);
     }
 
     #consq {
@@ -1083,22 +1099,20 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 768px) {
-    
-
     #consequences-deer {
-        transform: translate(10%, -150%);
+        transform: translate(-40%, -150%);
     }
 
     #consequences-forest {
-        transform: translate(30%, -105%);
+        transform: translate(-10%, -125%);
     }
 
     #consequences-bird {
-        transform: translate(43%, -640%);
+        transform: translate(10%, -600%);
     }
 
     #consequences-Turtle {
-        transform: translate(75%, -300%);
+        transform: translate(30%, -270%);
     }
 }
 
@@ -1153,20 +1167,24 @@ sl-tooltip::part(base)::after{
         transform: translate(30%, 7%);
     }
 
+    #city_lake img {
+        height: 80vh;
+    }
+
     #consequences-deer {
-        transform: translate(11%, -150%);
+        transform: translate(-40%, -150%);
     }
 
     #consequences-bird {
-        transform: translate(43%, -660%);
+        transform: translate(10%, -700%);
     }
 
     #consequences-forest {
-        transform: translate(55%, -125%);
+        transform: translate(-10%, -125%);
     }
 
     #consequences-Turtle {
-        transform: translate(75%, -405%);
+        transform: translate(40%, -330%);
     }
 
 }
