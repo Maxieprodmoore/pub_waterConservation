@@ -29124,10 +29124,6 @@ exports.export = function(dest, destName, get) {
                         <p>We lose the things that make up our beautiful landscapes.</p>
                                                 
                     </sl-dialog>
-                    <sl-dialog class="consqDialog" label="For our food chain:">
-                        <p>Certain animals will lose their food sources.</p>
-                                                
-                    </sl-dialog>
                     <sl-dialog class="consqDialog" label="For our health:">
                         <p>We lose our sources of hydration and eventually die of thirst.</p>
                                                 
@@ -29136,35 +29132,42 @@ exports.export = function(dest, destName, get) {
                         <p>Plants will wither and die, and the soil gets eroded without the plants roots to anchor them.</p>
                                                 
                     </sl-dialog>
+                    <sl-dialog class="consqDialog" label="For our food chain:">
+                        <p>Certain animals will lose their food sources.</p>
+                                                
+                    </sl-dialog>               
                     <sl-dialog class="consqDialog" label="For the creatures in the sea:">
                         <p>Creatures of the water will lose their habitats.</p>
                                                 
                     </sl-dialog>
                     <div class="consequences-imgGallery"> 
-                        <sl-tooltip hoist="" id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
-                            <img src="/sea_B4_City.6f7ac96b.jpg" alt="city view from a lake-side">
-                        </sl-tooltip>   
+                        <div class="consqPic">
+                            <sl-tooltip hoist="" id="city_lake" placement="top" content="We lose the things that make up our beautiful landscapes" trigger="click">
+                                <img src="/sea_B4_City.6f7ac96b.jpg" alt="city view from a lake-side">
+                            </sl-tooltip>
+                        </div>
+                           
                         <div class="consequences-imgCollage">                       
                                                                                 
-                            <div id="consequences-bird" class="consqPic">
+                            <div id="consequences-bird" class="consqPic consqPicBtn">
                                 <sl-tooltip hoist="" placement="top" content="Certain animals will lose their food sources." trigger="click">
                                     <img src="/Bird_drinking_Water_preview.1df63a6d.png" alt="bird catching fish from waters">
                                 </sl-tooltip>
                             </div>                                                   
                                 
-                                <div id="consequences-deer" class="consqPic">
+                                <div id="consequences-deer" class="consqPic consqPicBtn">
                                     <sl-tooltip hoist="" placement="top" content="We lose our sources of hydration and eventually die of thirst." trigger="click">
                                         <img src="/pexels-esteban-arango-deer.77579d81.png" alt="deer drinking from river">
                                     </sl-tooltip>
                                 </div>
                                 
-                                <div id="consequences-forest" class="consqPic">
+                                <div id="consequences-forest" class="consqPic consqPicBtn">
                                     <sl-tooltip hoist="" placement="top" content="Plants will wither and die, and the soil gets eroded without the plants roots to anchor them." trigger="click">
                                         <img src="/pexels-holiho-forest-preview.cd4fff68.png" alt="pathway through the forest">
                                     </sl-tooltip> 
                                 </div>
 
-                                <div id="consequences-Turtle" class="consqPic">
+                                <div id="consequences-Turtle" class="consqPic consqPicBtn">
                                     <sl-tooltip hoist="" placement="top" content="Creatures of the water will lose their habitats." trigger="click">
                                         <img src="/sea_Turtle-preview.3d8bb615.png" alt="turtle swimming">
                                     </sl-tooltip>

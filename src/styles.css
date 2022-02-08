@@ -489,7 +489,7 @@ sl-tooltip::part(base)::after{
             cursor: pointer;
         }
 
-        .consqPic img{
+        .consqPicBtn img{
             width: 11.5%;
             border-radius: 50%;
             object-fit: contain;
@@ -793,7 +793,7 @@ sl-tooltip::part(base)::after{
         height: 70vh;
     }
 
-    .consqPic img {
+    .consqPicBtn img {
         width: 13.5%;
     }
 
@@ -903,7 +903,7 @@ sl-tooltip::part(base)::after{
         object-fit: cover;
     }
 
-    .consqPic img {
+    .consqPicBtn img {
         width: 18%;
     }
 
@@ -940,7 +940,7 @@ sl-tooltip::part(base)::after{
         width: auto;
     }
 
-    .consqPic img {
+    .consqPicBtn img {
         width: 20%;
     }
 
@@ -1023,7 +1023,7 @@ sl-tooltip::part(base)::after{
 
 @media only screen and (max-width: 834px) {
     
-    .consqPic img {
+    .consqPicBtn img {
         width: 15%;
     }
 
@@ -1171,7 +1171,7 @@ sl-tooltip::part(base)::after{
         height: 90vh;
     }
 
-    .consqPic img{
+    .consqPicBtn img{
         width: 17.5%;
     }
 
@@ -1197,12 +1197,12 @@ sl-tooltip::part(base)::after{
     #city_lake img {
         max-width: initial;
         max-height: initial;
-        height: 80vh;
+        height: 90vh;
         width: auto;
         object-fit: cover;
     }
 
-    .consqPic img {
+    .consqPicBtn img {
         width: 15%;
     }
 
@@ -1342,7 +1342,7 @@ sl-tooltip::part(base)::after{
     }
     
 
-    .consqPic img {
+    .consqPicBtn img {
         width: 18%;
     }
 
@@ -1462,7 +1462,7 @@ sl-tooltip::part(base)::after{
         margin-bottom: 3%;
     }
 
-    .consqPic img{
+    .consqPicBtn img{
         width: 24%;
     }
 
@@ -1700,7 +1700,7 @@ sl-tooltip::part(base)::after{
 
     #consequences-Turtle {
         transform: translate(35%, -150%);
-    }
+      }
 }
 
 @media only screen  and (max-width: 360px) {
