@@ -92,7 +92,7 @@ sl-button.footer-btn::part(base){
 
 /*-----Intro section------*/
 #imgHero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
     background-color: #5B9ED9;
     width: 100vw;
     height: 100vh;
@@ -814,7 +814,7 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-deer {
-        transform: translate(-40%, -130%);
+        transform: translate(-30%, -130%);
     }
 
     #consequences-forest {
@@ -822,11 +822,11 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(10%, -640%);
+        transform: translate(10%, -380%);
     }
 
     #consequences-Turtle {
-        transform: translate(30%, -270%);
+        transform: translate(30%, -210%);
     }
 }
 
@@ -1558,13 +1558,23 @@ sl-tooltip::part(base)::after{
         transform: translate(3%, 60%);
     }
 
-    #consequences-Turtle {
-        transform: translate(70%, -320%);
+    #consequences-deer {
+        transform: translate(-30%, -160%);
     }
 
     #consequences-bird {
-        transform: translate(42%, -600%);
+        transform: translate(5%, -600%);
     }
+
+    #consequences-forest {
+        transform: translate(15%, -135%);
+      }
+
+      #consequences-Turtle {
+        transform: translate(35%, -320%);
+      }
+
+    
 
 }
 
@@ -1579,6 +1589,53 @@ sl-tooltip::part(base)::after{
 
     p.waterSustains_btn {
         transform: translate(0%, -20%);
+    }
+
+}
+
+@media only screen and (max-height: 384px) {
+    .intro {
+        width: 98%;
+        margin: 0 1%;
+        transform: translate(-50%,-5%);
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro h4 {
+        font-size: 1.6rem;
+    }
+
+    .welcome {
+        text-align: center;
+        font-size: 1.2rem;
+        margin-top: 0;
+        margin-bottom: 0.25%;
+    }
+
+    #city_lake img {
+        max-width: initial;
+        max-height: initial;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    #consequences-bird {
+        transform: translate(15%, -300%);
+    }
+
+    #consequences-deer {
+        transform: translate(-35%, -120%);
+    }
+
+    #consequences-forest {
+        transform: translate(-5%, -110%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(35%, -160%);
     }
 
 }
@@ -1600,8 +1657,20 @@ sl-tooltip::part(base)::after{
         transform: translate(0%, -20%);
     }
 
+    #consequences-deer {
+        transform: translate(-30%, -160%);
+    }
+
+    #consequences-forest {
+        transform: translate(5%, -135%);
+    }
+
     #consequences-bird {
-        transform: translate(42%, -660%);
+        transform: translate(20%, -640%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -320%);
     }
 
 }
