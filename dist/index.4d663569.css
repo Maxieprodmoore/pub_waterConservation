@@ -53,6 +53,7 @@ section{
     width: calc(100vw - 10%);
     display: block;
     overflow: hidden;
+    text-align: center;
 }
 
 .section-waterConserve, .section-waterAvail, .proteccH2O, .section-waterSustains {
@@ -82,12 +83,10 @@ button {
 
 .footer {
     display: block;
-    width: 100vw;
     margin-top: 1%;
 }
 
 sl-button.footer-btn::part(base){
-    transform: translate(540%, 0%);
     padding: 2%;
 }
 
@@ -651,10 +650,6 @@ p.waterSustains_btn {
     #consequences-Turtle {
         transform: translate(80%, -190%);
     }
-
-    sl-button.footer-btn::part(base) {
-        transform: translate(472%, 0%);
-    }
 }
 
 @media only screen and (max-width: 1366px) {
@@ -697,10 +692,6 @@ p.waterSustains_btn {
         min-width: initial;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(350%, 0%);
-    }
-
 }
 
 @media only screen and (max-width: 1200px) {
@@ -714,9 +705,6 @@ p.waterSustains_btn {
         width: 47%;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(328%, 0%);
-    }
 }
 
 @media only screen and (max-width: 1194px) {
@@ -736,9 +724,7 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 1180px) {
-    sl-button.footer-btn::part(base) {
-        transform: translate(330%, 0%);
-    }
+    
 }
 
 @media only screen and (max-width: 1080px) {
@@ -764,9 +750,6 @@ p.waterSustains_btn {
         margin: 0 3vw;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(295%, 0%);
-    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -869,9 +852,6 @@ p.waterSustains_btn {
         transform: translate(60%, -280%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(250%, 0%);
-    }
 }
 
 @media only screen and (max-width: 915px) {
@@ -892,9 +872,6 @@ p.waterSustains_btn {
         transform: translate(75%, -150%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(260%, 0%);
-    }
 }
 
 @media only screen and (max-width: 896px) {
@@ -916,27 +893,18 @@ p.waterSustains_btn {
         transform: translate(60%, -330%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(243.5%, 0%);
-    }
 }
 
 @media only screen and (max-width: 883px) {
-    sl-button.footer-btn::part(base) {
-        transform: translate(270%, 0%);
-    }
+
 }
 
 @media only screen and (max-width: 854px) {
-    sl-button.footer-btn::part(base) {
-        transform: translate(240%, 0%);
-    }
+
 }
 
 @media only screen and (max-width: 846px) {
-    sl-button.footer-btn::part(base) {
-        transform: translate(235%, 0%);
-    }
+
 }
 
 @media only screen and (max-width: 844px) {
@@ -973,10 +941,6 @@ p.waterSustains_btn {
         margin: 0 2vw;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(230%, 0%);
-    }
-
 }
 
 @media only screen and (max-width: 820px) {
@@ -1001,9 +965,6 @@ p.waterSustains_btn {
         transform: translate(60%, -300%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(226%, 0%);
-    }
 }
 
 @media only screen and (max-width: 812px) {
@@ -1081,7 +1042,6 @@ p.waterSustains_btn {
     }
 
     sl-button.footer-btn::part(base){
-        transform: translate(216%, 0%);
         padding: 2%;
     }
 
@@ -1114,10 +1074,6 @@ p.waterSustains_btn {
     
     #consequences-Turtle {
         transform: translate(60%, -330%);
-    }
-
-    sl-button.footer-btn::part(base) {
-        transform: translate(206.5%, 0%);
     }
 
 }
@@ -1157,15 +1113,10 @@ p.waterSustains_btn {
         transform: translate(75%, -150%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(210%, 0%);
-    }
 }
 
 @media only screen and (max-width: 740px) {
-    sl-button.footer-btn::part(base) {
-        transform: translate(195%, 0%);
-    }
+
 }
 
 @media only screen and (max-width: 720px) {
@@ -1214,9 +1165,6 @@ p.waterSustains_btn {
         transform: translate(75%, -405%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(185%, 0%);
-    }
 }
 
 @media only screen and (max-width: 667px) {
@@ -1245,9 +1193,6 @@ p.waterSustains_btn {
         transform: translate(60%, -300%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(170%, 0%);
-    }
 }
 
 @media only screen and (max-width: 428px) {
@@ -1382,9 +1327,6 @@ p.waterSustains_btn {
         margin-right: 0;
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(85%, 0%);
-    }
 }
 
 @media only screen  and (max-width: 414px){
@@ -1428,9 +1370,6 @@ p.waterSustains_btn {
         margin-bottom: 0;
     }
 
-    sl-button.footer-btn::part(base) {
-      transform: translate(84.5%, 0%);
-    }
 }
 
 @media only screen  and (max-width: 412px){
@@ -1458,10 +1397,6 @@ p.waterSustains_btn {
         transform: translate(42%, -600%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(90%, 0%);
-    }
-
 }
 
 @media only screen  and (max-width: 390px){
@@ -1477,9 +1412,6 @@ p.waterSustains_btn {
         transform: translate(0%, -20%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(76%, 0%);
-    }
 }
 
 @media only screen  and (max-width: 384px) {
@@ -1503,9 +1435,6 @@ p.waterSustains_btn {
         transform: translate(42%, -660%);
     }
 
-    sl-button.footer-btn::part(base) {
-        transform: translate(80%, 0%);
-    }
 }
 
 @media only screen  and (max-width: 375px) {
@@ -1582,10 +1511,6 @@ p.waterSustains_btn {
 
     #consequences-Turtle {
         transform: translate(70%, -320%);
-    }
-
-    sl-button.footer-btn::part(base) {
-        transform: translate(70%, 0%);
     }
 
 }
