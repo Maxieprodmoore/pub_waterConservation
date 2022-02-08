@@ -807,6 +807,29 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-height: 1080px){
+    #city_lake img {
+        height: 85vh;
+        width: initial;
+    }
+
+    #consequences-deer {
+        transform: translate(-40%, -130%);
+    }
+
+    #consequences-forest {
+        transform: translate(-15%, -110%);
+    }
+
+    #consequences-bird {
+        transform: translate(10%, -640%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -270%);
+    }
+}
+
 @media only screen and (max-width: 1080px) {
     #phoneNavBtn{
         display: none;
@@ -1118,19 +1141,19 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-deer {
-        transform: translate(11%, -130%);
+        transform: translate(-40%, -130%);
     }
 
     #consequences-forest {
-        transform: translate(45%, -105%);
-    }
-
-    #consequences-Turtle {
-        transform: translate(60%, -270%);
+        transform: translate(-15%, -110%);
     }
 
     #consequences-bird {
-        transform: translate(50%, -640%);
+        transform: translate(10%, -640%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -270%);
     }
 
     sl-button.footer-btn::part(base){
@@ -1236,7 +1259,29 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 740px) {
+    #city_lake img {
+        max-width: initial;
+        max-height: initial;
+        height: 90vh;
+        width: auto;
+        object-fit: cover;
+    }
 
+    #consequences-deer {
+        transform: translate(-30%, -120%);
+    }
+
+    #consequences-forest {
+        transform: translate(-12.5%, -125%);
+    }
+
+    #consequences-bird {
+        transform: translate(15%, -280%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(40%, -150%);
+    }
 }
 
 @media only screen and (max-width: 720px) {
@@ -1612,6 +1657,52 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-height: 360px) {
+    .intro {
+        width: 98%;
+        margin: 0 1%;
+        transform: translate(-50%,-22%);
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .intro h4 {
+        font-size: 1.6rem;
+    }
+
+    .welcome {
+        font-size: 1.25rem;
+        margin-top: 0.25%;
+        margin-bottom: 0;
+    }
+
+    #city_lake img {
+        max-width: initial;
+        max-height: initial;
+        height: 90vh;
+        width: auto;
+        object-fit: cover;
+    }
+
+    #consequences-deer {
+        transform: translate(-30%, -120%);
+    }
+
+    #consequences-forest {
+        transform: translate(-12.5%, -125%);
+    }
+
+    #consequences-bird {
+        transform: translate(15%, -280%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(35%, -150%);
+    }
+}
+
 @media only screen  and (max-width: 360px) {
     .intro {
         transform: translate(-50%, 0%);
@@ -1629,12 +1720,20 @@ sl-tooltip::part(base)::after{
         transform: translate(0%, -25%);
     }
 
+    #consequences-deer {
+        transform: translate(-30%, -160%);
+    }
+
+    #consequences-forest {
+        transform: translate(05%, -135%);
+    }
+
     #consequences-bird {
-        transform: translate(42%, -680%);
+        transform: translate(25%, -660%);
     }
 
     #consequences-Turtle {
-        transform: translate(70%, -320%);
+        transform: translate(35%, -270%);
     }
 
 }
