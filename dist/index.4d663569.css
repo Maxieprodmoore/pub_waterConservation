@@ -406,11 +406,6 @@ p.waterSustains_btn {
             text-align: center;
         }
 
-.section-waterConserve{
-            left: 23.2%;
-            right: auto;
-        }
-
 /*----- END How much Water is really needed section -----*/
 
 /*----- How much Water we have section -----*/
@@ -663,9 +658,6 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 1366px) {
-    .section-waterConserve {
-        left: 14%;
-    }
 
     p.waterUses_btn {
         transform: translate(35%,50%);
@@ -693,10 +685,6 @@ p.waterSustains_btn {
         transform: translate(0%,150%);
     }
 
-    .section-waterConserve {
-        left: 11%;
-    }
-
     #consequences-bird {
         transform: translate(43%, -400%);
     }
@@ -716,9 +704,6 @@ p.waterSustains_btn {
 }
 
 @media only screen and (max-width: 1200px) {
-    .section-waterConserve {
-        left: 8%;
-    }
 
     #slide_waterUses {
         height: 25vh;
@@ -743,10 +728,6 @@ p.waterSustains_btn {
 
     #slide_waterUses {
         height: initial;
-    }
-
-    .section-waterConserve {
-        left: 8.5%;
     }
 
     sl-button.footer-btn::part(base) {
@@ -826,11 +807,6 @@ p.waterSustains_btn {
 
     .collageDrawer{
         --size: 100vh;
-    }
-
-    .section-waterConserve {
-        left: auto;
-        right: auto;
     }
 
     #city_lake img{
@@ -1069,10 +1045,6 @@ p.waterSustains_btn {
 
     p.waterUses_btn {
         transform: translate(30%, 7%);
-    }
-
-    .section-waterConserve {
-        left: initial;
     }
 
     .waterNeed-demo {
@@ -1487,7 +1459,7 @@ p.waterSustains_btn {
     }
 
     sl-button.footer-btn::part(base) {
-        transform: translate(80%, 0%);
+        transform: translate(90%, 0%);
     }
 
 }

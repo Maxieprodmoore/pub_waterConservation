@@ -408,15 +408,8 @@ sl-tooltip::part(base)::after{
         .waterNeed-demo sl-tab-panel::part(base) {
             --padding: 2%;
             text-align: center;
-        }
-
-        .section-waterConserve{
-            left: 23.2%;
-            right: auto;
-        }
+        }      
         
-        
-
         /*----- END How much Water is really needed section -----*/
 
 
@@ -669,9 +662,6 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 1366px) {
-    .section-waterConserve {
-        left: 14%;
-    }
 
     p.waterUses_btn {
         transform: translate(35%,50%);
@@ -699,10 +689,6 @@ sl-tooltip::part(base)::after{
         transform: translate(0%,150%);
     }
 
-    .section-waterConserve {
-        left: 11%;
-    }
-
     #consequences-bird {
         transform: translate(43%, -400%);
     }
@@ -722,9 +708,6 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 1200px) {
-    .section-waterConserve {
-        left: 8%;
-    }
 
     #slide_waterUses {
         height: 25vh;
@@ -749,10 +732,6 @@ sl-tooltip::part(base)::after{
 
     #slide_waterUses {
         height: initial;
-    }
-
-    .section-waterConserve {
-        left: 8.5%;
     }
 
     sl-button.footer-btn::part(base) {
@@ -832,11 +811,6 @@ sl-tooltip::part(base)::after{
 
     .collageDrawer{
         --size: 100vh;
-    }
-
-    .section-waterConserve {
-        left: auto;
-        right: auto;
     }
 
     #city_lake img{
@@ -1075,10 +1049,6 @@ sl-tooltip::part(base)::after{
 
     p.waterUses_btn {
         transform: translate(30%, 7%);
-    }
-
-    .section-waterConserve {
-        left: initial;
     }
 
     .waterNeed-demo {
@@ -1493,7 +1463,7 @@ sl-tooltip::part(base)::after{
     }
 
     sl-button.footer-btn::part(base) {
-        transform: translate(80%, 0%);
+        transform: translate(90%, 0%);
     }
 
 }
