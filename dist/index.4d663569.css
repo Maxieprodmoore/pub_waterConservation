@@ -400,8 +400,8 @@ p.waterSustains_btn {
             color: #E61A14;
         }
 
-.waterNeed-demo sl-tab-panel::part(base) {
-            --padding: 2%;
+.waterNeed-demo::part(base) {
+            padding: 3%;
             text-align: center;
         }
 
