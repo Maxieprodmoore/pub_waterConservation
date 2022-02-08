@@ -1563,12 +1563,12 @@ p.waterSustains_btn {
     }
 
     #consequences-forest {
-        transform: translate(15%, -135%);
-      }
+        transform: translate(-5%, -135%);
+    }
 
-      #consequences-Turtle {
-        transform: translate(35%, -320%);
-      }
+    #consequences-Turtle {
+        transform: translate(33%, -320%);
+    }
 
     
 
