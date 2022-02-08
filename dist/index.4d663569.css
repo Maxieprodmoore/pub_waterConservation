@@ -488,19 +488,19 @@ p.waterSustains_btn {
         }
 
 #consequences-forest {
-            transform: translate(55%, -150%);
+            transform: translate(0%, -150%);
         }
 
 #consequences-deer {
-            transform: translate(11%, -135%);
+            transform: translate(-30%, -135%);
         }
 
 #consequences-bird {
-            transform: translate(43%, -530%);
+            transform: translate(20%, -530%);
         }
 
 #consequences-Turtle {
-            transform: translate(90%, -190%);
+            transform: translate(50%, -190%);
         }
 
 /*Styling big image BG--------*/
