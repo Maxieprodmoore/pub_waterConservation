@@ -94,13 +94,13 @@ sl-button.footer-btn::part(base){
 #imgHero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.75)), url("./../images/pexels-pixabay-247765-waterDroplet.jpg");
     background-color: #5B9ED9;
-    width: 100vw;
+    width: calc(100vw + 4%);
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain ;
     position: relative;
-    margin: -2%;
+    margin: 0 -2%;
 }
 
 .intro{
@@ -633,7 +633,7 @@ sl-tooltip::part(base)::after{
 /*-------END Protecting Singapore's Water supply Section------*/
 @media only screen and (max-height: 1600px) {
     .intro {
-        transform: translate(-51%, 1%);
+        transform: translate(-65%, 1%);
     }
 
     .consqPicBtn img {
@@ -769,6 +769,10 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 1280px) {
+    .intro {
+        transform: translate(-62.75%, -2%);
+    }
+
     #navbar {
         margin-top: 2%;
     }
@@ -935,6 +939,33 @@ sl-tooltip::part(base)::after{
 
 }
 
+@media only screen and (max-height: 1024px) {
+    .intro {
+        transform: translate(-63.25%, 1%);
+    }
+
+    p.waterUses_btn {
+        transform: translate(38.5%,-20%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(-0.75%, -20%);
+    }
+
+    #consequences-forest {
+        transform: translate(-5%, -110%);
+    }
+
+    #consequences-bird {
+        transform: translate(20%, -480%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -200%);
+    }
+
+}
+
 @media only screen and (max-width: 1024px) {
     .intro {
         width: 90%;
@@ -956,7 +987,7 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterSustains_btn {
-        transform: translate(0.25%,70%);
+        transform: translate(0%,70%);
     }
 
     #navbar{
@@ -1202,7 +1233,14 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-width: 834px) {
-    
+    p.waterUses_btn {
+        transform: translate(22%,-20%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%,-35%);
+    }
+
     .consqPicBtn img {
         width: 15%;
     }
@@ -1242,6 +1280,10 @@ sl-tooltip::part(base)::after{
 
     #consequences-bird {
         transform: translate(15%, -550%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(25%, -210%);
     }
 }
 
@@ -1319,6 +1361,36 @@ sl-tooltip::part(base)::after{
 
     #consequences-Turtle {
         transform: translate(75%, -150%);
+    }
+}
+
+@media only screen and (max-height: 810px){
+    .intro {
+        transform: translate(-56%,-15%);
+    }
+
+    p.waterUses_btn {
+        transform: translate(21%, 7%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%, -25%);
+    }
+
+    #consequences-deer {
+        transform: translate(-40%, -140%);
+    }
+
+    #consequences-forest {
+        transform: translate(-10%, -135%);
+    }
+
+    #consequences-bird {
+        transform: translate(12%, -510%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -210%);
     }
 }
 
@@ -1535,7 +1607,10 @@ sl-tooltip::part(base)::after{
 
 @media only screen and (max-width: 720px) {
     .intro {
-        transform: translate(-51%, 1%);
+        transform: translate(-51.75%, 1%);
+        padding: 0 2%;
+        width: 99%;
+        margin: 0 0.5%;
     }
     
     h1 {
@@ -1705,6 +1780,7 @@ sl-tooltip::part(base)::after{
     #supply-Gallery {
         display: flex;
         flex-direction: column;
+        margin-bottom: 3%;
     }
 
     .flip-card {
@@ -1810,7 +1886,7 @@ sl-tooltip::part(base)::after{
 @media only screen  and (max-width: 414px){
 
     .intro {
-        transform: translate(-48%, 0%);
+        transform: translate(-51%, 0%);
     }
 
     .intro-btn::part(base) {
@@ -1866,7 +1942,7 @@ sl-tooltip::part(base)::after{
 
 @media only screen  and (max-width: 412px){
     .intro {
-        transform: translate(-49.25%, 0%);
+        transform: translate(-51%, 0%);
     }
 
     .intro-btn::part(base) {
@@ -1874,11 +1950,11 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(50%, 7%);
+        transform: translate(47%, 7%);
     }
 
     p.waterSustains_btn {
-        transform: translate(3%, 60%);
+        transform: translate(1%, 60%);
     }
 
     #consequences-deer {
@@ -1907,11 +1983,19 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(47%, 7%);
+        transform: translate(40%, 7%);
     }
 
     p.waterSustains_btn {
         transform: translate(0%, -20%);
+    }
+
+    #consequences-bird {
+        transform: translate(5%, -620%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(27%, -310%);
     }
 
 }
@@ -1966,7 +2050,7 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(41%, 7%);
+        transform: translate(40%, 7%);
     }
 
     p.waterSustains_btn {
@@ -2021,11 +2105,11 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterSustains_btn {
-        transform: translate(1%, -25%);    
+        transform: translate(0%, -25%);    
     }
 
     p.waterUses_btn {
-        transform: translate(40%, 7%);
+        transform: translate(36%, 7%);
     }
 
     #consequences-deer {
@@ -2054,7 +2138,7 @@ sl-tooltip::part(base)::after{
     .intro {
         width: 98%;
         margin: 0 1%;
-        transform: translate(-50%,-22%);
+        transform: translate(-52%,-22%);
     }
 
     h1 {
@@ -2071,6 +2155,14 @@ sl-tooltip::part(base)::after{
         margin-bottom: 0;
     }
 
+    p.waterUses_btn {
+        transform: translate(15%,-20%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(0%,70%);
+    }
+
     #consequences-deer {
         transform: translate(-30%, -120%);
     }
@@ -2080,17 +2172,31 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(15%, -260%);
+        transform: translate(15%, -290%);
     }
 
     #consequences-Turtle {
         transform: translate(30%, -150%);
-      }
+    }
+
+    .flip-card {
+        width: calc(60vw - 1.8%);
+        height: 40vw;
+    }
+
+    .flip-card-Txt {
+        font-size: initial;
+    }
+
+    .flip-card-back {
+        padding: 15% 10% 15%;
+    }
+
 }
 
 @media only screen  and (max-width: 360px) {
     .intro {
-        transform: translate(-50%, 0%);
+        transform: translate(-52.25%, 0%);
     }
 
     .intro-btn::part(base) {
