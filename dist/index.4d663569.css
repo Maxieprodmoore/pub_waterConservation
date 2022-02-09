@@ -627,6 +627,32 @@ p.waterSustains_btn {
 
 /*-------END Protecting Singapore's Water supply Section------*/
 
+@media only screen and (max-height: 1600px) {
+    .intro {
+        transform: translate(-51%, 1%);
+    }
+
+    .consqPicBtn img {
+        width: 20%;
+    }
+
+    #consequences-deer {
+        transform: translate(-35%, -160%);
+    }
+
+    #consequences-forest {
+        transform: translate(-10%, -140%);
+    }
+
+    #consequences-bird {
+        transform: translate(10%, -720%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(30%, -360%);
+    }
+}
+
 @media only screen and (max-width: 1600px) {
     #phoneNavBtn{
         display: block;
@@ -654,6 +680,36 @@ p.waterSustains_btn {
 
     #consequences-Turtle {
         transform: translate(80%, -190%);
+    }
+}
+
+@media only screen and (max-height: 1440px) {
+    p.waterUses_btn {
+        transform: translate(115%, 90%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(39%, 66%);
+    }
+
+    .consqPicBtn img {
+        width: 18%;
+    }
+
+    #consequences-deer {
+        transform: translate(-40%, -120%);
+    }
+
+    #consequences-forest {
+        transform: translate(10%, -120%);
+    }
+
+    #consequences-bird {
+        transform: translate(70%, -540%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(90%, -200%);
     }
 }
 
@@ -1475,7 +1531,7 @@ p.waterSustains_btn {
 
 @media only screen and (max-width: 720px) {
     .intro {
-        transform: translate(-55%, 1%);
+        transform: translate(-51%, 1%);
     }
     
     h1 {
