@@ -657,6 +657,30 @@ p.waterSustains_btn {
     }
 }
 
+@media only screen and (max-height: 1366px) {
+    .consqPicBtn img {
+        width: 16%;
+    }
+
+    #consequences-deer {
+        transform: translate(-40%, -135%);
+    }
+
+    #consequences-forest {
+        transform: translate(-15%, -135%);
+    }
+
+    #consequences-bird {
+        transform: translate(5%, -500%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(35%, -210%);
+    }
+
+
+}
+
 @media only screen and (max-width: 1366px) {
 
     p.waterUses_btn {
@@ -859,15 +883,20 @@ p.waterSustains_btn {
     }
 
     section {
-        width: 100%;
+        width: initial;
+        margin: 0 2%;
+    }
+
+    p.waterUses_btn, p.waterSustains_btn {
+        font-size: 2.8rem;
     }
 
     p.waterUses_btn {
-        transform: translate(15%,10%);
+        transform: translate(25%,10%);
     }
 
     p.waterSustains_btn {
-        transform: translate(1%,70%);
+        transform: translate(0.25%,70%);
     }
 
     #navbar{
@@ -1052,6 +1081,32 @@ p.waterSustains_btn {
 
     #consequences-bird {
         transform: translate(50%, -270%);
+    }
+}
+
+@media only screen and (max-height: 834px) {
+    p.waterUses_btn {
+        transform: translate(28%,-20%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(-1.35%, 30%);
+    }
+
+    #consequences-deer {
+        transform: translate(-40%, -130%);
+    }
+
+    #consequences-forest {
+        transform: translate(-20%, -110%);
+    }
+
+    #consequences-bird {
+        transform: translate(0%, -440%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(25%, -180%);
     }
 }
 
