@@ -501,7 +501,7 @@ p.waterSustains_btn {
         }
 
 #consequences-bird {
-            transform: translate(20%, -530%);
+            transform: translate(20%, -570%);
         }
 
 #consequences-Turtle {
@@ -1512,16 +1512,20 @@ p.waterSustains_btn {
         transform: translate(3%, 30%);
     }
 
+    #consequences-deer {
+        transform: translate(-35%, -160%);
+    }
+
     #consequences-Turtle {
-        transform: translate(65%, -315%);
+        transform: translate(30%, -270%);
     }
 
     #consequences-forest {
-        transform: translate(35%, -135%);
+        transform: translate(-10%, -135%);
     }
 
     #consequences-bird {
-        transform: translate(42%, -600%);
+        transform: translate(10%, -600%);
     }
 
     .flip-card-TitleTxt { 
