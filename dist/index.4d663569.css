@@ -295,12 +295,12 @@ p.waterUses_btn::after, p.waterSustains_btn::after{
     }
 
 p.waterUses_btn {
-        transform: translate(75%, 90%);
+        transform: translate(90%, 90%);
         color: black;
     }
 
 p.waterSustains_btn {
-        transform: translate(16%, 400%);
+        transform: translate(30%, 400%);
         color: white;
     }
 
@@ -353,7 +353,7 @@ p.waterSustains_btn {
 
 .collageDrawer {
                     --size: 100vh; /* Full width */
-                    --body-spacing: 5%;
+                    --body-spacing: 3.5% 2%;
                 }
 
 .collageDrawer::part(panel) {
@@ -372,6 +372,7 @@ p.waterSustains_btn {
 .collageDrawer div p {
                     font-size: 2rem;
                     text-align: center;
+                    margin-top: 0;
                 }
 
 /*-----Overlay Image---*/
@@ -480,7 +481,7 @@ p.waterSustains_btn {
         }
 
 #consequences-forest, #consequences-deer, #consequences-Turtle, #consequences-bird{
-            z-index: 300; 
+            z-index: 3; 
             position: absolute;  
             overflow: hidden;        
             cursor: pointer;
@@ -608,7 +609,7 @@ p.waterSustains_btn {
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 20% 10% 20%;
+            padding: 15% 10% 20%;
             
         }
 
@@ -953,11 +954,11 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(20%, -480%);
+        transform: translate(20%, -400%);
     }
 
     #consequences-Turtle {
-        transform: translate(30%, -200%);
+        transform: translate(40%, -200%);
     }
 
 }
@@ -1199,11 +1200,11 @@ p.waterSustains_btn {
 
 @media only screen and (max-height: 834px) {
     p.waterUses_btn {
-        transform: translate(28%,-20%);
+        transform: translate(71%,-20%);
     }
 
     p.waterSustains_btn {
-        transform: translate(-1.35%, 30%);
+        transform: translate(18%, 30%);
     }
 
     #city_lake img {
@@ -1220,7 +1221,7 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(0%, -440%);
+        transform: translate(0%, -400%);
     }
 
     #consequences-Turtle {
@@ -1449,11 +1450,11 @@ p.waterSustains_btn {
 
 @media only screen and (max-height: 800px) {
     p.waterUses_btn {
-        transform: translate(33%, 7%);
+        transform: translate(68.5%, 7%);
     }
 
     p.waterSustains_btn {
-        transform: translate(0%, -25%);
+        transform: translate(16%, -25%);
     }
 
     #consequences-deer {
