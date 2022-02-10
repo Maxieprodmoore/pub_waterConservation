@@ -355,7 +355,7 @@ sl-tooltip::part(base)::after{
             /*Creating Overlay-----*/
                 /*-----Overlay Background---*/
                 .collageDrawer {
-                    --size: 100vh; /* Full width */
+                    --size: 100vw; /* Full width */
                     --body-spacing: 3.5% 2%;
                 }
 
@@ -1783,6 +1783,11 @@ sl-tooltip::part(base)::after{
         width: 100%;
         height: 100%;
         margin: 0 0 2%;
+    }
+
+    .collageDrawer {
+        --size: 100vw; /* Full width */
+        --body-spacing: 1%;
     }
 
     .valueWater_img {

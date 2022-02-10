@@ -352,7 +352,7 @@ p.waterSustains_btn {
 /*-----Overlay Background---*/
 
 .collageDrawer {
-                    --size: 100vh; /* Full width */
+                    --size: 100vw; /* Full width */
                     --body-spacing: 3.5% 2%;
                 }
 
@@ -1779,6 +1779,11 @@ p.waterSustains_btn {
         width: 100%;
         height: 100%;
         margin: 0 0 2%;
+    }
+
+    .collageDrawer {
+        --size: 100vw; /* Full width */
+        --body-spacing: 1%;
     }
 
     .valueWater_img {
