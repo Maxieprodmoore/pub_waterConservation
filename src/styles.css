@@ -372,9 +372,10 @@ sl-tooltip::part(base)::after{
                     object-fit: contain;
                 }
 
-                .collageDrawer div p {
+                .overlay-Content p {
                     font-size: 2rem;
                     text-align: center;
+                    margin-top: 0;
                 }
 
                 /*-----Overlay Image---*/
@@ -611,7 +612,7 @@ sl-tooltip::part(base)::after{
             background-color: #2980b9;
             color: white;
             transform: rotateY(180deg);
-            padding: 20% 10% 20%;
+            padding: 15% 10% 20%;
             
         }
         
