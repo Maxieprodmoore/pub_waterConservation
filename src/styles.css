@@ -372,7 +372,7 @@ sl-tooltip::part(base)::after{
                     object-fit: contain;
                 }
 
-                .overlay-Content p {
+                .collageDrawer div p {
                     font-size: 2rem;
                     text-align: center;
                     margin-top: 0;
