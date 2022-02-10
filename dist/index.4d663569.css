@@ -1643,6 +1643,10 @@ p.waterSustains_btn {
         transform: translate(30%, 7%);
     }
 
+    .collageDrawer div p {
+        font-size: 1.15rem;
+    }
+
     #city_lake img {
         height: 80vh;
     }
