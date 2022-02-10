@@ -373,7 +373,7 @@ sl-tooltip::part(base)::after{
                 }
 
                 .collageDrawer div p {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     text-align: center;
                     margin-top: 0;
                 }
@@ -1664,7 +1664,7 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-Turtle {
-        transform: translate(40%, -330%);
+        transform: translate(27%, -390%);
     }
 
 }
