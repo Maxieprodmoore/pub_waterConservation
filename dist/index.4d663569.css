@@ -659,6 +659,10 @@ p.waterSustains_btn {
         display: block;
     }
 
+    .valueWater_img a {
+        z-index: 10;
+    }
+
     #browserNav {
         display: none;
     }
@@ -918,6 +922,10 @@ p.waterSustains_btn {
 
     #browserNav {
         display: block;
+    }
+
+    .valueWater_img a {
+        z-index: 20;
     }
 
 
@@ -1736,6 +1744,10 @@ p.waterSustains_btn {
 
     #browserNav {
         padding-left: 0;
+    }
+
+    .valueWater_img a {
+        z-index: 10;
     }
 
     .welcome {
