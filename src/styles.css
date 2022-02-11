@@ -633,6 +633,33 @@ sl-tooltip::part(base)::after{
 
 
 /*-------END Protecting Singapore's Water supply Section------*/
+@media only screen and (max-height: 899px) {
+    p.waterUses_btn {
+        transform: translate(68%, 7%);
+    }
+
+    p.waterSustains_btn {
+        transform: translate(15%, 30%);
+    }
+
+    #consequences-deer {
+        transform: translate(-30%, -120%);
+    }
+
+    #consequences-forest {
+        transform: translate(0%, -110%);
+    }
+
+    #consequences-bird {
+        transform: translate(30%, -360%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(36%, -180%);
+    }
+
+}
+
 @media only screen and (max-height: 1600px) {
     .intro {
         transform: translate(-65%, 1%);
