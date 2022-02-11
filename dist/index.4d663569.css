@@ -196,6 +196,7 @@ sl-button.footer-btn::part(base){
 
 sl-tooltip::part(base){
     max-width: 100%;
+    position: relative;
     z-index: 400;
 }
 
@@ -300,7 +301,7 @@ p.waterUses_btn {
     }
 
 p.waterSustains_btn {
-        transform: translate(30%, 400%);
+        transform: translate(45%, 400%);
         color: white;
     }
 
@@ -1795,6 +1796,10 @@ p.waterSustains_btn {
         width: 100%;
         height: 100%;
         margin: 0 0 2%;
+    }
+
+    .waterAvail-img sl-tooltip::part(base) {
+        transform: translateY(-10%);
     }
 
     .collageDrawer {
