@@ -193,19 +193,19 @@ sl-button.footer-btn::part(base){
 }
 
 sl-tooltip::part(base){
-    max-width: 100%;
+    --max-width: 100%;
     position: relative;
-    z-index: 400;
+    z-index: 999;
 }
 
 sl-tooltip::part(base)::after{
-    --z-index: initial;
+    z-index: initial;
 }
 
 #browserNav {
     display: flex;
     flex-direction: column;
-    padding-top: 2%;
+    padding-top: 0.25%;
     padding-left: initial;
 }
 
@@ -222,6 +222,7 @@ sl-tooltip::part(base)::after{
 
 #browserNav div sl-tooltip::part(base){
     transform: translate(30%, -120%);
+
 }
 
 
@@ -1720,8 +1721,16 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-height: 667px) {
+    #consequences-deer {
+        transform: translate(-35%, -120%);
+    }
+
     #consequences-bird {
-        transform: translate(20%, -540%);
+        transform: translate(30%, -400%);
+    }
+
+    #consequences-Turtle {
+        transform: translate(35%, -160%);
     }
 }
 
