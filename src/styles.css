@@ -454,6 +454,10 @@ sl-tooltip::part(base)::after{
             cursor: pointer;
         }
 
+        .waterAvail-img:hover {
+            opacity: 0.7;
+        }
+
         .waterAvail-img::after {
             clear: both;
             display: flex;
