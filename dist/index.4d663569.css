@@ -1436,6 +1436,14 @@ p.waterSustains_btn {
         transform: translate(0%, -25%);
     }
 
+    #browserNav {
+        display: none;
+    }
+
+    #phoneNavBtn {
+        display: block;
+    }
+
     .consqPicBtn img {
         width: 18%;
     }
@@ -1449,7 +1457,7 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(12%, -510%);
+        transform: translate(18%, -360%);
     }
 
     #consequences-Turtle {
