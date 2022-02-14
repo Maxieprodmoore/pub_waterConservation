@@ -210,7 +210,7 @@ sl-tooltip::part(base)::after{
     padding-top: 0.25%;
     padding-left: initial;
     position: relative;
-    z-index: 99999;
+    z-index: 400;
 }
 
 #browserNav div::after {
@@ -357,7 +357,9 @@ p.waterSustains_btn {
 
 .collageDrawer {
                     --size: 100vw; /* Full width */
-                    --body-spacing: 3.5% 2%;
+                    --body-spacing: 3.5% 1%;
+                    position: relative;
+                    z-index: 99999;
                 }
 
 .collageDrawer::part(panel) {
