@@ -1666,6 +1666,10 @@ sl-tooltip::part(base)::after{
 }
 
 @media only screen and (max-height: 720px) {
+    .intro {
+        transform: translate(-63%,-10%);
+    }
+
     p.waterUses_btn {
         transform: translate(33%, 7%);
     }
