@@ -492,6 +492,10 @@ sl-tooltip::part(base)::after{
             cursor: pointer;
         }
 
+        .consqPicBtn:hover {
+            opacity: 0.7;
+        }
+
         .consqPicBtn img{
             width: 11.5%;
             border-radius: 50%;
