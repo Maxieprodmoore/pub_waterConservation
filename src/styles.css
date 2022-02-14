@@ -360,7 +360,7 @@ sl-tooltip::part(base)::after{
                 /*-----Overlay Background---*/
                 .collageDrawer {
                     --size: 100vw; /* Full width */
-                    --body-spacing: 3.5% 1%;
+                    --body-spacing: 3.5% 2%;
                     position: relative;
                     z-index: 99999;
                 }
@@ -1393,7 +1393,7 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(12%, -630%);
+        transform: translate(12%, -320%);
     }
 
     #consequences-Turtle {
