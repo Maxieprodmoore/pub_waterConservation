@@ -535,10 +535,19 @@ function stickyNav() {
     if (window.pageYOffset >= sticky) navbar.classList.add("sticky");
     else navbar.classList.remove("sticky");
 }
-/*---------------------------Hamburger Menu-----------------------*/ const navMenu = document.querySelector('#phoneNav');
+/*---------------------------Hamburger Menu-----------------------*/ //Get Navigation Hamburger menu drawer
+const navMenu = document.querySelector('#phoneNav');
+//Get links on Navigation Hamburger menu button
 const navOpen = document.querySelector('#phoneNavBtn');
 navOpen.addEventListener('click', ()=>navMenu.show()
 );
+//Get links on Navigation Hamburger menu
+const navLink = document.querySelectorAll('.phoneNavLink');
+//Enabling clicking on Navigation bar links to close hamburger menu on clicking
+Array.from(navLink).forEach(function(navLinkArray, i) {
+    navLinkArray.addEventListener('click', ()=>navMenu.hide()
+    );
+});
 /*--------Creating Modal images for How Water sustains nature Collage-------*/ //Get Overlay
 var collageDrawer = document.querySelectorAll(".collageDrawer");
 //Get image. 
