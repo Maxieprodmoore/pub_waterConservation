@@ -381,6 +381,7 @@ sl-tooltip::part(base)::after{
 
                 /*-----Overlay Image---*/
                 .overlay-Content {
+                    object-fit: contain;
                     margin-bottom: .5%;
                     
                 }

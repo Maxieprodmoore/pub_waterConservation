@@ -379,6 +379,7 @@ p.waterSustains_btn {
 /*-----Overlay Image---*/
 
 .overlay-Content {
+                    object-fit: contain;
                     margin-bottom: .5%;
                     
                 }
