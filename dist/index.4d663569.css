@@ -1056,11 +1056,11 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(-5%, -440%);
+        transform: translate(10%, -440%);
     }
 
     #consequences-forest {
-        transform: translate(5%, -135%);
+        transform: translate(0%, -120%);
     }
 
     .flip-card {
