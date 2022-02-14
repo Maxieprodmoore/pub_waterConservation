@@ -207,6 +207,8 @@ sl-tooltip::part(base)::after{
     flex-direction: column;
     padding-top: 0.25%;
     padding-left: initial;
+    position: relative;
+    z-index: 99999;
 }
 
 #browserNav div::after {
