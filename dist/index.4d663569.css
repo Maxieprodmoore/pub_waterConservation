@@ -1436,6 +1436,10 @@ p.waterSustains_btn {
         transform: translate(0%, -25%);
     }
 
+    .consqPicBtn img {
+        width: 18%;
+    }
+
     #consequences-deer {
         transform: translate(-40%, -140%);
     }
