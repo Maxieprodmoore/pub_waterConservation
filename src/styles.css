@@ -910,10 +910,18 @@ sl-tooltip::part(base)::after{
     }
 
     .flip-card {
-        width: calc(50vw - 1.8%);
-        height: 30vw;
+        width: calc(60vw - 1.8%);
+        height: 40vh;
         min-width: 300px;
         max-width: initial;
+    }
+
+    .flip-card-TitleTxt {
+        font-size: 1.6rem;
+    }
+
+    .flip-card-Txt {
+        font-size: 1.2rem;
     }
 
 }
