@@ -1841,6 +1841,17 @@ p.waterSustains_btn {
         transform: translate(75%, -330%);
     }
 
+    .flip-card {
+        width: calc(80vw - 1.8%);
+        height: 60vw;
+        min-width: initial;
+        max-width: initial;
+    }
+
+    .flip-card-back {
+        padding: 8% 4% 10%;
+    }
+
 }
 
 @media only screen and (max-height: 667px) {
