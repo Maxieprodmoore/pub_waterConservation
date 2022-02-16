@@ -1076,6 +1076,11 @@ p.waterSustains_btn {
         transform: translate(40%, -200%);
     }
 
+    .flip-card {
+        width: calc(50vw - 1.8%);
+        height: 30vw;
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1095,11 +1100,11 @@ p.waterSustains_btn {
     }
 
     p.waterUses_btn {
-        transform: translate(25%,10%);
+        transform: translate(25%, 10%);
     }
 
     p.waterSustains_btn {
-        transform: translate(0%,70%);
+        transform: translate(0%,-40%);
     }
 
     #navbar{
@@ -1153,7 +1158,7 @@ p.waterSustains_btn {
 
     .flip-card {
         width: calc(50vw - 1.8%);
-        height: 30vw;
+        height: 30vh;
     }
 
 }
@@ -2032,7 +2037,7 @@ p.waterSustains_btn {
         min-width: 360px;
         width: 100vw;
         height: 30vh;
-        max-height: 100%;
+        max-height: initial;
     }
 
     #city_lake img {
