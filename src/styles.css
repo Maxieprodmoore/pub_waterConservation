@@ -48,7 +48,7 @@ p{
 /*------General Stylings------*/
 
 
-section{
+section {
     margin: 0 5%;
     width: calc(100vw - 10%);
     display: block;
@@ -859,7 +859,15 @@ sl-tooltip::part(base)::after{
         height: 30vw;
         min-width: 300px;
         max-width: initial;
-      }
+    }
+
+    .flip-card-TitleTxt {
+        font-size: 2rem;
+    }
+
+    .flip-card-Txt {
+        font-size: 1.6rem;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -902,7 +910,7 @@ sl-tooltip::part(base)::after{
     }
 
     .flip-card {
-        width: calc(40vw - 1.8%);
+        width: calc(50vw - 1.8%);
         height: 30vw;
         min-width: 300px;
         max-width: initial;
@@ -1126,19 +1134,19 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-deer {
-        transform: translate(-30%, -135%);
+        transform: translate(-270%, -135%);
     }
 
-    #consequences-Turtle {
-        transform: translate(35%, -190%);
+    #consequences-forest {
+        transform: translate(-120%, -120%);
     }
 
     #consequences-bird {
         transform: translate(10%, -440%);
     }
 
-    #consequences-forest {
-        transform: translate(0%, -120%);
+    #consequences-Turtle {
+        transform: translate(150%, -190%);
     }
 
     .flip-card {
