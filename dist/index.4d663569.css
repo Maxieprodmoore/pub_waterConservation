@@ -905,7 +905,7 @@ p.waterSustains_btn {
 
     .flip-card {
         width: calc(60vw - 1.8%);
-        height: 40vh;
+        height: 50vh;
         min-width: 300px;
         max-width: initial;
     }
