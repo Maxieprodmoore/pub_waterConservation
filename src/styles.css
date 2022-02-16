@@ -831,11 +831,11 @@ sl-tooltip::part(base)::after{
     }
 
     p.waterUses_btn {
-        transform: translate(70.5%, 90%);
+        transform: translate(71%, 90%);
     }
 
     p.waterSustains_btn {
-        transform: translate(18%, 66%);
+        transform: translate(0%,-30%);
     }
 
     #consequences-deer {
@@ -853,16 +853,23 @@ sl-tooltip::part(base)::after{
     #consequences-Turtle {
         transform: translate(195%, -180%);
     }
+
+    .flip-card {
+        width: calc(40vw - 1.8%);
+        height: 30vw;
+        min-width: 300px;
+        max-width: initial;
+      }
 }
 
 @media only screen and (max-width: 1200px) {
 
     p.waterUses_btn {
-        transform: translate(27%,10%);
+        transform: translate(28%,10%);
     }
 
     p.waterSustains_btn {
-        transform: translate(0%,150%);
+        transform: translate(0%,-30%);
     }
 
     #slide_waterUses {
@@ -892,6 +899,13 @@ sl-tooltip::part(base)::after{
 
     #consequences-Turtle {
         transform: translate(240%, -180%);
+    }
+
+    .flip-card {
+        width: calc(40vw - 1.8%);
+        height: 30vw;
+        min-width: 300px;
+        max-width: initial;
     }
 
 }
