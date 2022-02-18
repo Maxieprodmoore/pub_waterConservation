@@ -32,7 +32,18 @@
                 // Set the base path to the folder you copied Shoelace's assets to
                 setBasePath('https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.68/dist');    
                 
-                /*--------Creating Modal images for How Water sustains nature Collage-------*/
+                /*--------Importing Font Awesome Icons-------*/
+                    import { registerIconLibrary } from '@shoelace-style/shoelace/dist/utilities/icon-library.js';
+
+                    registerIconLibrary('fa', {
+                        resolver: name => {
+                        const filename = name.replace(/^fa[rbs]-/, '');
+                        let folder = 'regular';
+                        if (name.substring(0, 4) === 'fas-') folder = 'solid';
+                        return `https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/svgs/${folder}/${filename}.svg`;
+                        },
+                        mutator: svg => svg.setAttribute('fill', 'currentColor')
+                    });
             </script> 
         <!-------------------End of Shoelace Components Import----------------------->
         <!----Splide Importing----->
@@ -444,6 +455,41 @@
                     </section>
                                   
             </div> 
+
+            <sl-dialog id="social-sharing">
+                Like what you've seen? 
+                Feel free to share the website here!
+                <sl-button variant="default" circle slot="footer"> <sl-icon name="facebook"></sl-icon></sl-button>
+                <sl-button variant="default" circle slot="footer"> <sl-icon name="twitter"></sl-icon></sl-button>
+            </sl-dialog>
+            <sl-dialog id="sourcesPage" label="Sources">
+                <p><a  href="https://www.pexels.com/photo/10226875/">Arango, Esteban</a>. Deer. Digital Photograph. 2021. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/photo-of-a-turtle-swimming-underwater-847393/">Co, Belle</a>. Photo of a Turtle Swimming Underwater. Digital Photograph. 2018. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/underwater-photography-of-school-of-fish-3536511/">Haines, Harrison</a>. Underwater Photography of School of Fish. Digital Photograph. 2021. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/pathway-in-between-trees-at-daytime-1112186/">HoliHo</a>. Pathway in Between Trees at Daytime. Digital Photograph. 2018. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/woman-drinking-at-blue-sports-bottle-outdoors-1325711/">Jopwell</a>. Woman Drinking at Blue Sports Bottle Outdoors. Digital Photograph. 2018. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/cn-tower-457937/">Nextvoyage</a>. Cn Tower. Digital Photograph. 2017. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/cheerful-boy-brushing-teeth-against-mirror-4546141/">Subiyanto, Ketut</a>. Cheerful boy brushing teeth against mirror. Digital Photograph. 2020. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/confident-child-removing-clothes-from-washing-machine-4546167/">Subiyanto, Ketut</a>. Confident child removing clothes from washing machine. Digital Photograph. 2020. Reproduced from: Pexels.</p>
+                <p><a  href="https://www.pexels.com/photo/close-up-of-splashing-water-247765/">Pixabay</a>. Close-up of Splashing Water. Digital Photograph. 2016. Reproduced from: Pexels.</p>
+            </sl-dialog>
+
+            <footer>
+                <p id="disclaimer">
+                    This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. 
+                    <br>
+                    <br>
+                    All copyright material used remains copyright of the respective owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). 
+                    <br> <br>
+                    No part of this work may be reproduced without consent of the original copyright owners.
+                </p>
+                <sl-button pill> Share the website!</sl-button>
+
+                <p><sl-icon library="fa" name="far-copyright"></sl-icon> Ho Bing Lin 2022</p>
+
+                <sl-button pill>Sources</sl-button>
+
+            </footer>
 
             <script type="module" src="./main.js"></script> 
     </body>
