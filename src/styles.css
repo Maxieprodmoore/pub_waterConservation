@@ -120,7 +120,7 @@ footer p {
     background-repeat: no-repeat;
     background-size: contain ;
     position: relative;
-    margin: 0 -2%;
+    margin: -2% -2% 0;
 }
 
 .intro{
@@ -1285,19 +1285,19 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-deer {
-        transform: translate(-32%, -120%);
+        transform: translate(-240%, -120%);
     }
 
     #consequences-forest {
-        transform: translate(0%, -110%);
+        transform: translate(-60%, -110%);
     }
 
     #consequences-bird {
-        transform: translate(45%, -360%);
+        transform: translate(45%, -240%);
     }
 
     #consequences-Turtle {
-        transform: translate(52%, -180%);
+        transform: translate(180%, -165%);
     }
 
 }
@@ -1473,11 +1473,11 @@ sl-tooltip::part(base)::after{
     }
 
     #consequences-bird {
-        transform: translate(15%, -550%);
+        transform: translate(15%, -300%);
     }
 
     #consequences-Turtle {
-        transform: translate(25%, -210%);
+        transform: translate(195%, -195%);
     }
 }
 
