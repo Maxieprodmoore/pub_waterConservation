@@ -590,6 +590,12 @@ Array.from(waterConsqBtn).forEach(function(waterConsqBtnArray, i) {
         waterConsqInfo[i].show();
     });
 });
+/*----------------------Setting up Disclaimer and Socials Popups----------------------*/ //Getting dialogue box for Social
+const socialMediaShareBx = document.querySelector("#social-sharingBx");
+//Getting dialogue box for Social media Sharing button
+const socialMediaShareBtn = document.querySelector("#social-sharingBtn");
+socialMediaShareBtn.addEventListener('click', ()=>socialMediaShareBx.show()
+);
 
 },{"@splidejs/splide":"5CJev","@shoelace-style/shoelace/dist/shoelace":"6TTGm","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5CJev":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");

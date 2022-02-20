@@ -91,3 +91,12 @@ document.addEventListener( 'DOMContentLoaded', function () {
         waterConsqInfo[i].show();
       });
     });
+
+/*----------------------Setting up Disclaimer and Socials Popups----------------------*/ 
+    //Getting dialogue box for Social
+    const socialMediaShareBx = document.querySelector("#social-sharingBx");
+
+    //Getting dialogue box for Social media Sharing button
+    const socialMediaShareBtn = document.querySelector("#social-sharingBtn");
+
+    socialMediaShareBtn.addEventListener('click', () => socialMediaShareBx.show());

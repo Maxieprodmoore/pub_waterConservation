@@ -91,24 +91,6 @@ sl-button.footer-btn::part(base){
     margin-bottom: 10%;
 }
 
-footer {
-    margin: 0 -2% -2%;
-    padding: 3% 10% 2%;
-    background-color: #5B9ED9;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-}
-
-#disclaimer {
-    margin: 0 0 2%;
-    text-align: left;
-}
-
-footer p {
-    text-align: center;
-}
-
 /*-----Intro section------*/
 
 #imgHero {
@@ -658,6 +640,38 @@ p.waterSustains_btn {
 
 /*-------END Protecting Singapore's Water supply Section------*/
 
+/*----------------Footer section--------------------------*/
+
+footer {
+        margin: 0 -2% -2%;
+        padding: 3% 10% 2%;
+        background-color: #5B9ED9;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+#disclaimer {
+        margin: 0 0 2%;
+        text-align: left;
+    }
+
+footer p {
+        text-align: center;
+    }
+
+.disclaimerCopyright {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+#social-sharingBtn, .disclaimerCopyright p {
+        margin-right: 3%;
+    }
+
+/*-------------------End of Footer section---------------------*/
+
 @media only screen and (max-height: 1600px) {
     .intro {
         transform: translate(-65%, 1%);
@@ -1110,7 +1124,7 @@ p.waterSustains_btn {
     .intro {
         width: 90%;
         margin: 0 5%;
-        transform: translate(-55%,2%);
+        transform: translate(-57%,2%);
     }
 
     section {
@@ -1186,6 +1200,11 @@ p.waterSustains_btn {
 
     footer {
         padding: 3% 5% 2%;
+    }
+
+    .disclaimerCopyright {
+        display: flex;
+        flex-direction: column;
     }
 
 }
@@ -1842,11 +1861,11 @@ p.waterSustains_btn {
     }
 
     #consequences-bird {
-        transform: translate(20%, -360%);
+        transform: translate(20%, -270%);
     }
 
     #consequences-Turtle {
-        transform: translate(195%, -195%);
+        transform: translate(195%, -180%);
     }
 }
 
