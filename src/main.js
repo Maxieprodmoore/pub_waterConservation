@@ -100,3 +100,11 @@ document.addEventListener( 'DOMContentLoaded', function () {
     const socialMediaShareBtn = document.querySelector("#social-sharingBtn");
 
     socialMediaShareBtn.addEventListener('click', () => socialMediaShareBx.show());
+
+    //Getting dialogue box for Credits page
+    const creditsBx = document.querySelector("#sourcesPage");
+
+    //Getting dialogue box for Credits button
+    const creditsBtn = document.querySelector("#sourcesBtn");
+
+    creditsBtn.addEventListener('click', () => creditsBx.show());

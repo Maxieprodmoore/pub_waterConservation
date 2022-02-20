@@ -596,6 +596,12 @@ const socialMediaShareBx = document.querySelector("#social-sharingBx");
 const socialMediaShareBtn = document.querySelector("#social-sharingBtn");
 socialMediaShareBtn.addEventListener('click', ()=>socialMediaShareBx.show()
 );
+//Getting dialogue box for Credits page
+const creditsBx = document.querySelector("#sourcesPage");
+//Getting dialogue box for Credits button
+const creditsBtn = document.querySelector("#sourcesBtn");
+creditsBtn.addEventListener('click', ()=>creditsBx.show()
+);
 
 },{"@splidejs/splide":"5CJev","@shoelace-style/shoelace/dist/shoelace":"6TTGm","@shoelace-style/shoelace/dist/components/drawer/drawer.js":"1eEuu","@shoelace-style/shoelace/dist/components/button/button.js":"9AbKL","@shoelace-style/shoelace/dist/components/icon-button/icon-button.js":"9ii4L","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"5CJev":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
